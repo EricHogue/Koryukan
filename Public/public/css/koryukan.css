@@ -1,0 +1,302 @@
+*
+{
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: #F4EADE;
+	color:#000000;
+	scrollbar-3dlight-color:white; 
+	scrollbar-arrow-color:#804000;
+	scrollbar-base-color:#FEECD9;
+	scrollbar-darkshadow-color:#804000;
+	scrollbar-face-color:#f2f2f2;
+	scrollbar-highlight-color:#F9F1E7;
+	scrollbar-shadow-color:#FEECD9;	
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
+/** All links */
+
+a
+{
+	color:#790000;
+	text-decoration:none;
+}
+
+a:link
+{
+	color:#790000;
+	text-decoration:none;
+}
+
+a:active{}
+
+a:visited
+{
+	color:#790000;
+	text-decoration:none;
+}
+
+a:hover
+{
+	font-weight:bold
+}
+/** /All Links */
+
+/** Top Banner **/
+div.topBanner {
+	padding-top: 10px;
+	width: 100%;
+	height: 120px;
+	font-family: Goudy old style;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 40px;
+	vertical-align: middle;
+	position:relative;
+	color: #000000;
+	margin: auto;
+	text-align: center;
+}	
+
+div.topBanner div {
+	float: left;		
+}
+
+div.topBanner div.text {
+	position:relative; 
+	width: 42%;
+	top: 30%; 
+}
+div.topBanner div.textleft {
+	text-align: right;
+}
+
+div.topBanner div.takedalogo {
+	width: 16%;
+}
+
+div.topBanner div.textright {
+	text-align: left;
+}
+/** Top Banner **/
+
+
+
+/** Main Menu */
+ul.mainMenu
+{
+	list-style-image: none;
+	list-style-type: none;
+	margin-top: 10px;
+	width: 80%;
+	background-color: #c7a259;
+	margin: auto;
+	text-align: center;
+}
+
+ul.mainMenu li 
+{
+	display: inline;
+	padding-right: 15px;
+	font-family: Goudy old style;
+	font-style: italic;
+	font-size: 14px;
+	
+}
+div.pageTitle
+{
+	width: 80%;
+	background-color: #FCFBF9;
+	padding: 0;
+	height: 30px;
+	margin: auto;
+}
+
+div.pageTitle h1
+{
+	padding: 0 0 0 10px;
+	font-family: Goudy old style;
+	font-style: none;
+	font-size: 18px;
+	color: black;
+	font-weight: bold;
+	text-align: left;
+	font-size: 24px;
+	float: left;
+	vertical-align: 100%;
+}
+div.pageTitle img 
+{
+	float: right;
+	vertical-align: bottom;
+	padding-top: 5px;
+	padding-right: 5px; 
+}
+
+a.menulink:link
+{
+	color: #000000;
+	text-decoration:none;
+}
+a.menulink:visited
+{
+	color: #000000;
+	text-decoration:none;
+}
+
+a.menulink:hover
+{
+	color: #A41815;
+	text-decoration:none;	
+	font-weight: normal;
+}
+/** /Main Menu */
+
+
+/** Main Page layout */
+#page {
+    width:75%;
+    margin:0 auto;
+    margin-top: 10px;
+}
+#maincontent {
+    float:right;
+    width:75%;
+}
+
+#leftsidebar {
+    float:left;
+    width:25%;
+}
+#footer {
+    clear:both;
+    padding:5px 10px;
+}
+/** /Main Page layout*/
+
+
+/* News */
+ul.NewsUL 
+{
+	list-style-image: none;
+	list-style-type: none;
+	width: 100%;
+	text-align: left;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
+ul.NewsUL li 
+{
+	display: block;
+	width: 100%;
+	padding: 10px 10px 5px 10px;
+	
+}
+
+ul.NewsUL li h3
+{
+	display: block;
+	text-transform: uppercase;
+	padding: 0px 0px 0px 5px;
+	margin: 5px 0px 0px 0px;
+	background-color: #c7a259;
+	
+	font-weight: bold;
+	font-family: Goudy old style;
+	font-style: italic;
+}
+ul.NewsUL li h6
+{
+	padding: 2px 0px 2px 5px;
+	margin: 0px 0px 5px 0px;
+	font-style: italic;
+	background-color: white;
+}
+/* /News */
+
+
+
+
+/* Boutique */
+div.storeitems {
+}
+
+div.storeitems ul 
+{
+	list-style-image: none;
+	list-style-type: none;
+	width: 100%;
+	text-align: left;
+	padding: 0px 0px 10px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+div.storeitems ul li 
+{
+	display: block;
+	width: 100%;
+	border-bottom: 1px solid grey;
+	padding: 10px 10px 5px 10px;
+}
+
+div.storeitems ul li h2, div.storeitems ul li h3
+{
+	display: block;
+}
+
+div.storeitems ul li h2 
+{
+	text-transform: uppercase;
+}
+
+div.storeitems ul li img
+{
+	float: left;
+	margin-right: 10px;
+	text-transform: lowercase;
+	border: none;
+} 
+
+div.storeitems ul li h3 
+{
+	padding-top: 10px;
+	padding-bottom: 0px;
+	clear: left;
+}
+
+div.storeitems ul li span 
+{
+	clear: both;
+	float: left;
+}
+
+
+/* /Boutique */
+
+
+/** Multimedia */
+
+table.ImagesTable {
+	width:450; 
+	border: 4px ridge #FAEDDA;
+	padding: none;
+	margin: none
+}
+table.ImagesTable tr {
+	padding: none;
+	margin: none
+}
+
+table.ImagesTable tr td {
+	padding: 5px;
+	border: 2px ridge #FAEDDA;
+	margin: none;
+
+/** /Multimedia */
+
+

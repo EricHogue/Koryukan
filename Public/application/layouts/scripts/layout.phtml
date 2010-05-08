@@ -1,0 +1,39 @@
+<?php echo $this->doctype() ?>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="description" content="Koryukan est la seule &eacute;cole de aiki-jujutsu de style Daito Ruy au Canada. L'aiki-jujutsu est un art martial Japonais" />
+    <meta name="keywords" content="Daito Ryu, hakuhoryu, aiki, aikijujutsu, aiki jujutsu, aikibudo, art martial, arts martiaux, aikijujitsu, aiki jujitsu, Ono Ha Itto Ryu, kenjutsu, Aiki Budo kendo Jujutsu" />
+
+
+  <title>Koryukan</title>
+  <?php echo $this->headLink()->appendStylesheet('/css/koryukan.css'); ?>
+</head>
+<body>
+
+    <!-- Page Header -->
+    <?php echo $this->partial('header.phtml'); ?>
+
+
+    <div id="page">
+        <div id="leftsidebar">
+            <?php echo $this->partial('sidebar.phtml');?>
+        </div>
+
+        <div id="maincontent">
+            <?php echo $this->layout()->content ?>
+        </div>
+
+        <div id="footer">
+            <!-- No footer -->
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+</html>
