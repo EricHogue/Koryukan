@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Koyukan Public\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-05-15 18:32-0500\n"
+"POT-Creation-Date: 2010-05-15 19:19-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: eric <eric@erichogue.ca>\n"
 "Language-Team: Koyukan <eric@koryukan.com>\n"
@@ -60,17 +60,37 @@ msgstr "Français"
 msgid "English"
 msgstr "English"
 
-#: application/controllers/IndexController.php:22
+#: application/controllers/IndexController.php:9
 msgid "Welcome to Koryukan"
 msgstr "Bienvenue chez Koryukan"
 
+#: application/controllers/NewsController.php:8
+msgid "NewsPageTitle"
+msgstr "Nouvelles"
+
 #: application/views/scripts/index/index.phtml:1
-msgid "welcome-body"
-msgstr "Bienvenue"
+msgid "homeHeader"
+msgstr "Dojo Koryukan"
 
 #: application/views/scripts/index/index.phtml:3
-msgid "Recent reviews"
-msgstr "Critiques récentes"
+msgid "homePar1"
+msgstr "Le dojo Koryukan à été créé par Medhat Darwish. Situé à Montréal au Canada, il permet une étude de l'Aiki Jujutsu Daito Ryu. Medhat a été inspiré par Okabayashi Shogen Sensei duquel il a reçu la permission d'établir le premier groupe d'étude d'Hakyho Kai Daito Ryu Aiki Jujutsu au Canada. Peu de temps après, Okabayashi Shogen Sensei fit le grand honneur au dojo Koryukan d'être la première branche d'Hakuho Ryu au pays et M. Darwish fut nommé premier représentant au Canada."
+
+#: application/views/scripts/index/index.phtml:7
+msgid "homePar2"
+msgstr "Présentement, Koryukan est un dojo indépendant qui a pour but la pratique et le préservation des techniques du Daito Ryu Aki Budo traditionnel et du Kenjutsu Ono Ha Itto Ryu comme elles nous ont été enseignées."
+
+#: application/views/scripts/index/index.phtml:11
+msgid "homePar3"
+msgstr "Koryukan offre un enseignement de l'Aiki Jujutsu Daito Ryu et du Kenjutsu aux individus et aux groupes. Le respect, la loyauté, la camaraderie, l'humanité, l'humilité, la bravoure, le dévouement, l'engagement et un esprit droit sont toutes des valeurs fortement encouragées."
+
+#: application/views/scripts/index/index.phtml:15
+msgid "homeHeader2"
+msgstr "Dojo Dokyoo"
+
+#: application/views/scripts/index/index.phtml:17
+msgid "homePar4"
+msgstr "Le dojo Dyokoo est une branche de Koryukan qui fut fondée en 2009 par Pavel Ribinsky. Pavel pratique le Daito Ryu avec sensei Darwish depuis 2006 et a présentement le rang de 4ième kyu. Michel Wakil va assister Pavel dans la création du nouveau dojo. Michel va s'assurer du respect des valeurs fondamentales au Koryukan et de la qualité des techniques enseignées."
 
 #: application/layouts/scripts/header.phtml:3
 msgid "Koryukan Dojo"
@@ -80,4 +100,9 @@ msgstr "Koryukan Dojo"
 #: application/layouts/scripts/header.phtml:13
 msgid "Daito Ryu Aiki Budo"
 msgstr "Daito Ryu Aiki Budo"
+
+#~ msgid "welcome-body"
+#~ msgstr "Bienvenue"
+#~ msgid "Recent reviews"
+#~ msgstr "Critiques récentes"
 

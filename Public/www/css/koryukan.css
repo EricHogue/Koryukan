@@ -299,7 +299,14 @@ table.ImagesTable tr td {
 	padding: 5px;
 	border: 2px ridge #FAEDDA;
 	margin: none;
-
+}
 /** /Multimedia */
 
 
+div#maincontent p {
+	margin-bottom: 1em;
+}
+div#maincontent h2 {
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+}
