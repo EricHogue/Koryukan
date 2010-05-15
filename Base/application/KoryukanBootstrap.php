@@ -59,46 +59,42 @@ class KoryukanBootstrap extends Zend_Application_Bootstrap_Bootstrap
         $frontController->registerPlugin($plugin);
     }
 
+    protected function _initZFDebug()
+    {
+        $config = $this->getOptions();
+        if (array_key_exists('enable_zf_debug', $config) && true === (bool) $config['enable_zf_debug']) {
+            $autoloader = Zend_Loader_Autoloader::getInstance();
+            $autoloader->registerNamespace('ZFDebug');
 
+            $options = array(
+                'plugins' => array('Variables',
+                                   'File' => array('base_path' => realpath(APPLICATION_PATH . '/../..')),
+                                   'Memory',
+                                   'Time',
+                                   'Registry',
+                                   'Exception')
+            );
 
-    protected function _initTranslation() {
-$english = array('message1' => 'message1',
-                 'message2' => 'message2',
-                 'message3' => 'message3');
-$french = array('message1' => 'premier',
-                'message2' => 'deuxieme',
-                'message3' => 'troisieme');
+            /*# Instantiate the database adapter and setup the plugin.
+            # Alternatively just add the plugin like above and rely on the autodiscovery feature.
+            if ($this->hasPluginResource('db')) {
+                $this->bootstrap('db');
+                $db = $this->getPluginResource('db')->getDbAdapter();
+                $options['plugins']['Database']['adapter'] = $db;
+            }*/
 
-$translate = new Zend_Translate('array', $english, 'en');
-$translate->addTranslation($french, 'fr');
+            /*# Setup the cache plugin
+            if ($this->hasPluginResource('cache')) {
+                $this->bootstrap('cache');
+                $cache = $this-getPluginResource('cache')->getDbAdapter();
+                $options['plugins']['Cache']['backend'] = $cache->getBackend();
+            }*/
 
+            $debug = new ZFDebug_Controller_Plugin_Debug($options);
 
-Zend_Controller_Router_Route::setDefaultTranslator($translate);
-
-/*
-$router = Zend_Controller_Front::getInstance()->getRouter();
-$langRoute = new Zend_Controller_Router_Route(
-        ':lang/',
-        array(
-            'lang' => 'en'
-        )
-    );
-
-    $defaultRoute = new Zend_Controller_Router_Route(
-        ':controller/:action',
-        array(
-            'module'=>'default',
-            'controller'=>'index',
-            'action'=>'index'
-        )
-    );
-     $defaultRoute = $langRoute->chain($defaultRoute);
-
-$router->addRoute('langRoute', $langRoute);
- $router->addRoute('defaultRoute', $defaultRoute);
-
-print_r(Zend_Controller_Front::getInstance()->getParams());
- echo $translate->translate('message1');
- */
+            $this->bootstrap('frontController');
+            $frontController = $this->getResource('frontController');
+            $frontController->registerPlugin($debug);
+        }
     }
 }
