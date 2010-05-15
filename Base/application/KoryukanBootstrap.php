@@ -83,12 +83,10 @@ class KoryukanBootstrap extends Zend_Application_Bootstrap_Bootstrap
                 $options['plugins']['Database']['adapter'] = $db;
             }*/
 
-            /*# Setup the cache plugin
-            if ($this->hasPluginResource('cache')) {
-                $this->bootstrap('cache');
-                $cache = $this-getPluginResource('cache')->getDbAdapter();
-                $options['plugins']['Cache']['backend'] = $cache->getBackend();
-            }*/
+            # Setup the cache plugin
+            $this->bootstrap('mainCache');
+            $cache = $this->getResource('mainCache');
+            $options['plugins']['Cache']['backend'] = $cache->getBackend();
 
             $debug = new ZFDebug_Controller_Plugin_Debug($options);
 
@@ -96,5 +94,64 @@ class KoryukanBootstrap extends Zend_Application_Bootstrap_Bootstrap
             $frontController = $this->getResource('frontController');
             $frontController->registerPlugin($debug);
         }
+    }
+
+    protected function _initMainCache()
+    {
+        $config = $this->getOptions();
+
+        $cacheTtl = 0;
+        if (array_key_exists('cache', $config) && array_key_exists('main', $config['cache'])) {
+            $mainCacheOptions = $config['cache']['main'];
+             $cacheTtl = (array_key_exists('ttl', $mainCacheOptions))? (int) $mainCacheOptions['ttl']: 30;
+             $cachIdPrefix = (array_key_exists('cache_id_prefix', $mainCacheOptions))? $mainCacheOptions['cache_id_prefix']: '';
+        }
+
+        $frontendOptions = array(
+            'caching' => true,
+            'cache_id_prefix' => $cachIdPrefix,
+            'lifetime' => $cacheTtl,
+            'automatic_serialization' => true
+        );
+
+        // getting a Zend_Cache_Frontend_Page object
+        $cache = Zend_Cache::factory('Core', 'Apc', $frontendOptions);
+
+        return $cache;
+    }
+
+    protected function _initPageCache()
+    {
+        $config = $this->getOptions();
+
+        $cachePages = false;
+        $cacheTtl = 0;
+        $showDebugHeader = false;
+        if (array_key_exists('cache', $config) && array_key_exists('page', $config['cache'])) {
+            $pageCacheOptions = $config['cache']['page'];
+             $cachePages = (array_key_exists('enabled', $pageCacheOptions))? (bool) $pageCacheOptions['enabled']: false;
+             $cacheTtl = (array_key_exists('ttl', $pageCacheOptions))? (int) $pageCacheOptions['ttl']: 0;
+             $showDebugHeader = (array_key_exists('debug_header', $pageCacheOptions))? (bool) $pageCacheOptions['debug_header']: 0;
+        }
+
+        if ($cacheTtl < 1) {
+            $cachePages = false;
+        }
+
+        $frontendOptions = array(
+            'lifetime' => $cacheTtl,
+            'debug_header' => $showDebugHeader, // for debugging
+            'default_options' => array(
+                'cache' => $cachePages,
+                'cache_with_cookie_variables' => true
+            )
+        );
+
+        // getting a Zend_Cache_Frontend_Page object
+        $cache = Zend_Cache::factory('Page', 'Apc', $frontendOptions);
+
+        $cache->start();
+
+        return $cache;
     }
 }

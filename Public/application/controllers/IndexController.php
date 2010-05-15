@@ -18,7 +18,5 @@ class IndexController extends Zend_Controller_Action
         $region = $locale->getRegion();
 
         print("<br />$language  -  $region");
-
-
     }
 }
