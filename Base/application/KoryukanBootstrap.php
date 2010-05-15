@@ -55,7 +55,8 @@ class KoryukanBootstrap extends Zend_Application_Bootstrap_Bootstrap
 
         $plugin = new Koryukan_Controller_Plugin_LanguageSetup($languagePath, $languages);
 
-        $frontController = Zend_Controller_Front::getInstance();
+        $this->bootstrap('frontController');
+        $frontController = $this->getResource('frontController');
         $frontController->registerPlugin($plugin);
     }
 

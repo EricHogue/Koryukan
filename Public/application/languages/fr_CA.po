@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Koyukan Public\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-05-15 07:40-0500\n"
+"POT-Creation-Date: 2010-05-15 18:32-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: eric <eric@erichogue.ca>\n"
 "Language-Team: Koyukan <eric@koryukan.com>\n"
@@ -16,6 +16,54 @@ msgstr ""
 "X-Poedit-Basepath: /media/Data/Workspace/Koryukan/Public\n"
 "X-Poedit-SearchPath-0: application\n"
 
+#: application/controllers/MenuController.php:12
+msgid "Home"
+msgstr "Acceuil"
+
+#: application/controllers/MenuController.php:14
+msgid "news"
+msgstr "Nouvelles"
+
+#: application/controllers/MenuController.php:16
+msgid "daitoryu"
+msgstr "Daito Ryu"
+
+#: application/controllers/MenuController.php:18
+msgid "onohaittoryu"
+msgstr "Ono Ha Itto Ryu"
+
+#: application/controllers/MenuController.php:20
+msgid "articles"
+msgstr "Articles"
+
+#: application/controllers/MenuController.php:22
+msgid "multimedia"
+msgstr "Multimedia"
+
+#: application/controllers/MenuController.php:24
+msgid "children"
+msgstr "Enfants"
+
+#: application/controllers/MenuController.php:26
+msgid "store"
+msgstr "Boutique"
+
+#: application/controllers/MenuController.php:28
+msgid "contacts"
+msgstr "Contact & Info"
+
+#: application/controllers/MenuController.php:33
+msgid "French"
+msgstr "Français"
+
+#: application/controllers/MenuController.php:36
+msgid "English"
+msgstr "English"
+
+#: application/controllers/IndexController.php:22
+msgid "Welcome to Koryukan"
+msgstr "Bienvenue chez Koryukan"
+
 #: application/views/scripts/index/index.phtml:1
 msgid "welcome-body"
 msgstr "Bienvenue"
@@ -23,4 +71,13 @@ msgstr "Bienvenue"
 #: application/views/scripts/index/index.phtml:3
 msgid "Recent reviews"
 msgstr "Critiques récentes"
+
+#: application/layouts/scripts/header.phtml:3
+msgid "Koryukan Dojo"
+msgstr "Koryukan Dojo"
+
+#: application/layouts/scripts/header.phtml:5
+#: application/layouts/scripts/header.phtml:13
+msgid "Daito Ryu Aiki Budo"
+msgstr "Daito Ryu Aiki Budo"
 

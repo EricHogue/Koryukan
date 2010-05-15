@@ -13,12 +13,13 @@
 <body>
 
     <!-- Page Header -->
-    <?php echo $this->partial('header.phtml'); ?>
+    <?php echo $this->partial('header.phtml', array('pageTitle' => $this->pageTitle)); ?>
 
 
     <div id="page">
         <div id="leftsidebar">
-            <?php echo $this->partial('sidebar.phtml');?>
+            <?php echo $this->partial('sidebar.phtml', array('sideImage' => $this->sideImage,
+                'sideImageAlt' => $this->sideImageAlt));?>
         </div>
 
         <div id="maincontent">

@@ -1,10 +1,10 @@
 <td valign="top" class='image' >
-    <img src="/Images/Pages/takuma.jpg"  alt="ALT_TEXT">
+    <img src="/Images/Pages/<?php echo $this->sideImage; ?>"  alt="<?php echo $this->escape($this->sideImageAlt); ?>">
 
     <div style="position:relative;left:40">
         <ul>
             <?php /*foreach ($submenus as $link => $url):*/ ?>
-                <li>TEST<?php /*echo html::anchor(url_lang::site($url), $link)*/ ?></li>
+                <!-- <li><?php /*echo html::anchor(url_lang::site($url), $link)*/ ?></li> -->
             <?php /*endforeach*/ ?>
         </ul>
 

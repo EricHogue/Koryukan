@@ -108,6 +108,25 @@ ul.mainMenu li
 	font-size: 14px;
 	
 }
+
+ul.mainMenu li a:link
+{
+    color: #000000;
+    text-decoration:none;
+}
+ul.mainMenu li a:visited
+{
+    color: #000000;
+    text-decoration:none;
+}
+
+ul.mainMenu li a:hover
+{
+    color: #A41815;
+    text-decoration:none;   
+    font-weight: normal;
+}
+
 div.pageTitle
 {
 	width: 80%;
@@ -138,23 +157,7 @@ div.pageTitle img
 	padding-right: 5px; 
 }
 
-a.menulink:link
-{
-	color: #000000;
-	text-decoration:none;
-}
-a.menulink:visited
-{
-	color: #000000;
-	text-decoration:none;
-}
 
-a.menulink:hover
-{
-	color: #A41815;
-	text-decoration:none;	
-	font-weight: normal;
-}
 /** /Main Menu */
 
 

@@ -1,26 +1,15 @@
 <div>
     <div class='topBanner'>
-        <div class='text textleft'>Koryukan Dojo</div>
+        <div class='text textleft'><?php echo $this->escape($this->translate('Koryukan Dojo')); ?></div>
         <div class='takedalogo'><img alt='Takeda' src="/Images/Menu/TakedaLogo.gif" /></div>
-        <div class='text textright'>Daito Ryu Aiki Budo </div>
+        <div class='text textright'><?php echo $this->escape($this->translate('Daito Ryu Aiki Budo')); ?></div>
     </div>
     <br />
     <div>
-        <ul class="mainMenu">
-            <?php /*foreach ($menus as $link => $url):*/ ?>
-            <li>MENU ITEM 1<?php /*echo html::anchor(url_lang::site($url), $link, array('class'=>'menulink'))*/ ?></li>
-            <?php /*endforeach*/ ?>
-            <?php
-            /*//Add link to switch language
-            $lang = Kohana::config('locale.lang');
-            if (0 == strcasecmp('fr', $lang)) $langDestination = 'en';
-            else $langDestination = 'fr';*/
-            ?>
-            <li><?php /*echo html::anchor($langDestination, Kohana::lang('menu.otherlanguage'), array('class'=>'menulink'))*/ ?></li>
-        </ul>
+        <?php echo $this->layout()->menu; ?>
     </div>
     <div class="pageTitle">
-        <h1><?php echo $this->escape('Page Title') ?></h1>
-        <img src="/Images/Menu/Kenji.gif" alt="Daito Ryu Aiki Budo"  />
+        <h1><?php echo $this->escape($this->pageTitle) ?></h1>
+        <img src="/Images/Menu/Kenji.gif" alt="<?php echo $this->escape($this->translate('Daito Ryu Aiki Budo')); ?>"  />
     </div>
 </div>
