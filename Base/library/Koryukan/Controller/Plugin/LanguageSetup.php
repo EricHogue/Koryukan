@@ -23,19 +23,14 @@ class Koryukan_Controller_Plugin_LanguageSetup extends Zend_Controller_Plugin_Ab
 
         $localeString = $this->_languages[$lang];
         $locale = new Zend_Locale($localeString);
-        $file = $this->_dir . '/'. $localeString . '.php';
+        $file = $this->_dir . '/'. $localeString . '.mo';
 
-        if (file_exists($file)) {
-            $translationStrings = include $file;
-        } else {
-            $translationStrings = include $this->_dir . '/en_US.php';
+
+        if (!file_exists($file)) {
+            throw new Exception('Missing $translationStrings in language file ' . $file);
         }
 
-        if (empty($translationStrings)) {
-            throw new Exception('Missing $translationStrings in language file');
-        }
-
-        $translate = new Zend_Translate('array', $translationStrings, $localeString);
+        $translate = new Zend_Translate('gettext', $file, $localeString);
 
         Zend_Registry::set('lang', $lang);
         Zend_Registry::set('localeString', $localeString);

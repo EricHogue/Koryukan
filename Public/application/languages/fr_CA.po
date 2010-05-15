@@ -1,0 +1,26 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Koyukan Public\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-05-15 07:40-0500\n"
+"PO-Revision-Date: \n"
+"Last-Translator: eric <eric@erichogue.ca>\n"
+"Language-Team: Koyukan <eric@koryukan.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: CANADA\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: translate;_;setLabel;setValue;setMessage;setLegend;_refresh;append;prepend\n"
+"X-Poedit-Basepath: /media/Data/Workspace/Koryukan/Public\n"
+"X-Poedit-SearchPath-0: application\n"
+
+#: application/views/scripts/index/index.phtml:1
+msgid "welcome-body"
+msgstr "Bienvenue"
+
+#: application/views/scripts/index/index.phtml:3
+msgid "Recent reviews"
+msgstr "Critiques récentes"
+
