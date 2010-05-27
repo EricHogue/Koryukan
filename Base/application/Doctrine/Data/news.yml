@@ -1,0 +1,26 @@
+Koryukan_Model_News: 
+    news1:
+        publishedDate: '2010-05-15'
+        creationDate: '2010-05-15'
+        status: 'online'
+    news2: 
+        publishedDate: '2010-05-21'
+        creationDate: '2010-05-21'
+        status: 'deleted'
+Koryukan_Model_NewsText:
+    text1: 
+        News: news1
+        language: 'fr'
+        content: 'abcdefg'
+    text2: 
+        News: news1
+        language: 'en'
+        content: 'abcdefg'
+    text3: 
+        News: news2
+        language: 'fr'
+        content: '123456'
+    text4: 
+        News: news2
+        language: 'en'
+        content: '123456'

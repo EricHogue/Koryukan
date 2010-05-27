@@ -1,0 +1,47 @@
+detect_relations: true
+options:
+    type: INNODB
+    collate: utf8_unicode_ci
+    charset: utf8
+
+News:
+    columns:
+        id: 
+            type: integer(4)
+            notnull: true
+            unsigned: true
+            primary: true
+            autoincrement: true
+        publishedDate: 
+            type: date
+            notnull: true
+        creationDate:
+            type: date
+            notnull: true
+        status: 
+            type: enum
+            notnull: true
+            values: ['online', 'deleted']
+            default: 'online'
+NewsText: 
+    columns:
+        newsId: 
+            type: integer(4)
+            notnull: true
+            unsigned: true
+            primary: true
+        language: 
+            type: enum
+            notnull: true
+            values: ['fr', 'en']
+            default: 'fr'
+            primary: true
+        content:
+            type: text
+            notnull: true
+    relations:
+        News: 
+            local: newsId
+            foreign: id
+             
+            

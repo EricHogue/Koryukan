@@ -43,7 +43,12 @@ class KoryukanBootstrap extends Zend_Application_Bootstrap_Bootstrap
 
     protected function _initAutoLoad() {
         $autoloader = Zend_Loader_Autoloader::getInstance();
-        $autoloader->registerNamespace('Koryukan_');
+
+       /*$resourceLoader = new Zend_Loader_Autoloader_Resource(array(
+            'basePath'  => BASE_PATH . '/library/Koryukan/Db',
+            'namespace' => 'Model',
+        ));
+        $resourceLoader->addResourceType('Model', '/', 'Model');*/
     }
 
     protected function _initLanguagePlugin() {
@@ -62,11 +67,10 @@ class KoryukanBootstrap extends Zend_Application_Bootstrap_Bootstrap
 
     protected function _initZFDebug()
     {
+        $this->bootstrap('AutoLoad');
+
         $config = $this->getOptions();
         if (array_key_exists('enable_zf_debug', $config) && true === (bool) $config['enable_zf_debug']) {
-            $autoloader = Zend_Loader_Autoloader::getInstance();
-            $autoloader->registerNamespace('ZFDebug');
-
             $options = array(
                 'plugins' => array('Variables',
                                    'File' => array('base_path' => realpath(APPLICATION_PATH . '/../..')),
@@ -76,13 +80,9 @@ class KoryukanBootstrap extends Zend_Application_Bootstrap_Bootstrap
                                    'Exception')
             );
 
-            /*# Instantiate the database adapter and setup the plugin.
-            # Alternatively just add the plugin like above and rely on the autodiscovery feature.
-            if ($this->hasPluginResource('db')) {
-                $this->bootstrap('db');
-                $db = $this->getPluginResource('db')->getDbAdapter();
-                $options['plugins']['Database']['adapter'] = $db;
-            }*/
+            $this->bootstrap('Doctrine');
+            $dbConnection = $this->getResource('Doctrine');
+            $options['plugins']['Database']['adapter'] = $dbConnection;
 
             # Setup the cache plugin
             $this->bootstrap('mainCache');
@@ -117,6 +117,7 @@ class KoryukanBootstrap extends Zend_Application_Bootstrap_Bootstrap
 
         // getting a Zend_Cache_Frontend_Page object
         $cache = Zend_Cache::factory('Core', 'Apc', $frontendOptions);
+        Zend_Registry::set('mainCache', $cache);
 
         return $cache;
     }
@@ -148,11 +149,34 @@ class KoryukanBootstrap extends Zend_Application_Bootstrap_Bootstrap
             )
         );
 
+        //echo nl2br(print_r($frontendOptions, true));
+
         // getting a Zend_Cache_Frontend_Page object
         $cache = Zend_Cache::factory('Page', 'Apc', $frontendOptions);
-
         $cache->start();
 
         return $cache;
+    }
+
+    protected function _initDoctrine()
+    {
+        $this->bootstrap('AutoLoad');
+
+        $autoloader = Zend_Loader_Autoloader::getInstance();
+        $autoloader->pushAutoloader(array('Doctrine_Core','autoload'), array('sfYaml'));
+
+        $config = $this->getOptions();
+        $db = $config['db'];
+        $dns = "{$db['type']}://{$db['username']}:{$db['password']}@{$db['host']}/{$db['database']}?charset=utf8";
+
+        $manager = Doctrine_Manager::getInstance();
+        //$manager->setAttribute(Doctrine_Core::ATTR_MODEL_LOADING, Doctrine_CORE::MODEL_LOADING_CONSERVATIVE);
+        $manager->setAttribute(Doctrine_Core::ATTR_AUTO_ACCESSOR_OVERRIDE, true);
+        $manager->setAttribute(Doctrine_Core::ATTR_AUTOLOAD_TABLE_CLASSES, true);
+        $manager->setAttribute(Doctrine_Core::ATTR_USE_NATIVE_ENUM, true);
+
+        $connection = Doctrine_Manager::connection($dns);
+
+        return $connection;
     }
 }
