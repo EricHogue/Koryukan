@@ -1,4 +1,4 @@
-Koryukan_Model_News: 
+Koryukan_Db_News: 
     news1:
         publishedDate: '2010-05-14'
         creationDate: '2010-05-14'
@@ -7,7 +7,7 @@ Koryukan_Model_News:
         publishedDate: '2010-05-24'
         creationDate: '2010-05-24'
         status: 'online'
-Koryukan_Model_NewsText:
+Koryukan_Db_NewsText:
     text1: 
         News: news1
         language: 'fr'
