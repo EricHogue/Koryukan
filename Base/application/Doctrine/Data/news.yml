@@ -1,16 +1,17 @@
 Koryukan_Model_News: 
     news1:
-        publishedDate: '2010-05-15'
-        creationDate: '2010-05-15'
+        publishedDate: '2010-05-14'
+        creationDate: '2010-05-14'
         status: 'online'
     news2: 
-        publishedDate: '2010-05-21'
-        creationDate: '2010-05-21'
-        status: 'deleted'
+        publishedDate: '2010-05-24'
+        creationDate: '2010-05-24'
+        status: 'online'
 Koryukan_Model_NewsText:
     text1: 
         News: news1
         language: 'fr'
+        title: Séminaire du 23 mai 2010
         content: 'abcdefg'
     text2: 
         News: news1
@@ -19,7 +20,10 @@ Koryukan_Model_NewsText:
     text3: 
         News: news2
         language: 'fr'
-        content: '123456'
+        content: |
+            Q123456
+            dasdffsda
+            sdfafda
     text4: 
         News: news2
         language: 'en'

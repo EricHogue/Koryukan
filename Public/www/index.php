@@ -35,3 +35,4 @@ $application->bootstrap()
 
 //print nl2br(print_r($application->getOptions(), true));
 //echo '<br />APPLICATION_ENV: ' . APPLICATION_ENV . '<br />';
+

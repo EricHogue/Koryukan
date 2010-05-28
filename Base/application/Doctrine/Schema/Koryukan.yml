@@ -36,6 +36,9 @@ NewsText:
             values: ['fr', 'en']
             default: 'fr'
             primary: true
+        title: 
+            type: string(255) 
+            notnull: true;
         content:
             type: text
             notnull: true

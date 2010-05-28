@@ -7,6 +7,7 @@
  * 
  * @property integer $newsId
  * @property enum $language
+ * @property string $title
  * @property text $content
  * @property Koryukan_Model_News $News
  * 
@@ -34,6 +35,11 @@ abstract class Koryukan_Model_BaseNewsText extends Doctrine_Record
               1 => 'en',
              ),
              'primary' => true,
+             ));
+        $this->hasColumn('title', 'string', 255, array(
+             'type' => 'string',
+             'notnull' => 'true;',
+             'length' => '255',
              ));
         $this->hasColumn('content', 'text', null, array(
              'type' => 'text',

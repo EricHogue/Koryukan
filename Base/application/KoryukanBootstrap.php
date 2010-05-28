@@ -68,6 +68,7 @@ class KoryukanBootstrap extends Zend_Application_Bootstrap_Bootstrap
     protected function _initZFDebug()
     {
         $this->bootstrap('AutoLoad');
+        $this->bootstrap('Doctrine');
 
         $config = $this->getOptions();
         if (array_key_exists('enable_zf_debug', $config) && true === (bool) $config['enable_zf_debug']) {
@@ -77,12 +78,10 @@ class KoryukanBootstrap extends Zend_Application_Bootstrap_Bootstrap
                                    'Memory',
                                    'Time',
                                    'Registry',
-                                   'Exception')
+                                   'Exception',
+                                    'Danceric_Controller_Plugin_Debug_Plugin_Doctrine')
             );
 
-            $this->bootstrap('Doctrine');
-            $dbConnection = $this->getResource('Doctrine');
-            $options['plugins']['Database']['adapter'] = $dbConnection;
 
             # Setup the cache plugin
             $this->bootstrap('mainCache');

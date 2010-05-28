@@ -1,5 +1,11 @@
 <?php
 
+if (array_key_exists(1, $argv)) {
+    $env = $argv[1];
+} else {
+    $env = 'production';
+}
+
 defined('BASE_PATH')
     || define('BASE_PATH', realpath(dirname(__FILE__) . '/..'));
 
@@ -15,10 +21,7 @@ require_once 'Zend/Application.php';
 
 // Create application, bootstrap, and run
 $config = array('config' => array(realpath(BASE_PATH . '/application/configs/application.ini')));
-$application = new Zend_Application(
-    'production',
-    $config
-);
+$application = new Zend_Application($env, $config);
 
 
 $dbConnection = $application->getBootstrap()->bootstrap('Doctrine');
