@@ -103,19 +103,24 @@ class KoryukanBootstrap extends Zend_Application_Bootstrap_Bootstrap
         $cacheTtl = 0;
         if (array_key_exists('cache', $config) && array_key_exists('main', $config['cache'])) {
             $mainCacheOptions = $config['cache']['main'];
-             $cacheTtl = (array_key_exists('ttl', $mainCacheOptions))? (int) $mainCacheOptions['ttl']: 30;
-             $cachIdPrefix = (array_key_exists('cache_id_prefix', $mainCacheOptions))? $mainCacheOptions['cache_id_prefix']: '';
+            $cacheEnabled = (array_key_exists('enabled', $mainCacheOptions))? (bool) $mainCacheOptions['enabled']: false;
+            $cacheTtl = (array_key_exists('ttl', $mainCacheOptions))? (int) $mainCacheOptions['ttl']: 30;
+            $cachIdPrefix = (array_key_exists('cache_id_prefix', $mainCacheOptions))? $mainCacheOptions['cache_id_prefix']: '';
         }
 
         $frontendOptions = array(
-            'caching' => true,
+            'caching' => $cacheEnabled,
             'cache_id_prefix' => $cachIdPrefix,
             'lifetime' => $cacheTtl,
             'automatic_serialization' => true
         );
 
+        $backendOptions = array(
+            'cache_dir' => $config['cache']['path']
+        );
+
         // getting a Zend_Cache_Frontend_Page object
-        $cache = Zend_Cache::factory('Core', 'Apc', $frontendOptions);
+        $cache = Zend_Cache::factory('Core', 'File', $frontendOptions, $backendOptions);
         Zend_Registry::set('mainCache', $cache);
 
         return $cache;
@@ -148,10 +153,12 @@ class KoryukanBootstrap extends Zend_Application_Bootstrap_Bootstrap
             )
         );
 
-        //echo nl2br(print_r($frontendOptions, true));
+        $backendOptions = array(
+            'cache_dir' => $config['cache']['path']
+        );
 
         // getting a Zend_Cache_Frontend_Page object
-        $cache = Zend_Cache::factory('Page', 'Apc', $frontendOptions);
+        $cache = Zend_Cache::factory('Page', 'File', $frontendOptions, $backendOptions);
         $cache->start();
 
         return $cache;

@@ -7,7 +7,7 @@ class NewsController extends Zend_Controller_Action
     public function indexAction() {
         $news = Doctrine_Core::getTable('Koryukan_Db_News')->getNews('online');
 
-        echo nl2br(print_r($news, true));
+        echo nl2br(print_r($news->toArray(), true));
 
         $pageTitle = $this->view->translate('NewsPageTitle');
         $this->view->assign('pageTitle', $pageTitle);
