@@ -1,1 +1,11 @@
-<?php
+<ul class="NewsUL">
+    <?php foreach ($this->newsCollection as $news): ?>
+        <li>
+            <h3><?php echo $this->escape($news->getTitle($this->lang)); ?></h3>
+            <h6><?php echo $this->escape($news->getPublicationDate()); ?></h6>
+            <?php echo $news->getContent(Zend_Registry::get('lang')); ?>
+        </li>
+    <?php endforeach ?>
+</ul>
+
+<br /><br />

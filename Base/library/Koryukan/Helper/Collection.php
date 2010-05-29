@@ -54,6 +54,14 @@ class Koryukan_Helper_Collection implements Countable, Iterator
      */
     protected $_cacheKey;
 
+    /**
+     * The class name for the model
+     *
+     * @var string
+     */
+    protected $_modelClassName;
+
+
 
 
     /**
@@ -61,10 +69,11 @@ class Koryukan_Helper_Collection implements Countable, Iterator
      *
      * @return void
      */
-    public function __construct(Doctrine_Query $query)
+    public function __construct(Doctrine_Query $query, $modelClassName)
     {
         $this->_query = $query;
         $this->_cacheKey = sha1($query->getSqlQuery() . serialize($query->getParams()));
+        $this->_modelClassName = $modelClassName;
 
         $cache = Zend_Registry::get('mainCache');
 
@@ -127,7 +136,8 @@ class Koryukan_Helper_Collection implements Countable, Iterator
     }
 
     function current() {
-        return $this->_iterator->current();
+        $current = $this->_iterator->current();
+        return new $this->_modelClassName($current);
     }
 
     function key() {

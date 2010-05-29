@@ -12,19 +12,34 @@ Koryukan_Db_NewsText:
         News: news1
         language: 'fr'
         title: Séminaire du 23 mai 2010
-        content: 'abcdefg'
+        content: |
+            <a href='/Images/News/Seminaire20100523Fr.png' target='_blank' style='border: none;'><img src='/Images/News/Seminaire20100523Fr.png'  style='width: 400px; border: none;' /></a>        
     text2: 
         News: news1
         language: 'en'
-        content: 'abcdefg'
+        title: May 23rd Seminar
+        content: <a href='/Images/News/Seminar20100523En.png' target='_blank' style='border: none;'><img src='/Images/News/Seminar20100523En.png'  style='width: 400px; border: none;' /></a>
     text3: 
         News: news2
         language: 'fr'
+        title: Ouverture du dojo de Ste-Anne
         content: |
-            Q123456
-            dasdffsda
-            sdfafda
+            En vu de l'ouverture du dojo de Ste-Anne, nous tiendrons des séance d'inscriptions: <br /><br />
+
+            Le 25 et 27 Mai à 17:30 au Centre Harpell<br />
+            et <br />
+            Le 1er et 3 juin à 17:30hr au Chalet du Parc Aumais<br />
+            
+            <a href='/Images/News/CirculaireSteAnneFr.jpg' target='_blank' style='border: none;'><img src='/Images/News/CirculaireSteAnneFr.jpg'  style='width: 400px; border: none;' /></a>
     text4: 
         News: news2
         language: 'en'
-        content: '123456'
+        title: Ste-Anne's dojo opening
+        content: |
+            For the opening the Ste-Anne dojo, we will take inscriptions <br /><br />
+
+            On May 25 and 27 a the Harpell Center 
+            <br />And  <br />
+            On June 1st and 3rd at the Aumais park chalet. 
+            <br />
+            <a href='/Images/News/CirculaireSteAnneEn.jpg' target='_blank' style='border: none;'><img src='/Images/News/CirculaireSteAnneEn.jpg'  style='width: 400px; border: none;' /></a>

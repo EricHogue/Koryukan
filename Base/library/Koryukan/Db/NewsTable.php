@@ -31,6 +31,8 @@ class Koryukan_Db_NewsTable extends Doctrine_Table
             $query->addWhere('Status = ?', $status);
         }
 
+        $query->addOrderBy('publishedDate Desc');
+
         return $query;
     }
 
