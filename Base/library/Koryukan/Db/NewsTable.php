@@ -31,7 +31,7 @@ class Koryukan_Db_NewsTable extends Doctrine_Table
             $query->addWhere('Status = ?', $status);
         }
 
-        return $query->execute();
+        return $query;
     }
 
 }

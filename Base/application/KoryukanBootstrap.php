@@ -103,6 +103,7 @@ class KoryukanBootstrap extends Zend_Application_Bootstrap_Bootstrap
         $cacheTtl = 0;
         if (array_key_exists('cache', $config) && array_key_exists('main', $config['cache'])) {
             $mainCacheOptions = $config['cache']['main'];
+
             $cacheEnabled = (array_key_exists('enabled', $mainCacheOptions))? (bool) $mainCacheOptions['enabled']: false;
             $cacheTtl = (array_key_exists('ttl', $mainCacheOptions))? (int) $mainCacheOptions['ttl']: 30;
             $cachIdPrefix = (array_key_exists('cache_id_prefix', $mainCacheOptions))? $mainCacheOptions['cache_id_prefix']: '';
