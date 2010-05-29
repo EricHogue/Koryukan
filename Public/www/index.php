@@ -6,7 +6,7 @@ defined('APPLICATION_PATH')
 
 // Define application environment
 defined('APPLICATION_ENV')
-    || define('APPLICATION_ENV', (getenv('APPLICATION_ENV') ? getenv('APPLICATION_ENV') : 'development'));
+    || define('APPLICATION_ENV', (getenv('APPLICATION_ENV') ? getenv('APPLICATION_ENV') : 'staging'));
 
 defined('BASE_PATH')
     || define('BASE_PATH', realpath(APPLICATION_PATH . '/../../Base'));
@@ -35,4 +35,3 @@ $application->bootstrap()
 
 //print nl2br(print_r($application->getOptions(), true));
 //echo '<br />APPLICATION_ENV: ' . APPLICATION_ENV . '<br />';
-

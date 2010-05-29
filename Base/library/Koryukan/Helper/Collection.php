@@ -24,6 +24,8 @@
  */
 class Koryukan_Helper_Collection implements Countable, Iterator
 {
+    const SERIALIZATION_DEEP = 10;
+
     /**
      * The query
      *
@@ -36,7 +38,7 @@ class Koryukan_Helper_Collection implements Countable, Iterator
      *
      * @var Doctrine_Collection
      */
-    protected $_data;
+    protected $_dbData;
 
     /**
      * The data iterator
@@ -44,6 +46,14 @@ class Koryukan_Helper_Collection implements Countable, Iterator
      * @var Iterator
      */
     protected $_iterator;
+
+    /**
+     * The cache key
+     *
+     * @var string
+     */
+    protected $_cacheKey;
+
 
 
     /**
@@ -54,20 +64,52 @@ class Koryukan_Helper_Collection implements Countable, Iterator
     public function __construct(Doctrine_Query $query)
     {
         $this->_query = $query;
-        $cacheKey = sha1($query->getSqlQuery() . serialize($query->getParams()));
+        $this->_cacheKey = sha1($query->getSqlQuery() . serialize($query->getParams()));
 
         $cache = Zend_Registry::get('mainCache');
 
-        if ($cache->test($cacheKey)) {
-            $data = $cache->load($cacheKey);
+        if ($cache->test($this->_cacheKey)) {
+            $this->_loadFromCache($cache);
+            echo('From cache<br />');
         } else {
-            $data = $query->execute();
-            $cache->save($data, $cacheKey);
+            $this->_dbData = $this->_query->execute();
+            $this->_saveInCache($cache);
+            echo('From DB<br />');
         }
 
-        $this->_data = $data;
-        $this->_iterator = $data->getIterator();
+        $this->_iterator = $this->_dbData->getIterator();
     }
+
+    /**
+     * Save in cache
+     *
+     * @return void
+     */
+    private function _saveInCache(Zend_Cache_Core $cache)
+    {
+        $cacheData = array();
+
+        $cacheData['tableName'] = $this->_dbData->getTable()->getComponentName();
+        $cacheData['dataArray'] = $this->_dbData->toArray(self::SERIALIZATION_DEEP);
+
+        $cache->save($cacheData, $this->_cacheKey);
+    }
+
+    /**
+     * Load the data from cache
+     *
+     * @return void
+     */
+    private function _loadFromCache(Zend_Cache_Core $cache)
+    {
+        $cacheData = $cache->load($this->_cacheKey);
+        $dbData = new Doctrine_Collection($cacheData['tableName']);
+        $dbData->fromArray($cacheData['dataArray'], self::SERIALIZATION_DEEP);
+
+        $this->_dbData = $dbData;
+    }
+
+
 
     /**
      * Return how many items are in the collection
