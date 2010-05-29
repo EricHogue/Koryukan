@@ -117,7 +117,7 @@ class KoryukanBootstrap extends Zend_Application_Bootstrap_Bootstrap
         );
 
         $backendOptions = array(
-            'cache_dir' => $config['cache']['path']
+            'cache_dir' => realpath($config['cache']['path'])
         );
 
         // getting a Zend_Cache_Frontend_Page object
@@ -155,7 +155,7 @@ class KoryukanBootstrap extends Zend_Application_Bootstrap_Bootstrap
         );
 
         $backendOptions = array(
-            'cache_dir' => $config['cache']['path']
+            'cache_dir' => realpath($config['cache']['path'])
         );
 
         // getting a Zend_Cache_Frontend_Page object
