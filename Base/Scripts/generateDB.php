@@ -34,7 +34,7 @@ Doctrine_Core::createDatabases();
 
 
 $options = $application->getOptions();
-$ymlPath = realpath(BASE_PATH . '/application/Doctrine/Schema/Koryukan.yml');
+$ymlPath = realpath(BASE_PATH . '/Scripts/Yaml/Schema/Koryukan.yml');
 
 $modelsOptions = array(
     'suffix'          =>  '.php',
@@ -48,4 +48,4 @@ $modelsOptions = array(
 Doctrine_Core::generateModelsFromYaml($ymlPath, $options['db']['objectsPath'], $modelsOptions);
 Doctrine_Core::createTablesFromModels($options['db']['objectsPath']);
 
-Doctrine_Core::loadData(BASE_PATH . '/application/Doctrine/Data/news.yml');
+Doctrine_Core::loadData(BASE_PATH . '/Scripts/Yaml/Data/news.yml');

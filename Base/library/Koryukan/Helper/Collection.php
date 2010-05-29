@@ -79,11 +79,9 @@ class Koryukan_Helper_Collection implements Countable, Iterator
 
         if ($cache->test($this->_cacheKey)) {
             $this->_loadFromCache($cache);
-            echo('From cache<br />');
         } else {
             $this->_dbData = $this->_query->execute();
             $this->_saveInCache($cache);
-            echo('From DB<br />');
         }
 
         $this->_iterator = $this->_dbData->getIterator();
