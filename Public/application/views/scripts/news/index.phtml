@@ -1,28 +1,10 @@
-<?php
-$markdown = Zend_Markup::factory('Bbcode');
-//$markdown = new Markdown_Parser();
-
-//return;
-?>
 <ul class="NewsUL">
     <?php foreach ($this->newsCollection as $news): ?>
         <li>
-            <h3><?php echo $markdown->render($news->getTitle($this->lang)); ?></h3>
-            <h6><?php echo $this->escape($news->getPublicationDate()); ?></h6>
-            <?php //echo $markdown->render($news->getContent(Zend_Registry::get('lang'))); ?>
-
-            <?php
-              //  echo
-            ?>
-
-            <?php
-                $bbcode = "[url=http://koryukan.local/Images/News/Seminaire20100523Fr.png][img width=10]http://koryukan.local/Images/News/Seminaire20100523Fr.png[/img][/url]";
-                //$bbcode = "!http://koryukan.local/Images/News/Seminaire20100523Fr.png!";
-                $bbcode = "[img=50x50]http://www.bbcode.org/images/lubeck_small.jpg[/img]";
-                echo $markdown->render($bbcode);
-            ?>
+            <h3><?php echo $this->purify($news->getTitle($this->lang)); ?></h3>
+            <h6><?php echo $this->purify($news->getPublicationDate()); ?></h6>
+            <?php echo $this->purify($news->getContent(Zend_Registry::get('lang'))); ?>
         </li>
     <?php endforeach ?>
 </ul>
 
-<br /><br />

@@ -44,11 +44,7 @@ class KoryukanBootstrap extends Zend_Application_Bootstrap_Bootstrap
     protected function _initAutoLoad() {
         $autoloader = Zend_Loader_Autoloader::getInstance();
 
-       /*$resourceLoader = new Zend_Loader_Autoloader_Resource(array(
-            'basePath'  => BASE_PATH . '/library/Koryukan/Db',
-            'namespace' => 'Model',
-        ));
-        $resourceLoader->addResourceType('Model', '/', 'Model');*/
+       return $autoloader;
     }
 
     protected function _initLanguagePlugin() {
@@ -188,5 +184,33 @@ class KoryukanBootstrap extends Zend_Application_Bootstrap_Bootstrap
         $connection = Doctrine_Manager::connection($dns);
 
         return $connection;
+    }
+
+    /**
+     * Init HTMLPPurifier
+     *
+     * @return void
+     */
+    protected function _initHTMLPurifier()
+    {
+        $this->bootstrap('AutoLoad');
+        $this->bootstrap('View');
+
+
+
+        require_once realpath(BASE_PATH . '/library/HTMLPurifier/HTMLPurifier.auto.php');
+
+        $purifierConfig = HTMLPurifier_Config::createDefault();
+        $purifierConfig->set('Cache.DefinitionImpl', null);
+
+        $config = $this->getOptions();
+        $purifierConfig->set('HTML.Allowed', $config['HTMLPurifier']['HTML']['Allowed']);
+        $purifierConfig->set('AutoFormat.AutoParagraph', false);
+
+        $htmlPurifier = new HTMLPurifier($purifierConfig);
+        $purifyHelper = new Koryukan_View_Helper_Purify($htmlPurifier);
+
+        $view = $this->getResource('View');
+        $view->registerHelper($purifyHelper, 'purify');
     }
 }
