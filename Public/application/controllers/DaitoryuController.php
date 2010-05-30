@@ -25,6 +25,23 @@
 class DaitoryuController extends Zend_Controller_Action
 {
     /**
+     * Init
+     *
+     * @return void
+     */
+    public function init()
+    {
+        $view = $this->view;
+        $submenu = array(
+            array('name' => $view->translate('History of Daito Ryu'), 'action' => 'history_of_daitoryu'),
+            array('name' => $view->translate('Takeda Sokaku'), 'action' => 'takeda_sokaku'),
+            array('name' => $view->translate('Takeda Tokimune'), 'action'  => 'takeda_tokimune'),
+            array('name' => $view->translate('Hisa Takuma'), 'action' => 'hisa_takuma')
+        );
+        $view->assign('submenu', $submenu);
+    }
+
+    /**
      * Index action
      *
      * @return void

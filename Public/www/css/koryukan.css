@@ -127,6 +127,11 @@ ul.mainMenu li a:hover
     font-weight: normal;
 }
 
+div.sidebarMenu {
+	position:relative;
+	left:40;
+}
+
 div.pageTitle
 {
 	width: 80%;
@@ -309,4 +314,28 @@ div#maincontent p {
 div#maincontent h2 {
     margin-bottom: 0.5em;
     margin-top: 1em;
+}
+
+
+div#maincontent dl {
+	margin-bottom: 0.5em;
+}
+
+div#maincontent dt {
+	float: left;
+	min-width:50px;
+}
+
+div#daitoryucontent img {
+	float: left;
+}
+
+div#maincontent p.nomargin {
+    margin-bottom: 0;
+}
+
+div.clear {
+    clear: both;
+    float: none;
+    margin-bottom: 2em;
 }

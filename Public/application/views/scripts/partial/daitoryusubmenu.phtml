@@ -1,0 +1,8 @@
+<ul>
+<?php
+    foreach ($this->submenu as $menuItem) {
+        $url = $this->url(array('action' => $menuItem['action']));
+        echo '<li><a href="' . $url . '">' . $menuItem['name'] . '</a></li>';
+    }
+?>
+</ul>

@@ -1,13 +1,8 @@
 <td valign="top" class='image' >
     <img src="/Images/Pages/<?php echo $this->sideImage; ?>"  alt="<?php echo $this->escape($this->sideImageAlt); ?>">
 
-    <div style="position:relative;left:40">
-        <ul>
-            <?php /*foreach ($submenus as $link => $url):*/ ?>
-                <!-- <li><?php /*echo html::anchor(url_lang::site($url), $link)*/ ?></li> -->
-            <?php /*endforeach*/ ?>
-        </ul>
-
+    <div class='sidebarMenu'>
+        <?php echo $this->placeholder('sidebarmenu'); ?>
     </div>
 
 

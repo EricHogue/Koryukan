@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Koyukan Public\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-05-29 20:03-0500\n"
+"POT-Creation-Date: 2010-05-30 19:29-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: eric <eric@erichogue.ca>\n"
 "Language-Team: Koyukan <eric@koryukan.com>\n"
@@ -64,7 +64,23 @@ msgstr "English"
 msgid "Welcome to Koryukan"
 msgstr "Bienvenue chez Koryukan"
 
-#: application/controllers/DaitoryuController.php:34
+#: application/controllers/DaitoryuController.php:36
+msgid "History of Daito Ryu"
+msgstr "L'histoire du Daito Ryu"
+
+#: application/controllers/DaitoryuController.php:37
+msgid "Takeda Sokaku"
+msgstr "Takeda Sokaku"
+
+#: application/controllers/DaitoryuController.php:38
+msgid "Takeda Tokimune"
+msgstr "Takeda Tokimune"
+
+#: application/controllers/DaitoryuController.php:39
+msgid "Hisa Takuma"
+msgstr "Hisa Takuma"
+
+#: application/controllers/DaitoryuController.php:51
 msgid "HistoryOfDaitoRyuPageTitle"
 msgstr "L'histoire du Daito Ryu"
 
@@ -96,6 +112,504 @@ msgstr "Dojo Dokyoo"
 msgid "homePar4"
 msgstr "Le dojo Dyokoo est une branche de Koryukan qui fut fondée en 2009 par Pavel Ribinsky. Pavel pratique le Daito Ryu avec sensei Darwish depuis 2006 et a présentement le rang de 4ième kyu. Michel Wakil va assister Pavel dans la création du nouveau dojo. Michel va s'assurer du respect des valeurs fondamentales au Koryukan et de la qualité des techniques enseignées."
 
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:7
+msgid "THE HISTORY OF DAITO RYU AIKI JUJUTSU"
+msgstr "HISTOIRE DU DAITO RYU AIKI JUJUTSU "
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:8
+msgid "by"
+msgstr "par"
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:10
+msgid ""
+"Members of the Koryukan dojo would like to extend their gratitude to\n"
+"       Dr. Thivierge for his unselfish contribution to our website. We are all\n"
+"       better off for his generosity."
+msgstr "Les membres du dojo Koryukan souhaitent remercier le Dr Thivierge pour sa g&eacute;n&eacute;reuse contribution &agrave; notre site web. Nous sommes honor&eacute;s de sa g&eacute;n&eacute;rosit&eacute;."
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:14
+msgid "Aiki Jujutsu is a traditional Japanese combative discipline, the essence of the art is contained in the name."
+msgstr "Aiki Jujutsu est un art martial traditionnel japonais, dont l'essence est contenue dans son nom."
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:17
+msgid "Ai"
+msgstr "Ai"
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:18
+msgid "means to meet or harmony"
+msgstr "signifie 'rencontrer' ou 'harmonie'"
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:20
+msgid "Ki"
+msgstr "Ki"
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:21
+msgid "is the life energy that animates all living things"
+msgstr "est l'&eacute;nergie vitale qui anime toute chose vivante"
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:23
+msgid "Ju"
+msgstr "Ju"
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:24
+msgid "means flexible or non resistant"
+msgstr "signifie souple"
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:26
+msgid "Jutsu"
+msgstr "Jutsu"
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:27
+msgid "means an art"
+msgstr "se traduit par 'un art'"
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:31
+msgid "In Aiki jujutsu we discover an art with which we can master conflic by means of harmonizing with the life energy that animates the opponent. With this harmony it becomes possible to face the tests life continually sends our way."
+msgstr "On d&eacute;couvre dans l'Aiki jujutsu un art qui permet de ma&icirc;triser le conflit gr&acirc;ce &agrave; une harmonisation avec l'&eacute;nergie vitale animant l'adversaire. Gr&acirc;ce  &agrave; cette harmonie, il est d&eacute;sormais possible de faire face aux &eacute;preuves que                   la vie place chaque jour sur notre route."
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:33
+msgid "The origin of Daito ryu aiki jujutsu can be traced to emperor Seiwa (850 A.D)."
+msgstr "Les origines du Daito ryu aiki remontent &agrave; l'empereur Seiwa (850 apr&egrave;s JC)."
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:34
+msgid "Long kept a secret under the Minamoto clan, the art was used by the Emperor's army and private guard. Controlled by Japanese nobility, appointed official martial art of the Shogun's residence by Hoshina Masayuki in the late 1600's, Daito techniques were transmitted from generation to generation."
+msgstr "Longtemps conserv&eacute; cach&eacute; par le clan Minamoto, cet art &eacute;tait utilis&eacute; par l'arm&eacute;e de l'empereur et sa garde personnelle. Les techniques du Daito ont &eacute;t&eacute; transmises de g&eacute;n&eacute;ration en g&eacute;n&eacute;ration au sein de la noblesse japonaise qui les ma&icirc;trisait et ont &eacute;t&eacute; reconnues comme art martial de la r&eacute;sidence du Shogun par Hoshina Masayuki &agrave; la fin du 17&egrave;me si&egrave;cle."
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:35
+msgid "Through the centuries numerous masters of this discipline were important war lords, such as Shingen Takeda, undoubtedly the most famous in Japanese culture. Among his collateral descendants, whose destinies were intimately linked with Daito ryu, we find Sokaku Takeda, a master and a reviver of the art."
+msgstr "Au cours des si&egrave;cles, de nombreux ma&icirc;tres de cette discipline furent d'importants seigneurs de la guerre, tel Shingen Takeda, sans aucun doute le plus c&eacute;l&egrave;bre dans la culture japonaise. Parmi ses descendants spirituels, dont le destin fut intimement li&eacute; au Daito ryu, on trouve Sodaku Takeda, un ma&icirc;tre dans cet art qu'il a raviv&eacute;."
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:40
+msgid "was the son of prince Minamoto Yoriyoshi (lord of Chinjuf). Direct descendants of Emperor Seiwa."
+msgstr "&eacute;tait le fils du Prince Minamoto Yoriyoshi (Seigneur de Chinjuf) et descendant direct de l'Empereur Seiwa."
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:42
+msgid ""
+"Emperor Seiwa was a lackluster leader as most japanese emperors were.\n"
+"        Yoshimitsu inherited an art that had been developed by his forefathers\n"
+"        and said to be related to Sumo; he perfected this discipline which was\n"
+"        to be the roots of what is now known as Daito Ryu (Daito was the name\n"
+"        of Yoshimitsu's summer residence). Legend has it that in creating new\n"
+"        techniques he is said to have been influenced by observing the movements\n"
+"        of a spider trapping its prey."
+msgstr "L'Empereur Seiwa &eacute;tait un leader sans &eacute;clat, comme la plupart des empereurs japonais. Yoshimitsu h&eacute;ritait d'un art qui avait &eacute;t&eacute; d&eacute;velopp&eacute; par ses anc&ecirc;tres et dont on disait qu'il &eacute;tait proche de l'art sumo. Il perfectionna la discipline ce qui constitua les fondations de ce que l'on conna&icirc;t aujourd'hui sous le nom de Daito Ryu (Daito &eacute;tait le nom de la r&eacute;sidence d'&eacute;t&eacute; de Yoshimitsu). La l&eacute;gende pr&eacute;tend que sa cr&eacute;ation de nouvelles technique a &eacute;t&eacute; influenc&eacute;e par son observation des mouvements de l'araign&eacute;e pi&eacute;geant sa proie."
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:49
+msgid ""
+"He was also known as an exceptional horseman and a master of kenjutsu,\n"
+"        kyujutsu and sojutsu (the spear)."
+msgstr "Il passait aussi pour un cavalier exceptionnel et un ma&icirc;tre du kenjutsu, jyujutsu et du sojutsu (la lance)."
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:51
+msgid ""
+"During the Gosamen war (1083-1087), he fought alongside his brothers\n"
+"        against the Kiyohata clan, under the imperial banner (as the Minamoto\n"
+"        where often asked to do). It is with one of his brothers, Yoshiie, that\n"
+"        he besieged Kanazawa castle; the siege lasted one year and was successful."
+msgstr "Au cours de la guerre de Gosamen (1083-1087), il se battit aux c&ocirc;t&eacute;s de ses fr&egrave;res contre le clan Kiyohata, sous la banni&egrave;re imp&eacute;riale (ainsi qu'on le demandait souvent aux Minamoto). Ce fut avec l'un de ses fr&egrave;res, Yoshiie, qu'il assi&eacute;gea le ch&acirc;teau de Kanazawa, dont le si&egrave;ge dura un an et s'acheva sur une victoire."
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:55
+msgid ""
+"It is during this siege that the two brothers were said to have dissected\n"
+"        bodies of fallen enemy soldiers in order to study their anatomical structures.\n"
+"        This practice was said to have helped Yoshimitsu in perfecting his unarmed\n"
+"        martial art."
+msgstr "Il para&icirc;t que ce fut lors de ce si&egrave;ge que les deux fr&egrave;res diss&eacute;qu&egrave;rent les corps de soldats ennemis morts afin d'&eacute;tudier leurs anatomie. On dit que cette pratique aida Yoshimitsu &agrave; perfectionner son art martial pratiqu&eacute; sans armes."
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:59
+msgid ""
+"Because of his military prowess Yoshimitsu was made lord of Kai by\n"
+"        the Emperor. One of Yoshimitsu's son, Minamoto Yoshikiyo, moved to Takeda\n"
+"        village in the domain of Kai (present day Yamanashi prefecture) and took\n"
+"        the name Takeda Yoshikiyo. He later succeded his father as lord of Kai.\n"
+"        And so the Takeda clan was born."
+msgstr "Du fait de ses exploits militaires, Yoshimitsu fut &eacute;lev&eacute; au rang de Seigneur du Kai par l'Empereur. L'un des fils de Yoshimitsu, Minamoto Yoshikivo, s'installa dans le village de Takeda dans le domaine de Kai (aujourd'hui la pr&eacute;fecture de Yamanashi) et prit le nom de Takeda Yoshikivo. Plus tard, il succ&eacute;da &agrave; son p&egrave;re au titre de Seigneur du Kai. Ainsi naquit le clan Takeda."
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:68
+msgid ""
+", born in 1521 in the city of Kofu, became Daimyo\n"
+"        of Kai in 1541 when he deposed his father. He was ambitious, a brilliant\n"
+"        strategist and a formidable leader; his political savvy, however, did\n"
+"        not measure up to his military might. He was involved in numerous albeit\n"
+"        fruitless encounters with the Hojo, Imagawa, Tokugawa and Oda clans."
+msgstr "n&eacute; en 1521 dans la ville de Kofu, devint Daimyo du Kai en 1541 lorsqu'il d&eacute;mit son p&egrave;re de son titre. Il &eacute;tait ambitieux et se r&eacute;v&eacute;la un brillant strat&egrave;ge et un formidable meneur d'hommes ; sa compr&eacute;hension des questions politique en revanche n'&eacute;tait gu&egrave;re brillante compar&eacute;e &agrave; son pouvoir militaire. Il fut impliqu&eacute; dans de nombreuses rencontres, sans r&eacute;sultat, avec les clans Hojo, Imagawa, Tokugawa et Oda."
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:73
+msgid ""
+"But his most intense rivalry was with Uesugi Kenshin, Daimyo of Echigo.\n"
+"        They confronted each other five times at Kawanakajima. The fourth battle\n"
+"        is the most memorable and among the most famous in japanese history."
+msgstr "Sa plus forte rivalit&eacute; fut avec Uesugi Kenshin, Daimyo d'Echigo. Ils se battirent cinq fois &agrave; Kawanakajima. Le quatri&egrave;me combat est le plus remarquable le parmi les plus c&eacute;l&egrave;bres de l'histoire japonaise."
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:76
+msgid ""
+"Through the years they developed great respect for each other as exemplified\n"
+"        by this true story:"
+msgstr "Au cours des ann&eacute;es, ils d&eacute;velopp&egrave;rent le plus grand respect l'un ever l'autre ainsi que le prouve cette histoire r&eacute;elle."
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:78
+msgid ""
+"Salt was an important commodity in Japan especially in the mountainous\n"
+"        areas such as Kai where it was difficult to obtain. Several of Takeda's\n"
+"        enemies had decided to blockade the import of salt to Kai. When he heard\n"
+"        of this Uesugi decided to send salt to Takeda saying that he did not want\n"
+"        his enemy vanquished by a salt blockade but through Yumi-Ya (military\n"
+"        confrontation). In appreciation Takeda presented Uesugi with a now famous\n"
+"        blade the Kou-no-Tachi."
+msgstr "Le sel &eacute;tait une denr&eacute;e importante au Japon, particuli&egrave;rement dans les r&eacute;gions montagneuses comme le Kai o&ugrave; il &eacute;tait une denr&eacute;e rare. Un certain nombre des ennemis de Takeda d&eacute;cid&egrave;rent d'organiser un blocus sur l'importation de sel vers le Kai. Lorsqu'il en entendit parler, Uesugi d&eacute;cida d'envoyer du sel &agrave; Takeda avec le message suivant : il ne d&eacute;sirait aucunement vaincre son ennemi gr&acirc;ce &agrave; un blocus sur le sel mais lors d'un Yumi-Ya (confrontation militaire). En remerciement, Takeda offrit &agrave; Uesugi une arme d&eacute;sormais c&eacute;l&egrave;bre, le Kou-no-Tachi."
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:86
+msgid ""
+"See\n"
+"        here a statue erected at the site where Shingen Takeda repelled the attack\n"
+"        of Uesugi Kenshin with his tessen at the 4th battle of Kawanakajima 10\n"
+"        Sept 1561."
+msgstr "En image une statue &eacute;rig&eacute;e sur le site ou Shingen Takeda repoussa l'attaque d'Uesugi Kenshin avec son 'tessen' (?) lors de la quatri&egrave;me bataille de Kawanakajima le 10 septembre 1561."
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:90
+msgid ""
+"Years later, upon hearing of Shingen's death, Uesugi is said to have\n"
+"        wept at the loss of his 'best enemy'."
+msgstr "On dit que, des ann&eacute;es plus tard, lorsqu'il apprit la mort de Shingen, Uesugi pleura la perte de son 'meilleur ennemi'."
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:92
+msgid ""
+"During his reign Shingen built Yogai castle in Kofu. He resided on\n"
+"        the shores of lake Suwa strategically located and within view of mount\n"
+"        Fuji."
+msgstr "Au cours de son r&egrave;gne, Shingen construisit le ch&acirc;teau de Yogai &agrave; Kofu. Il r&eacute;sidait sur le rivage du lac Suwa, strat&eacute;giquement plac&eacute; en vue du mont Fuji."
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:95
+msgid ""
+"It is while reading Sun Tzu`s Art of War that he found what would become\n"
+"        his famous Furin Kazan:"
+msgstr "C'est en lisant L'art de la guerre, par Sun Tzu qu'il d&eacute;couvrit ce qui allait devenir son c&eacute;l&egrave;bre Furin Kazan:"
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:97
+msgid "Quick as the wind,"
+msgstr "Rapide comme le vent,"
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:98
+msgid "Peaceful as the forest,"
+msgstr "Tranquille comme la for&ecirc;t,"
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:99
+msgid "Overwhelming as fire,"
+msgstr "Ardent comme le feu,"
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:100
+msgid "As immovable as a mountain"
+msgstr "Aussi immuable que la montagne."
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:101
+msgid ""
+"A sniper's bullet put an end to his life during the siege of Noda castle\n"
+"        in april of 1573, as he approached enemy lines to listen to a defender\n"
+"        playing his flute. His death was kept a secret for two years and the leadership\n"
+"        of the clan was assumed by his son Katsuyori. The celebrated japanese\n"
+"        movie director, Kurosawa, made this incident the subject of a remarkable\n"
+"        film: Kagemusha. In february of 1574, in accordance with Shingen's last\n"
+"        will, Kunitsugo Takeda, Shingen's nephew, was welcomed to Aizu by Daimyo\n"
+"        Moriuji Ashina an old friend of Shingen."
+msgstr "La balle d'un sniper acheva son existence au cours du si&egrave;ge du ch&acirc;teau de Noga en avril 1573, alors qu'il approchait les lignes ennemies afin d'&eacute;couter un des assi&eacute;g&eacute;s jouer de la fl&ucirc;te. Sa mort fut tenue secr&egrave;te pendant deux ans et son fils assuma la direction du clan. Le tr&egrave;s reconnu r&eacute;alisateur japonais, Kurosawa, fit de cet incident le sujet d'un film remarquable, Kagemusha. En f&eacute;vrier 1574, en accord avec les derni&egrave;res volont&eacute;s de Shingen, Kunitsugo Takeda, son neveu, fut re&ccedil;u &agrave; Aizo par le Saimyo Moriuji Ashina un ami de longue date de Shingen."
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:110
+msgid ""
+"Katsuyori\n"
+"        besieged the castle of Nagashino in june 1575 against an alliance formed\n"
+"        by Oda Nobugana. On the morning of june 29, 1575 the famed cavalry of\n"
+"        the Takeda clan charged in the direction of the Rengogawa river which\n"
+"        had been laden with ropes by the defenders. This slowed them down considerably,\n"
+"        and they where now easy targets for the 3,000 arquebusiers that where\n"
+"        waiting for them. They were slaughtered."
+msgstr "Katsuyori assi&eacute;gea le ch&acirc;teau de Nagashino en juin 1575 d&eacute;non&ccedil;ant l'alliance form&eacute;e par Oda Nobugana. Dans la matin&eacute;e du 29 juin 1575, la c&eacute;l&egrave;bre cavalerie du clan Takeda chargea en direction de la rivi&egrave;re Rengowaga qui avait &eacute;t&eacute; remplie de cordes par les d&eacute;fenseurs. Ceci ralentit la cavalerie de fa&ccedil;on consid&eacute;rable et elle constituait d&egrave;s lors une cible facile pour les arquebusiers qui les attendaient. Ils furent massacr&eacute;s."
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:117
+msgid ""
+"Katsuyori retreated to Kai. The combined forces of Oda and Tokugawa\n"
+"        invaded Kai and defeated him in 1582. Katsuyori committed seppuku. This\n"
+"        was the end of the Takeda clan as a military force."
+msgstr "Katsuyori se retira dans le Kai. Les forces associ&eacute;s d'Oda et de Tokugawa envahirent le Kai et le vainquirent en 1582. Katsuyori s'infligea le seppuku. Ce fut la fin du clan Takeda comme puissance militaire."
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:123
+msgid "6 generations"
+msgstr "6 g&eacute;n&eacute;rations"
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:124
+msgid ""
+"Hoshina Masayuki becomes Lord of Aizu in 1643 (Grandson of Shogun Tokugawa\n"
+"        Ieyasu, he adopted the name Matsudaira in 1696. Matsudaira was Tokugawa\n"
+"        Ieyasu's original family name. The interest of mentionning this paticular\n"
+"        Daimyo in the lineage is that he became quite an enthousiast and practitionner\n"
+"        and was a major factor in the survival and development of the art.)"
+msgstr "Hoshina Masayuki devient Seigneur de Aizu en 1643 (petit-fils de Shogun Tokugawa Ieyasu, il prit le nom de Matsudaira en 1696. Matsudaira &eacute;tait le nom de famille d'origine de Tokugawa Ieyasu. L'int&eacute;r&ecirc;t de mentionner ce Daimyo de fa&ccedil;on sp&eacute;cifique dans la lign&eacute;e tient au fait qu'il s'enthousiasma pour cet art dont il devint un fervent pratiquant et ce faisant a permis &agrave; l'art de survivre et se d&eacute;velopper.)"
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:131
+msgid "4 generations"
+msgstr "4 g&eacute;n&eacute;rations"
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:140
+msgid ""
+"Aizu-Wakamatsu is a town situated in the west of Fukushima Prefecture.\n"
+"        It faces Lake Inawashiro. The city center was initiated by the construction\n"
+"        of a castle by Ashina Family. The Ashina family had been rewarded and\n"
+"        given the Aizu fief for helping the Minamoto establish the first military\n"
+"        government of Japan in 1192."
+msgstr "Aizu-Wakamatsu est une ville situ&eacute;e &agrave; l'ouest de la pr&eacute;fecture de Fukushima. Elle se trouve face au lac Inawashiro. La fondation du centre-ville a &eacute;t&eacute; initi&eacute;e avec la construction d'un ch&acirc;teau par la famille Ashina. Cette derni&egrave;re avait &eacute;t&eacute; r&eacute;compens&eacute;e et avait re&ccedil;ue le fief d'Aizu pour avoir aider les Minamoto &agrave; &eacute;tablir le premier gouvernement militaire japonais en 1192."
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:145
+msgid ""
+"The mansion constructed by Ashina Naonari in the first year of Shitoku\n"
+"        Era (1333) would be the origin of the castle, completed in 1384 it would\n"
+"        be known as Kurokawa Castle. In 1589 Date Masamune took the castle, but\n"
+"        his reign was short lived; Gamo Ujisato, a Hideyoshi retainer, overtook\n"
+"        it in the 18th year of Tensho Era (1591) to rename it Tsuruga Castle.\n"
+"        In 1643 Hoshina Masayuki was appointed Governer of Aizu by his brother,\n"
+"        Shogun Iemitsu. His name was later changed to Matsudaira. The Matsudaira\n"
+"        ruled Aizu till the defeat of the clan in September of 1868."
+msgstr "Le manoir construit par Ashina Naonari dans la premi&egrave;re ann&eacute;e de l'&egrave;re Shitoku (1333) s'av&eacute;ra devenir la base du ch&acirc;teau. Lorsque la construction de ce dernier sera achev&eacute;e en 1384, il prendra le nom de Ch&acirc;teau Kurokawa. En 1589 Date Masamune prit possession du ch&acirc;teau mais son r&egrave;gne fut de courte dur&eacute;e ; en effet, Gamo Ujisato, un serviteur de Hideyoshi, le reprit dans la 18&egrave;me ann&eacute;e de l'&egrave;re Tensho (1591) et le renomma le Ch&acirc;teau Tsugura. En 1643, Hoshina Masayuki fut nomm&eacute; gouverneur d'Aizu par son fr&egrave;re, le Shogun Iemitsu. Il changera plus tard son nom en Matsudaira, clan qui dirigea Aizu jusqu'&agrave; sa d&eacute;faite en septembre 1868."
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:154
+msgid ""
+"In october of 1799 the Nishinkan, Aizu Martial arts school, was completed.\n"
+"        The Nisshinkan school was founded by Genko Tanaka. In 1874, all the buildings\n"
+"        including the main donjon were destroyed but in September 1965, it was\n"
+"        restored to the initial state."
+msgstr "En octobre 1799, le Nishinkan, l'&eacute;cole d'arts martiaux d'Aizu, fut achev&eacute;e. L'&eacute;cole fut fond&eacute;e par Genko Tanaka. En 1874, tous les b&acirc;timents, le donjon principal compris, furent d&eacute;truit mais en Septembre 1965, l'&eacute;cole fut reconstruite dans son &eacute;tat d'origine."
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:158
+msgid ""
+"Tenshyukaku is the main tower of a whole castle compound and was formed\n"
+"        originally from a watchtower built above the habitation during the civil\n"
+"        war period of Sengoku (1467-1603). It has become then more and more solid\n"
+"        serving as well as a defense function. During Edo period it was considered\n"
+"        a symbol of the local daimyo's authority and became more decorative. Beginning\n"
+"        from a simple fort or a camp in the civil war period, it became a residence\n"
+"        and an administration office during the Edo period (1603-1867). It served\n"
+"        as well as a defense point by adding a donjon to its center. Those compound\n"
+"        buildings as a whole are called 'Jokaku'."
+msgstr "Tenshyukaku est la tour principale de l'enceinte d'un ch&acirc;teau et &eacute;tait initialement compose d'une tour de garde situ&eacute;e au-dessus de la maison durant la guerre civile de Sengoku (1467-1603). Au fil des ans elle a acquis une fonction de service en sus de sa fonction de d&eacute;fense. Durant l'&egrave;re Edo, elle &eacute;tait consid&eacute;r&eacute;e comme un symbole de l'autorit&eacute; du Daimyo au niveau local et devint plus un ornement. D'un simple fort, ou camp, elle devint une residence puis un bureau administrative au cours de l'&egrave;re Edo (1603-1867). Une fois le donjon ajout&eacute; en son centre, elle devint par ailleurs un point de d&eacute;fense. L'ensemble des b&acirc;timents de l'enceinte est appel&eacute; &#171; Jokaku &#187;."
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:167
+msgid ""
+"In 1868, after a defeat in the battle of Toba-Fushimi, the order was\n"
+"        given to subjugate the daimyo Matsudaira Katamori. So, the government\n"
+"        attacked Aizu, Matsudaira opposed it by forming an alliance with about\n"
+"        thirty feudal clans of Tohoku Region. They had resisted by holding Wakamatsu\n"
+"        Castle even after Edo Castle had surrendered but finally capitulated in\n"
+"        September after six months of fierce fighting. The sacrifice of the Boy's\n"
+"        Corps of Nihonmatsu and the famous collective suicide of the 'White Tiger\n"
+"        Regiment'(Byakko-tai), both formed by boys not older than 17, occurred\n"
+"        at that moment."
+msgstr "En 1868, apr&egrave;s la d&eacute;faite Durant la bataille de Toba-Fushimi, il fut ordonn&eacute; de soumettre le daimyo Matsudaira Katamori. Aussi, le gouvernement attaqua-t-il Aizu ; Matsudaira se d&eacute;fendit en formant une alliance avec une trentaine de clans f&eacute;odaux de la r&eacute;gion de Tohoku. Ils r&eacute;sist&egrave;rent en gardant le contr&ocirc;le du ch&acirc;teau Wakamutsu apr&egrave;s que le ch&acirc;teau d'Edo eut &eacute;t&eacute; pris mais durent finalement capitul&eacute; en septembre apr&egrave;s six mois de bataille acharn&eacute;e. Le sacrifice du Boy's Corps de Nihonmatsu et le c&eacute;l&egrave;bre suicide collectif du R&eacute;giment des 'White Tigers', deux corps form&eacute;s de jeunes gar&ccedil;ons de 17 ans et moi, eurent lieu &agrave; ce moment."
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:180
+msgid "The Edo era"
+msgstr "L'&egrave;re Edo"
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:182
+msgid "The beginning of the Edo era"
+msgstr "Le d&eacute;but de l'&egrave;re Edo"
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:183
+msgid "Three men in japanese history are known as 'The three unifiers' they are: "
+msgstr "Dans l'histoire japonaise, trios hommes ont &eacute;t&eacute; surnomm&eacute;s 'les Trois unificateurs'. Il s'agit de : "
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:190
+msgid ""
+"The events that brought about the end of the Takeda clan as a military\n"
+"        force where described in the biography of Shingen Takeda. This was the\n"
+"        era of the Warring States and of course many clans like the Takeda where\n"
+"        subdued, many formed alliances but few held the reins of power."
+msgstr "Les &eacute;v&eacute;nements qui provoqu&egrave;rent la fin du clan Takeda en tant que puissance militaire furent d&eacute;crits dans la biographie de Shingen Takeda. Ceci eut lieu dans la p&eacute;riode des 'Warring States' et bien s&ucirc;r de nombreux clans subirent le m&ecirc;me sort que celui des Takeda et furent d&eacute;faits. Si beaucoup form&egrave;rent des alliances peu purent tenir les r&ecirc;nes du pouvoir."
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:194
+msgid ""
+"After the dust had settled over all the battlefields it would be Oda\n"
+"        Nobugana who would be military leader of Japan but he never held the tittle\n"
+"        of Shogun. Save for a few reluctant Daimyos Japan was practically unified\n"
+"        in 1582 when he was assassinated at the Honnoji temple by one of his generals,\n"
+"        Akechi Mitsuhide. The latter proclaimed himself Shogun; but his reign\n"
+"        would last only 13 days. Upon hearing of Oda's death Toyotomi Hideyoshi,\n"
+"        one of Oda's most faithful generals, killed Mitsuhide."
+msgstr "Apr&egrave;s que les champs de bataille furent depuis longtemps d&eacute;sert&eacute;s, ce fut Oda Nobugana qui devint le leader militaire du Japon mais il ne porta jamais le titre de Shogun. Mis &agrave; part quelques Daimyos r&eacute;fractaires, le Japon &eacute;tait presque totalement unifi&eacute; en 1582 quand Oda Nobugana fut assassin&eacute; au temple Honnoji par l'un de ses g&eacute;n&eacute;raux Akechi Mitsuhide. Ce dernier se proclama Shogun mais son r&egrave;gne ne dura que 13 jours. En apprenant la nouvelle de la mort de Oda, l'un de ses plus fid&egrave;les g&eacute;n&eacute;raux, Toyotomi Hideyoshi, tua Mitsuhide."
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:202
+msgid ""
+"Hideyoshi succeeded Oda but like him was not Shogun, he was a man of modest origin\n"
+"        but a fierce warrior so the other important Daimyos did not oppose him.\n"
+"        He decided that from then on the tittle of Shogun would be transmitted\n"
+"        trough lineage to insure stability. He designated his son to be the first\n"
+"        of a lineage and thus had is five principal generals (among which was\n"
+"        Tokugawa) swear that if anything should happen to him his son Hideyori\n"
+"        would be Shogun, they all agreed. In 1587 Hideyoshi banned the possession\n"
+"        of weapons by commoners, another element to insure stability of the land\n"
+"        and of course his own. But his ambitions took him beyond the frontiers\n"
+"        of Japan and he decided to invade Korea. It was a fiasco, and he died\n"
+"        there of disease in 1598."
+msgstr "Hideyoshi succ&eacute;da &agrave; Oda mais tout comme lui n'assuma jamais le titre de Shogun. C'&eacute;tait un homme d'origine modeste mais un f&eacute;roce guerrier de sorte que les autres Daimyos ne s'oppos&egrave;rent pas &agrave; lui. Il d&eacute;cida que d&eacute;sormais le titre de Shogun serait transmis de p&egrave;re en fils afin de maintenir une certaine stabilit&eacute;. Il d&eacute;signa son fils comme le premier de la lign&eacute;e et s'assura de la fid&eacute;lit&eacute; de ses cinq principaux g&eacute;n&eacute;raux (parmi lesquels Tokugawa) en leur faisant jurer que si quoi que ce soit lui arrivait son fils Hideyori deviendrait Shogun. Tous accept&egrave;rent. En 1587, Hideyoshi interdit la possession d'armes aux roturiers, un autre &eacute;l&eacute;ment permettant d'assurer la stabilit&eacute; du pays et bien s&ucirc;r d'asseoir son pouvoir. Mais ses ambitions l'emmen&egrave;rent au-del&agrave; des fronti&egrave;res japonaises lorsqu'il d&eacute;cida d'envahir la Cor&eacute;e, invasion qui fut un &eacute;chec cuisant. Il fut emport&eacute; par la maladie en 1598."
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:213
+msgid ""
+"Tokugawa saw the opportunity: he would be Shogun. Not respecting the\n"
+"        promise he had made to Hideyoshi meant little to him. He was opposed in\n"
+"        this decision by Ishida Mitsunari, a faithful Hideyoshi retainer. They\n"
+"        both made alliances, and their opposing views were finally settled at\n"
+"        the battle of Sekigahara, on October 21 1600. Tokugawa, of course, was\n"
+"        the victor there. In 1615, in order to eliminate the true inheritor of\n"
+"        the tittle of Shogun, he traitorously invaded the fortress of Osaka, where\n"
+"        Hideyori Toyotomi had taken refuge with a few faithful retainers. They\n"
+"        where subdued and Hideyori committed seppuku."
+msgstr "Tokugawa y vit une opportunit&eacute;: il serait le Shogun. Renier la promesse qu'il avait faite &agrave; Hideyoshi ne signifiait rien pour lui. Ishida Mitsunari, un serviteur fid&egrave;le d'Hideyoshi s'opposa &agrave; sa d&eacute;cision. Tous deux form&egrave;rent des alliances et leur diff&eacute;rend fut r&eacute;gl&eacute; durant la bataille de Sekigahara, qui eut lieu le 21 otobre 1600. Tokugawa sortit vainqueur de la confrontation. En 1615, afin de faire dispara&icirc;tre le v&eacute;ritable h&eacute;ritier du titre de Shogun, il envahit sournoisement la forteresse d'Osaka o&ugrave; Hideyori Toyotomi s'&eacute;tait r&eacute;fugi&eacute; avec quelques fid&egrave;les. Ils furent vaincus et Hideyori commit le seppuku."
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:222
+msgid ""
+"Nobody thereafter dared oppose him and to insure the loyalty of his\n"
+"        Daimyos he instituted, among other measures, the Sankin Kotai, a law stipulating\n"
+"        that the Daimyos had to spend every other year in Edo and when they were\n"
+"        not in Edo they had to leave behind a member of their family; a concubine,\n"
+"        a child etc. It was blackmail, but it worked. The Edo period, which lasted\n"
+"        for over 250, years was one of peace and prosperity."
+msgstr "Personne par la suite n'osa s'opposer &agrave; lui et afin de s'assurer de la loyaut&eacute; de ses Daimyos, il institua, entre autres, le Sankin Kotai, une loi stipulant que les Daimyos devaient passer une ann&eacute;e sur deux &agrave; Edo et lorsqu'ils n'y &eacute;taient pas, ils devaient y laisser un membre de leur famille, une concubine ou un enfant par exemple. C'&eacute;tait une forme de chantage mais cela fonctionna et l'&egrave;re Edo, qui dura plus de 250 ans, fut marqu&eacute;e par la paix et la prosp&eacute;rit&eacute;."
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:228
+msgid ""
+"It was also one of isolation for Japan; the policy of sakoku (closed\n"
+"        nation policy) having been implemented. Save for the Dutch who where allowed\n"
+"        to reside and trade on the very small Deshima island near the port facilities\n"
+"        of Nagasaki, no foreigners or even elements of foreign culture where allowed\n"
+"        to permeate japanese society."
+msgstr "Ce fut aussi une p&eacute;riode de grande isolation pour le Japon, la politique de sakoku (politique de nation ferm&eacute;e) ayant &eacute;t&eacute; mise en place. Mis &agrave; part les hollandais qui pouvaient r&eacute;sider et commercer sur la petite &icirc;le de Deshima pr&egrave;s des infrastructures portuaires de Nagasaki, aucun &eacute;tranger ni m&ecirc;me des &eacute;l&eacute;ments de culture &eacute;trang&egrave;re ne fut autoris&eacute; &agrave; infiltrer la soci&eacute;t&eacute; japonaise."
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:234
+msgid ""
+"It was however for the warrior class a period of idleness, and Tokugawa\n"
+"        drew up the Buke Sho Hatto. It gave Samurai 13 guides on how a warrior\n"
+"        should live during peace time. To insure that the skills developed during\n"
+"        the past centuries would not be lost, many decided to pass them on in\n"
+"        an organized fashion. It was in this period that most of the Koryu were\n"
+"        formally developed."
+msgstr "Ce fut pour la classe guerri&egrave;re une p&eacute;riode d'oisivet&eacute;. Togukawa mit en place le Buke Sho Hatto qui fournit aux Samurai treize r&egrave;gles de conduite sur la mani&egrave;re dont les guerriers devaient se comporter durant les p&eacute;riodes de paix. Afin de s'assurer que le savoir-faire d&eacute;velopp&eacute; au cours des si&egrave;cles pr&eacute;c&eacute;dents ne soient pas perdus, beaucoup d&eacute;cid&egrave;rent de les transmettre de mani&egrave;re organis&eacute;e. Ce fut durant cette p&eacute;riode que la plupart des Koryu furent d&eacute;velopp&eacute;s de fa&ccedil;on formelle."
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:240
+msgid "The end of the Edo era"
+msgstr "La fin de l'&egrave;re Edo "
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:241
+msgid ""
+"Aside from the natural decay that is to be expected of a regime that\n"
+"        has been in power for over two hundred years, two series of events triggered\n"
+"        the downfall of the Tokugawa regime. There where internal discords and\n"
+"        also the expansionist views of the western world who had wanted Japan\n"
+"        open to trade for a long time."
+msgstr "En plus de la d&eacute;cadence naturelle associ&eacute;e &agrave; un r&eacute;gime en place depuis plus de 200 ans, deux s&eacute;ries d'&eacute;v&eacute;nements pr&eacute;cipit&egrave;rent la fin du r&eacute;gime Tokugawa. D'une part des diff&eacute;rends internes et d'autre part les visions expansionnistes du monde occidental qui voulait depuis longtemps que le Japon ouvre ses fronti&egrave;res au commerce."
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:246
+msgid ""
+"Among the activities the high ranking but idle samurai did, was the\n"
+"        study of japanese culture at the School of National Learning. Scholars\n"
+"        from this school were called kokugakushu and they excluded from their\n"
+"        studies anything that was not strictly Japanese. One of those samurai,\n"
+"        Takayama Hikokuro, was a strong proponent of the idea that the Emperor\n"
+"        was not getting the respect he deserved and that he should be head of\n"
+"        state."
+msgstr "Parmi les rares activit&eacute;s qu'ils avaient, les Samurai les plus hauts plac&eacute;s &eacute;tudiaient la culture japonaise &agrave; l'Ecole national d'&eacute;ducation. Les &eacute;rudits de cette &eacute;cole, appel&eacute;s kokugakushu, excluaient de leurs &eacute;tudes toute chose n'&eacute;tant pas exclusivement japonaise. L'un de ces samurai, Takayama Hikokuro &eacute;tait un fervent partisan de l'id&eacute;e selon laquelle l'Empereur ne recevait pas le respect qui lui &eacute;tait du et devait &ecirc;tre le r&eacute;el chef de l'Etat."
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:253
+msgid ""
+"Of course that noble idea was very pleasing to the clans that had been\n"
+"        on the loosing side at Sekigahara a few centuries before, they had always\n"
+"        been kept away from the reins of power and they resented the Tokugawa\n"
+"        with a passion. The Satsuma and Chosu where such clans, they where powerful\n"
+"        but isolated politically even though they shared a hatred for the Tokugawa."
+msgstr "Cette id&eacute;e fort noble &eacute;tait &eacute;videmment all&eacute;chante pour les clans qui s'&eacute;taient trouv&eacute;s parmi les vaincus &agrave; Sekigahara quelques si&egrave;cles auparavant. Ils avaient toujours &eacute;t&eacute; maintenus &agrave; l'&eacute;cart du pouvoir et ils d&eacute;testaient les Tokugawa. Parmi ces clans on compte les Satsuma et les Chosu, qui &eacute;taient puissants mais isol&eacute;s politiquement malgr&eacute; leur haine commune pour les Togukawa."
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:258
+msgid ""
+"In the first half of the 19th century the British had strongholds in\n"
+"        China and this was known to the Tokugawa government. The japanese leaders\n"
+"        where also aware of the military strength of the western countries and\n"
+"        that in order to pursue their politic of sakoku Japan was to be stongly\n"
+"        united."
+msgstr "Au cours de la premi&egrave;re moiti&eacute; du 19&egrave;me si&egrave;cle, il &eacute;tait de notori&eacute;t&eacute; publique que les britanniques poss&eacute;daient des places fortes en China. Conscients de la puissance militaire des pays occidentaux les leaders japonais savaient que pour maintenir leur politique de sakoku le Japon devait faire front commun"
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:263
+msgid ""
+"On the other side of the Pacific a high ranking american naval officer,\n"
+"        Alfred T. Mahan, convinced President Fillmore that it was essential for\n"
+"        the United States to establish, forcibly if necessary, diplomatic relations\n"
+"        with Japan in order to have access to its ports. President Fillmore dispatched\n"
+"        for the mission Commodore Matthew Perry."
+msgstr "De l'autre c&ocirc;t&eacute; du Pacifique l'officier naval Alfred T Mahan, convainquait le pr&eacute;sident Fillmore qu'il &eacute;tait essentiel pour les Etats-Unis d'&eacute;tablir, de force si n&eacute;cessaire, des relations diplomatiques avec le Japon afin d'avoir acc&egrave;s &agrave; ses ports. Le pr&eacute;sident Fillmore envoya une mission avec le Commandeur Matthew Perry &agrave; sa t&ecirc;te."
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:268
+msgid ""
+"Perry arrived with his four 'black ships' in the bay of Edo on the\n"
+"        8th of July 1853 with a proposition destined to the Emperor. It stipulated\n"
+"        that Japan was to open its ports to foreign trade. It that was more an\n"
+"        ultimatum than a diplomatic endeavor. Perry said he would be back in the\n"
+"        spring of 1854 for the response."
+msgstr "Ce dernier arriva avec ses quatre bateaux noirs dans la baie de Edo le 8 juillet 1853 avec une proposition pour l'empereur. Elle exigeait que le Japon ouvre ses ports au commerce international. Ceci constituait plus un ultimatum qu'une entreprise diplomatique. Perry annon&ccedil;a qu'il reviendrait au printemps 1854 pour une r&eacute;ponse."
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:273
+msgid ""
+"Shogun Iesada Tokugawa needed the support of the provincial Daimyos\n"
+"        in order to have strong negotiating powers. He, of course, did not get\n"
+"        it."
+msgstr "Le Shogun Tokugawa aurait eu besoin du soutien des Daimyos pour avoir un pouvoir de n&eacute;gociation plus fort mais ne l'obtint &eacute;videmment pas."
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:276
+msgid ""
+"When Perry came back in February of 1854 Tokugawa had no choice but\n"
+"        to sign the Treaty of Kanagawa which gave foreigners access to the ports\n"
+"        of Shimoda and Hakodate; it also stipulated that an american council was\n"
+"        to be in residence in Shimoda. The council, Townsend Harris, arrived in\n"
+"        1856."
+msgstr "Lorsque Perry revint en f&eacute;vrier 1854, Tokugawa n'eut pas d'autre choix que de signer le Trait&eacute; de Kanagawa qui donna acc&egrave;s aux &eacute;trangers aux ports de Shimoda et Hakodate ; il stipulait qu'un conseiller am&eacute;ricain r&eacute;siderait &agrave; Shimoda. Ce dernier Townsend Harris arriva en 1856."
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:282
+msgid ""
+"In 1858 Tokugawa Iesada died without an heir. The Roju (head of the Shogun's\n"
+"        council) and theTozama (the Provincial Daimyos) had opposing views on\n"
+"        who was to succeed. The Roju appointed Ii Naotsuke as counselor to try\n"
+"        and resolve the conflict. This was futile; on the 24th of March 1860 he\n"
+"        was assassinated by a group of samurais who would be the precursors of\n"
+"        the SHISHI, an organization devoted to the expulsion and if necessary\n"
+"        brutal assassination of foreigners and the reinstatement of the Emperor."
+msgstr "En 1858, Tokugawa Iesada d&eacute;c&eacute;da sans h&eacute;ritier. Le Roju (chef du conseil du Shogun) et les Tozama (les Daimyos des Provinces) s'opposaient sur le choix du successeur. Le Roju nomma Ii Naotsuke en tant que m&eacute;diateur afin de r&eacute;soudre le conflit. Ceci s'av&eacute;ra une futilit&eacute; et il fut assassin&eacute; le 24 mars 1860 par un groupe de samurai qui furent les pr&eacute;curseurs des SHISHI, une organisation vou&eacute;e &agrave; expulser voire assassiner les &eacute;trangers et &agrave; restaurer le pouvoir de l'empereur."
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:289
+msgid ""
+"Saigo Takamori (not related to Tanomo Saigo), an important retainer and\n"
+"        diplomat of the Satsuma clan of the island of Kyushu, was of course in favor\n"
+"        of the SHISHI's actions.  But their brutality infuriated the foreigners and\n"
+"        Takamori and the Tozama knew they could not overthrow the Tokugawa regime\n"
+"        without foreign help.  So the SHISHI were eliminated."
+msgstr "Saigo Takamori (sans aucun lien avec Tanomo Saigo), un important fid&egrave;le et diplomate du clan Satsuma de l'&icirc;le de Kyushu, favorisait les actions des SHISHI. Mais leur brutalit&eacute; provoqua la col&egrave;re des &eacute;trangers ; or Takamori et les Toazama savaient qu'ils ne pourraient d&eacute;faire le regime Tokugawa sans l'aide des &eacute;trangers, aussi les SHISHI furent-ils &eacute;limin&eacute;s."
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:298
+msgid ""
+"By 1866 the Satsuma and the Choshu clans had decided to form an alliance\n"
+"        and by 1868 under the military command of Prince Arisugawa, armed with modern\n"
+"        weapons and dressed like their occidental allies, they formed with other clans\n"
+"        a formidable army.  The clans who opposed them  (the Aizu clan among others)\n"
+"        where no match and by the fall of 1868 the Boshin civil war was over and\n"
+"        Emperor Meiji was restored to power."
+msgstr "Avant 1866 les clans Satsuma et Choshu avaient d&eacute;cid&eacute; de s'allier et en 1868 sous la direction militaire du Prince Arisugawa, arm&eacute;s de fa&ccedil;on moderne et habill&eacute;s comme leurs alli&eacute;s occidentaux, ils formaient avec d'autres clans une arm&eacute;e surprenante. Les clans qui s'opposaient &agrave; eux (le clan Aizu notamment) ne pouvaient faire face et &agrave; l'automne 1868, la guerre civil Boshin &eacute;tait achev&eacute;e et l'Empereur Meiji restaur&eacute; dans son pouvoir."
+
+#: application/views/scripts/daitoryu/history-of-daitoryu.phtml:304
+msgid ""
+"The treaty, putting an end to the civil war the 'Tosa Settlement', still\n"
+"       left Tokugawa with some influence.  This infuriated the Satsuma and Chosu clans\n"
+"       who under Takamori's leadership rebelled against the Emperor they helped\n"
+"       reinstate.  In the end Prince Arisugawa besieged the castle in Satsuma in\n"
+"       1877, that put an end to the Satsuma rebellion.  Saigo Takamori received a\n"
+"       gunshot wound to the lower abdomen and so he would not be taken prisoner was\n"
+"       beheaded (quite probably at his own request) by one of his own retainers on\n"
+"       24 September 1877.  This would be the last battle in which samurai would\n"
+"       participate."
+msgstr "Le trait&eacute; mettant fin &agrave; la guerre civile, 'R&egrave;glement Tosa', laissa une certaine influence au Tokugawa. Ceci provoqua la col&egrave;re des clans Satsuma et Chosu qui se r&eacute;volt&egrave;rent, sous la direction de Takamori, contre l'empereur dont ils avaient pr&eacute;par&eacute; le retour au pouvoir. Finalement, le prince Arisugawa assi&eacute;gea la ch&acirc;teau &agrave; Satsuma en 1877 et mit fin &agrave; la rebellion Satsuma. Saigo Takamori re&ccedil;ut une plaie par balle dans le bas de l'abdomen et pour ne pas &ecirc;tre fait prisonnier il fut d&eacute;capit&eacute; (tr&egrave;s probablement &agrave; sa demande) par l'un de ses propres serviteur. Ce fut la derni&egrave;re bataille &agrave; laquelle les samoura&iuml;s particip&egrave;rent."
+
 #: application/layouts/scripts/header.phtml:3
 msgid "Koryukan Dojo"
 msgstr "Koryukan Dojo"
@@ -105,6 +619,11 @@ msgstr "Koryukan Dojo"
 msgid "Daito Ryu Aiki Budo"
 msgstr "Daito Ryu Aiki Budo"
 
+#~ msgid "gratitude to dr Thivierge"
+#~ msgstr ""
+#~ "Les membres du dojo Koryukan souhaitent remercier le Dr Thivierge pour sa "
+#~ "g&eacute;n&eacute;reuse contribution &agrave; notre site web. Nous sommes "
+#~ "honor&eacute;s de sa g&eacute;n&eacute;rosit&eacute;."
 #~ msgid "welcome-body"
 #~ msgstr "Bienvenue"
 #~ msgid "Recent reviews"
