@@ -13,6 +13,7 @@ Koryukan_Db_NewsText:
         language: 'fr'
         title: Séminaire du 23 mai 2010
         content: |
+            [img=/Images/News/Seminaire20100523Fr.png]/Images/News/Seminaire20100523Fr.png[/img]
             <a href='/Images/News/Seminaire20100523Fr.png' target='_blank' style='border: none;'><img src='/Images/News/Seminaire20100523Fr.png'  style='width: 400px; border: none;' /></a>        
     text2: 
         News: news1

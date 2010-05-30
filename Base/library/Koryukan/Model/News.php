@@ -32,7 +32,7 @@ class Koryukan_Model_News extends Koryukan_Model_Base
      *
      * @var string
      */
-    protected static $_DB_CLASS_NAME = 'Koryukan_Db_News';
+    const DB_CLASS_NAME = 'Koryukan_Db_News';
 
 
     /**
@@ -42,7 +42,7 @@ class Koryukan_Model_News extends Koryukan_Model_Base
      */
     public static function getNews()
     {
-        $table = Doctrine_Core::getTable(self::$_DB_CLASS_NAME);
+        $table = Doctrine_Core::getTable(self::DB_CLASS_NAME);
         $news = $table->getNews(self::STATUS_ONLINE);
 
         return new Koryukan_Helper_Collection($news, 'Koryukan_Model_News');
@@ -106,6 +106,6 @@ class Koryukan_Model_News extends Koryukan_Model_Base
      */
     protected function _getDbClassName()
     {
-        return self::$_DB_CLASS_NAME;
+        return self::DB_CLASS_NAME;
     }
 }

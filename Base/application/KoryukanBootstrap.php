@@ -104,9 +104,11 @@ class KoryukanBootstrap extends Zend_Application_Bootstrap_Bootstrap
         if (array_key_exists('cache', $config) && array_key_exists('main', $config['cache'])) {
             $mainCacheOptions = $config['cache']['main'];
 
-            $cacheEnabled = (array_key_exists('enabled', $mainCacheOptions))? (bool) $mainCacheOptions['enabled']: false;
+            $cacheEnabled = (array_key_exists('enabled', $mainCacheOptions))?
+                (bool) $mainCacheOptions['enabled']: false;
             $cacheTtl = (array_key_exists('ttl', $mainCacheOptions))? (int) $mainCacheOptions['ttl']: 30;
-            $cachIdPrefix = (array_key_exists('cache_id_prefix', $mainCacheOptions))? $mainCacheOptions['cache_id_prefix']: '';
+            $cachIdPrefix = (array_key_exists('cache_id_prefix', $mainCacheOptions))?
+                $mainCacheOptions['cache_id_prefix']: '';
         }
 
         $frontendOptions = array(
@@ -138,7 +140,8 @@ class KoryukanBootstrap extends Zend_Application_Bootstrap_Bootstrap
             $pageCacheOptions = $config['cache']['page'];
              $cachePages = (array_key_exists('enabled', $pageCacheOptions))? (bool) $pageCacheOptions['enabled']: false;
              $cacheTtl = (array_key_exists('ttl', $pageCacheOptions))? (int) $pageCacheOptions['ttl']: 0;
-             $showDebugHeader = (array_key_exists('debug_header', $pageCacheOptions))? (bool) $pageCacheOptions['debug_header']: 0;
+             $showDebugHeader = (array_key_exists('debug_header', $pageCacheOptions))?
+                (bool) $pageCacheOptions['debug_header']: 0;
         }
 
         if ($cacheTtl < 1) {
