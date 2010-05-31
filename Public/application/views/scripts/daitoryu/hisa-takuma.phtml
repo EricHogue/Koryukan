@@ -1,0 +1,9 @@
+<?php
+    $sidebarmenu =  $this->partial('partial/daitoryusubmenu.phtml', array('submenu' => $this->submenu));
+    $this->placeholder('sidebarmenu')->set($sidebarmenu);
+?>
+
+<div id='daitoryucontent'>
+    <p><?php echo $this->purify($this->translate("A former sumo wrestler, Takuma Hisa had the good fortune of being a student of two great teachers: Sokaku Takeda and Morihei Ueshiba. His position of Director of General Affairs at the Asahi News, in Osaka, was instrumental in providing him with the opportunity of becoming acquainted with Ueshiba. Because of the political turmoil of the times (early 1930's) the threat of violence was very real, and Hisa was advised to study with the Aikido founder. Later, Takeda himself began instructing at Asahi News dojo. Hisa compiled a formal catalogue of techniques of Daito ryu using photographs taken at the Asahi dojo, which has survived until today. The Daito ryu Aiki Budo Densho Zen Jukikan Mokuroku (also known as Soden) constitutes a valuable historical record.")); ?></p>
+    <p><?php echo $this->purify($this->translate("In 1939, Takuma Hisa received a Menkyo Kaiden certificate from Sokaku Takeda. Although in his later years he relocated to Ogikubo, Tokyo,where he continued to teach untill passing away in 1979. His students remained faithful, and eventually agreed to create the very reputable organization known today as Takumakai.")); ?></p>
+</div>

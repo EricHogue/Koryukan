@@ -53,4 +53,44 @@ class DaitoryuController extends Zend_Controller_Action
         $this->view->assign('sideImage', 'sokaku.jpg');
         $this->view->assign('sideImageAlt', $pageTitle);
     }
+
+    /**
+     * Takeda Sokaku
+     *
+     * @return void
+     */
+    public function takedasokakuAction()
+    {
+        $pageTitle = $this->view->translate('Takeda Sokaku');
+        $this->view->assign('pageTitle', $pageTitle);
+        $this->view->assign('sideImage', 'sokaku.jpg');
+        $this->view->assign('sideImageAlt', $pageTitle);
+    }
+
+    /**
+     * Takeda Tokumine
+     *
+     * @return void
+     */
+    public function takedatokimuneAction()
+    {
+        $pageTitle = $this->view->translate('Takeda Tokimune');
+        $this->view->assign('pageTitle', $pageTitle);
+        $this->view->assign('sideImage', 'tokimune.jpg');
+        $this->view->assign('sideImageAlt', $pageTitle);
+    }
+
+    /**
+     * Hisa Takuma
+     *
+     * @return void
+     */
+    public function hisatakumaAction()
+    {
+        $pageTitle = $this->view->translate('Hisa Takuma');
+        $this->view->assign('pageTitle', $pageTitle);
+        $this->view->assign('sideImage', 'takuma.jpg');
+        $this->view->assign('sideImageAlt', $pageTitle);
+    }
+
 }
