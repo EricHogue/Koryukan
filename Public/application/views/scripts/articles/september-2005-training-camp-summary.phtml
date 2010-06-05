@@ -1,0 +1,92 @@
+<?php
+    $sidebarmenu =  $this->partial('partial/daitoryusubmenu.phtml', array('submenu' => $this->submenu));
+    $this->placeholder('sidebarmenu')->set($sidebarmenu);
+?>
+
+<h2><?php echo $this->purify($this->translate("September 2005 Training camp summary")); ?></h2>
+<p><?php echo $this->purify($this->translate("Hakuho Ryu Montreal was greatly honored with the opportunity to host it's first international training camp under the guidance and teachings of Okabayashi Shogen Sensei, founder and headmaster of Hakuho Ryu Aiki Budo. A number of participants from abroad were in attendance for the training camp.")); ?></p>
+<ul class="participantslist">
+    <li>Quentin Ball (HHR Rep England)</li>
+    <li>Nicola Noldin (HHR Italy)</li>
+    <li>James Mullins(HHR Rep Penn,USA)</li>
+    <li>Mike Rozycki(HHR Penn, USA)</li>
+    <li>Richard Kinville(HHR NY, USA)</li>
+    <li>Dan Sharp (HHR Rep Mich, USA)</li>
+    <li>Deric Wilkins (HHR Mich, USA)</li>
+    <li>Betsy Hagan (HHR Mich, USA)</li>
+    <li>Wayne Braedan(HHR Mich, USA)</li>
+    <li>Gail Christopherson(HHR Mich,USA)</li>
+    <li>Joseph Wilson (HHR Rep, Ontario)</li>
+    <li>Chris Caile(www.fightingarts.com)</li>
+</ul>
+
+<p><?php echo $this->purify($this->translate("Okabayashi Sensei concentrated his teachings on Aiki , how to use it and apply it in techniques from basic to advanced.
+    The most important gift being that he taught us how to move.I want to take this opportunity to thank everyone who took
+    time out of their schedules to make the sometimes very long trip to Montreal to be present at this camp. The true goal
+    of this camp was to bring as many people in the the organization together as possible and to get to know each other better
+    and I think that that goal was greatly accomplished thanks to the contributions of all.")); ?></p>
+<p><b>**</b></p>
+
+
+<h2><?php echo $this->purify($this->translate("Daito Ryu Seminar a success in Italy")); ?></h2>
+<em><?php echo $this->purify($this->translate("summary provided by Mr. James Mullins")); ?></em>
+<p><?php echo $this->purify($this->translate("Sensei began the seminar with a focus on the Aiki no Jutsu techniques
+            of Daito Ryu. Various techniques were delved into for two hours. Sensei
+            explained how successful performance of these techniques requires
+            more of a focus on gravity and body movements, rather than strength.
+            Then, during a break, some participants inquired about nikkajo techniques,
+            so Sensei transitioned into some tachiai and ushiro techniques from
+            the nikkajo. These were practiced for another two hours. As the 'flavor'
+            of Aiki no Jutsu techniques and nikkajo techniques differ, all participants
+            were able to practice two completely different sets of Daito Ryu techniques.
+            After the seminar, Sensei was presented with a plaque of appreciation
+            from Maestro Rocco LaGuardia of Taranto.")); ?></p>
+<?php
+    $galleryUrl = $this->url(array('controller' => 'multimedia', 'action' => 'index'));
+    $gallery = $this->purify($this->translate('gallery'));
+    $galleryAnchor = '<a href="' . $galleryUrl . '">' . $gallery . '</a>';
+?>
+<p><?php echo str_replace('--URL-LINK--', $galleryAnchor, $this->purify($this->translate("Visit the --URL-LINK-- for pictures.")));  ?></p>
+<p><b>**</b></p>
+
+
+<?php
+    $bodyMovementText = $this->purify($this->translate('Article by Russel Haskin'));
+    $bodyMovementUrl = $this->url(array('action' => 'body_movements_by_russel_haskin'));
+    echo '<p><a href="' . $bodyMovementUrl . '">' . $bodyMovementText . '</a></p>'
+?>
+
+<p><?php echo str_replace('--URL-LINK--', $galleryAnchor, $this->purify($this->translate("On February 28-29, Russel Haskin from Hakuho Ryu Japan paid our
+            Montreal dojo his second visit. There was an impressive attendance
+            as, with an air of comeraderie, Mr. Haskin conducted an enlightening
+            exposition of some profound Hakuho Ryu body movements and techniques.
+            In addition to his presence, he has left us with some words of his
+            own to consider. Follow the link above to read the article, or go
+            to our --URL-LINK-- to see some pictures taken
+            during that weekend."))); ?></p>
+<p><b>**</b></p>
+
+<p><?php echo $this->purify($this->translate("Special thanks to Sensei Raynald Fleury, chief instructor of the
+            Seuin Maru Dojo for inviting us to participate in a seminar on the
+            30th of November 2003. It was enjoyed by all and was a great opportunity
+            to practice with martial artists of different backgrounds.")); ?></p>
+<p><b>**</b></p>
+
+<p><?php echo $this->purify($this->translate("In February 2003, Medhat Darwish, David Biron and Anton Deinekin
+            of the Koryukan Dojo enjoyed the great experience of traveling to
+            Japan. We would like to thank Okabayashi Shogen Sensei and all of
+            the Hakuho Ryu members in Japan for receiving us with great hospitality.
+            A special thanks to Steve Richter, who was kind enough to host us
+            at his house and take the time to show us around Japan, and all this
+            during what was for him the busiest time of the year due to work.
+            Also a special thank you to Rod Uhler for organizing and coordinating
+            this trip, and receiving us during what was for him an equally busy
+            time of the year due to work.")); ?>
+
+<?php
+    $trainingInJapanText = $this->purify($this->translate('Click here for a more detailed account of our trip!'));
+    $trainingInJapanUrl = $this->url(array('action' => 'training_in_japan'));
+    echo '<p><a href="' . $trainingInJapanUrl . '">' . $trainingInJapanText . '</a></p>'
+?>
+</p>
+

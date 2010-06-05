@@ -1,0 +1,105 @@
+<?php
+    $sidebarmenu =  $this->partial('partial/daitoryusubmenu.phtml', array('submenu' => $this->submenu));
+    $this->placeholder('sidebarmenu')->set($sidebarmenu);
+?>
+
+<h2><?php echo $this->purify($this->translate("Training in Japan")); ?></h2>
+<?php
+    $galleryUrl = $this->url(array('controller' => 'multimedia', 'action' => 'index'));
+    $gallery = $this->purify($this->translate('gallery'));
+    $galleryAnchor = '<a href="' . $galleryUrl . '">' . $gallery . '</a>';
+?>
+<p><?php echo str_replace('--URL-LINK--', $galleryAnchor, $this->purify($this->translate("See our --URL-LINK-- for photos from our trip! ")));  ?></p>
+
+
+<p><?php echo $this->purify($this->translate("The main purpose of our trip to Japan was of course to train
+                with Okabayashi Shogen Sensei and Hakuho Ryu group in Japan. We
+                were very fortunate to pack in a lot of training during our short
+                stay, training thirteen out of the fifteen days that we were there.
+                Okabayashi Sensei teaches every day of the week at Hakuho Ryu
+                Dojo around the Osaka, Kobe and Kyoto areas. It was a great pleasure
+                for us to train with and meet every one at these locations.")); ?></p>
+<p><?php echo $this->purify($this->translate("We arrived in Japan very smoothly on <strong>Saturday, February 1</strong>,
+                a little tired but very excited. The next day we decided to take
+                it easy and let our bodies deal with the jet lag and adjust to
+                the time change. Our first day of training was on <strong>Monday</strong>,
+                needless to say our first training session in Japan was super,
+                it was great to stretch out and do some jujutsu.")); ?></p>
+<p><?php echo $this->purify($this->translate("<strong>Tuesday</strong> was a full day. We had a great outing to Osaka
+                Jo, the beautiful Osaka castle that is in the heart of city, and
+                towards the evening we met Sensei at great little Italian coffee
+                shop in Ashiya, a suburb of Osaka, close by to the hall where
+                the Ashiya group trains. Before training Sensei treated us by
+                taking us to the top of Ashiya Mountain from where we could see
+                a gorgeous view of Osaka bay and pretty much the whole city. Tuesday
+                night training was a blast and we were quiet tired by the end
+                of it all.")); ?></p>
+<p><?php echo $this->purify($this->translate("One trip to Osaka Jo just wasn't enough, so we went back for
+                a visit inside the castle museum <strong>Wednesday</strong> morning. In
+                the after noon we met up with our fantastic host Steve Richter
+                and headed to Mukonoso for training. This was a really nice location
+                and we could see why Steve liked training there, the room was
+                quiet large and had a nice feel to it.")); ?></p>
+<p><?php echo $this->purify($this->translate("Everyday of the week was a full plate, we always kept busy and
+                had something to do and see, and <strong>Thursday</strong> was no different.
+                Thursday night we had the privilege of training with Sensei's
+                advanced group. The skill of this group is just amazing and we
+                really felt out of our league among these guys, but they were
+                all extremely nice and helpful. The training was hard even though
+                they toned it down a couple of notches for us. We had a really
+                good class and enjoyed ourselves, despite the effectiveness, efficiency
+                and scariness of the level of waza (technique) in this group.
+                It was a pleasure to meet and learn from these guys.")); ?></p>
+<p><?php echo $this->purify($this->translate("<strong>Friday's</strong> busy day was also followed up by a good training
+                session. We spent the day sightseeing Japan with Steve, we found
+                out how Japanese people stay so healthy, it includes a lot of
+                walking, everywhere.")); ?></p>
+<p><?php echo $this->purify($this->translate("<strong>Saturdays</strong>, Rod and Mitsuko teach sword at a beautiful
+                dojo near their house in Mino. Class is at 10 in the morning,
+                it was great to train early in the day. At the beginning of class
+                Rod killed us with a demanding warm up that included countless
+                sword cuts. We weren't used to this kind of training so I think
+                all of our arms were about to fall off. After cutting practice
+                we stretched out and spent the rest of the class training kata.
+                Okabayashi Sensei came to oversee the class and teach us. It was
+                a really intense experience doing kenjutsu kata with Sensei, Rod
+                and Mitsuko, you always had the feeling that their eyes were cutting
+                right through you. We learned a lot about how to train in kenjutsu,
+                the attitude, approach and atmosphere of training is very important.")); ?></p>
+<p><?php echo $this->purify($this->translate("Saturday afternoon we came with Sensei to train with a group
+                he teaches in Kobe. We had a lot of fun helping out with the kids'
+                class that is taught before the adults get on the mats.")); ?></p>
+<p><?php echo $this->purify($this->translate("The kids were really good; they impressed us with the level
+                of their waza.")); ?></p>
+<p><?php echo $this->purify($this->translate("Then it was our turn, by the end of this class we were wiped.
+                Kenjutsu in the morning and Aikijujutsu in the afternoon made
+                our relaxing dinner especially enjoyable.")); ?></p>
+<p><?php echo $this->purify($this->translate("<strong>Sunday</strong> was a big day of testing where almost every one
+                who trains in Hakuho Ryu in the Kansai area got together. The
+                session lasted about 4 hours, it began by people being tested
+                warming up and running through their waza, then it was time for
+                testing. Every one did very well and it was a good display of
+                peoples' skills. After testing we spent the rest of the time training.
+                What a great feeling to train with so many people at the same
+                time. After wards a few of us went for dinner to celebrate and
+                replenish our fuel cells.")); ?></p>
+<p><?php echo $this->purify($this->translate("<strong>Monday</strong> was a day off, and thankfully so. We were more
+                tired than we thought so it was good to have a day just to relax,
+                hang around Steve house and replenish our strength. We certainly
+                needed it, the second week also included training every night
+                and a lot of sightseeing and moving around during the days. It
+                was an amazing experience to go and train in Japan, to see Sensei
+                and to meet all of his students. Everyone was so receptive and
+                hospitable, so much so that we never wanted to leave. We received
+                a lot of correction and new instruction to take back home with
+                us and work on. Over and above that we saw and felt how people
+                train in Japan, how they conduct themselves and interact with
+                each other and all those subtle things that just can't be put
+                into words. Our training was slightly different from what it usually
+                is in Japan. Because we were visitors, Sensei and his senior students
+                paid special attention to us and probably corrected us more and
+                showed us more in two weeks than they would had we lived there,
+                nonetheless we defiantly absorbed some of those (once again) subtle
+                little 'dojo' things, and hopefully we will be doing a good job
+                of bringing them back and passing them on to the people in our
+                branch dojo. This was undoubtedly the experience of a lifetime.")); ?></p>

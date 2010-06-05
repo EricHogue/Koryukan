@@ -19,7 +19,7 @@ class MenuController extends Zend_Controller_Action
                 'url'=>$this->view->url(array('lang'=>$lang, 'controller'=>'onohaittoryu','action'=>'index'),
                 null, true)),
             array('title'=>$this->view->translate('articles'),
-                'url'=>$this->view->url(array('lang'=>$lang, 'controller'=>'articles','action'=>'index'), null, true)),
+                'url'=>$this->view->url(array('lang'=>$lang, 'controller'=>'articles','action'=>'september_2005_training_camp_summary'), null, true)),
             array('title'=>$this->view->translate('multimedia'),
                 'url'=>$this->view->url(array('lang'=>$lang, 'controller'=>'multimedia','action'=>'index'),
                 null, true)),
