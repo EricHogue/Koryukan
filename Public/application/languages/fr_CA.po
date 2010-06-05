@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Koyukan Public\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-06-05 16:45-0500\n"
+"POT-Creation-Date: 2010-06-05 17:37-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: eric <eric@erichogue.ca>\n"
 "Language-Team: Koyukan <eric@koryukan.com>\n"
@@ -60,9 +60,17 @@ msgstr "Français"
 msgid "English"
 msgstr "English"
 
+#: application/controllers/StoreController.php:34
+msgid "Online store"
+msgstr "Boutique en ligne"
+
 #: application/controllers/IndexController.php:9
 msgid "Welcome to Koryukan"
 msgstr "Bienvenue chez Koryukan"
+
+#: application/controllers/ContactsController.php:34
+msgid "Dojo & Contact Info"
+msgstr "Contact & Info"
 
 #: application/controllers/ArticlesController.php:36
 #: application/controllers/ArticlesController.php:53
@@ -71,7 +79,6 @@ msgstr "Sommaire du camp d'entrainement de septembre 2005"
 
 #: application/controllers/ArticlesController.php:37
 #: application/controllers/ArticlesController.php:65
-#: application/views/scripts/articles/the-benefits-of-aa-oo-mm.phtml:6
 msgid "The Benefits of AaOoMm"
 msgstr "Les bienfaits de AaOoMm"
 
@@ -121,9 +128,87 @@ msgstr "L'histoire du Daito Ryu"
 msgid "Children - Family"
 msgstr "Enfants - Familles"
 
+#: application/controllers/MultimediaController.php:34
+msgid "Multimedia"
+msgstr "Multimedia"
+
 #: application/controllers/NewsController.php:10
 msgid "NewsPageTitle"
 msgstr "Nouvelles"
+
+#: application/views/scripts/contacts/index.phtml:2
+msgid "Koryukan Dojo"
+msgstr "Koryukan Dojo"
+
+#: application/views/scripts/contacts/index.phtml:7
+msgid "Gym Zone, 8351 Newman Boulevard"
+msgstr "Gym Zone, 8351 Newman Boulevard"
+
+#: application/views/scripts/contacts/index.phtml:8
+msgid "LaSalle Quebec"
+msgstr "LaSalle Quebec"
+
+#: application/views/scripts/contacts/index.phtml:16
+msgid "Class Times:"
+msgstr "Horaires des cours:"
+
+#: application/views/scripts/contacts/index.phtml:17
+msgid "Adult"
+msgstr "Adulte"
+
+#: application/views/scripts/contacts/index.phtml:18
+msgid "Mondays and Wednesdays"
+msgstr "Lundi et Mercredi"
+
+#: application/views/scripts/contacts/index.phtml:19
+msgid "8:00 PM to 10:00 PM"
+msgstr "20h00 &agrave; 22h00"
+
+#: application/views/scripts/contacts/index.phtml:20
+#: application/views/scripts/contacts/index.phtml:23
+#: application/views/scripts/contacts/index.phtml:45
+msgid "Sunday"
+msgstr "Dimanche"
+
+#: application/views/scripts/contacts/index.phtml:21
+msgid "11:00 AM to 12:30 AM"
+msgstr "11h00 &agrave; 12h30"
+
+#: application/views/scripts/contacts/index.phtml:22
+msgid "Children-Family"
+msgstr "Enfants - Familles"
+
+#: application/views/scripts/contacts/index.phtml:24
+msgid "10:00 AM to 11:00 AM"
+msgstr "10h00 &agrave; 11h00"
+
+#: application/views/scripts/contacts/index.phtml:31
+msgid "Dokyoo Dojo"
+msgstr "Dojo Dokyoo"
+
+#: application/views/scripts/contacts/index.phtml:35
+msgid "Sainte-Sophie Orthodox Ukrainian Cathedral,"
+msgstr "Cath&eacute;drale Orthodoxe Ukrainienne Sainte-Sophie,"
+
+#: application/views/scripts/contacts/index.phtml:36
+msgid "6250 12 i&egrave;me avenue"
+msgstr "6250 12ème avenue"
+
+#: application/views/scripts/contacts/index.phtml:37
+msgid "Montr&eacute;al, QC"
+msgstr "Montréal, QC"
+
+#: application/views/scripts/contacts/index.phtml:38
+msgid "H1X 3A5"
+msgstr "H1X 3A5"
+
+#: application/views/scripts/contacts/index.phtml:44
+msgid "Class Times"
+msgstr "Horaires des cours:"
+
+#: application/views/scripts/contacts/index.phtml:46
+msgid "03:00 PM to 04:30 PM"
+msgstr "15:00 &agrave; 16:30"
 
 #: application/views/scripts/articles/body-movements-by-russel-haskin.phtml:6
 msgid "Brief Background of Russel Haskin"
@@ -276,7 +361,6 @@ msgid "Training in Japan"
 msgstr "S'entraîner au Japon!"
 
 #: application/views/scripts/articles/training-in-japan.phtml:9
-#: application/views/scripts/articles/september-2005-training-camp-summary.phtml:46
 msgid "gallery"
 msgstr "galerie"
 
@@ -1064,7 +1148,7 @@ msgid ""
 "Aiki jujutsu is art based on self defence and therefore a very peaceful.\n"
 "                The strikes that are used have only for goal to destabilize, to distract the adversary to let us control and attack\n"
 "                or to simply avoid or get rid of the aggressor to put an end to the attack."
-msgstr "L'Aiki Jujutsu est un art martial bas&eacute; sur l'auto d&eacute;fense, donc tr&egrave;s pacifique. Les frappes qui sont 		donn&eacute;es ont pour seul but de d&eacute;stabiliser, d'amener l'attention de l'adversaire ailleurs pour nous permettre de faire une technique. Les techniques enseign&eacute;es nous permettent 		de contr&ocirc;ler notre attaquant ou de tout simplement l'&eacute;viter, de nous en d&eacute;barrasser afin de mettre un terme &agrave; l'agression que l'on subit."
+msgstr "L'Aiki Jujutsu est un art martial bas&eacute; sur l'auto d&eacute;fense, donc tr&egrave;s pacifique. Les frappes qui sont \t\tdonn&eacute;es ont pour seul but de d&eacute;stabiliser, d'amener l'attention de l'adversaire ailleurs pour nous permettre de faire une technique. Les techniques enseign&eacute;es nous permettent \t\tde contr&ocirc;ler notre attaquant ou de tout simplement l'&eacute;viter, de nous en d&eacute;barrasser afin de mettre un terme &agrave; l'agression que l'on subit."
 
 #: application/views/scripts/children/index.phtml:6
 msgid ""
@@ -1679,10 +1763,6 @@ msgid ""
 "       24 September 1877.  This would be the last battle in which samurai would\n"
 "       participate."
 msgstr "Le trait&eacute; mettant fin &agrave; la guerre civile, 'R&egrave;glement Tosa', laissa une certaine influence au Tokugawa. Ceci provoqua la col&egrave;re des clans Satsuma et Chosu qui se r&eacute;volt&egrave;rent, sous la direction de Takamori, contre l'empereur dont ils avaient pr&eacute;par&eacute; le retour au pouvoir. Finalement, le prince Arisugawa assi&eacute;gea la ch&acirc;teau &agrave; Satsuma en 1877 et mit fin &agrave; la rebellion Satsuma. Saigo Takamori re&ccedil;ut une plaie par balle dans le bas de l'abdomen et pour ne pas &ecirc;tre fait prisonnier il fut d&eacute;capit&eacute; (tr&egrave;s probablement &agrave; sa demande) par l'un de ses propres serviteur. Ce fut la derni&egrave;re bataille &agrave; laquelle les samoura&iuml;s particip&egrave;rent."
-
-#: application/layouts/scripts/header.phtml:3
-msgid "Koryukan Dojo"
-msgstr "Koryukan Dojo"
 
 #: application/layouts/scripts/header.phtml:5
 #: application/layouts/scripts/header.phtml:13

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Koyukan Public\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-06-05 16:44-0500\n"
+"POT-Creation-Date: 2010-06-05 17:38-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: eric <eric@erichogue.ca>\n"
 "Language-Team: Koryukan <eric@koryukan.com>\n"
@@ -60,9 +60,17 @@ msgstr "Français"
 msgid "English"
 msgstr "English"
 
+#: application/controllers/StoreController.php:34
+msgid "Online store"
+msgstr "Online store"
+
 #: application/controllers/IndexController.php:9
 msgid "Welcome to Koryukan"
 msgstr "Welcome To Koryukan"
+
+#: application/controllers/ContactsController.php:34
+msgid "Dojo & Contact Info"
+msgstr "Dojo & Contact Info"
 
 #: application/controllers/ArticlesController.php:36
 #: application/controllers/ArticlesController.php:53
@@ -71,7 +79,6 @@ msgstr "September 2005 Training Camp Summary"
 
 #: application/controllers/ArticlesController.php:37
 #: application/controllers/ArticlesController.php:65
-#: application/views/scripts/articles/the-benefits-of-aa-oo-mm.phtml:6
 msgid "The Benefits of AaOoMm"
 msgstr "The Benefits of AaOoMm"
 
@@ -121,9 +128,87 @@ msgstr "History of Daito Ryu"
 msgid "Children - Family"
 msgstr "Children - Family"
 
+#: application/controllers/MultimediaController.php:34
+msgid "Multimedia"
+msgstr "Multimedia"
+
 #: application/controllers/NewsController.php:10
 msgid "NewsPageTitle"
 msgstr "News"
+
+#: application/views/scripts/contacts/index.phtml:2
+msgid "Koryukan Dojo"
+msgstr "Koryukan Dojo"
+
+#: application/views/scripts/contacts/index.phtml:7
+msgid "Gym Zone, 8351 Newman Boulevard"
+msgstr "Gym Zone, 8351 Newman Boulevard"
+
+#: application/views/scripts/contacts/index.phtml:8
+msgid "LaSalle Quebec"
+msgstr "LaSalle Quebec"
+
+#: application/views/scripts/contacts/index.phtml:16
+msgid "Class Times:"
+msgstr "Class Times"
+
+#: application/views/scripts/contacts/index.phtml:17
+msgid "Adult"
+msgstr "Adult"
+
+#: application/views/scripts/contacts/index.phtml:18
+msgid "Mondays and Wednesdays"
+msgstr "Mondays and Wednesdays"
+
+#: application/views/scripts/contacts/index.phtml:19
+msgid "8:00 PM to 10:00 PM"
+msgstr "8:00 PM to 10:00 PM"
+
+#: application/views/scripts/contacts/index.phtml:20
+#: application/views/scripts/contacts/index.phtml:23
+#: application/views/scripts/contacts/index.phtml:45
+msgid "Sunday"
+msgstr "Sunday"
+
+#: application/views/scripts/contacts/index.phtml:21
+msgid "11:00 AM to 12:30 AM"
+msgstr "11:00 AM to 12:30 AM"
+
+#: application/views/scripts/contacts/index.phtml:22
+msgid "Children-Family"
+msgstr "Children - Family"
+
+#: application/views/scripts/contacts/index.phtml:24
+msgid "10:00 AM to 11:00 AM"
+msgstr "10:00 AM to 11:00 AM"
+
+#: application/views/scripts/contacts/index.phtml:31
+msgid "Dokyoo Dojo"
+msgstr "Dokyoo Dojo"
+
+#: application/views/scripts/contacts/index.phtml:35
+msgid "Sainte-Sophie Orthodox Ukrainian Cathedral,"
+msgstr "Sainte-Sophie Orthodox Ukrainian Cathedral,"
+
+#: application/views/scripts/contacts/index.phtml:36
+msgid "6250 12 i&egrave;me avenue"
+msgstr "6250 12 i&egrave;me avenue"
+
+#: application/views/scripts/contacts/index.phtml:37
+msgid "Montr&eacute;al, QC"
+msgstr "Montr&eacute;al, QC"
+
+#: application/views/scripts/contacts/index.phtml:38
+msgid "H1X 3A5"
+msgstr "H1X 3A5"
+
+#: application/views/scripts/contacts/index.phtml:44
+msgid "Class Times"
+msgstr "Class Times"
+
+#: application/views/scripts/contacts/index.phtml:46
+msgid "03:00 PM to 04:30 PM"
+msgstr "03:00 PM to 04:30 PM"
 
 #: application/views/scripts/articles/body-movements-by-russel-haskin.phtml:6
 msgid "Brief Background of Russel Haskin"
@@ -276,7 +361,6 @@ msgid "Training in Japan"
 msgstr "Training in Japan"
 
 #: application/views/scripts/articles/training-in-japan.phtml:9
-#: application/views/scripts/articles/september-2005-training-camp-summary.phtml:46
 msgid "gallery"
 msgstr "gallery"
 
@@ -2169,10 +2253,6 @@ msgstr ""
 "       beheaded (quite probably at his own request) by one of his own retainers on\n"
 "       24 September 1877.  This would be the last battle in which samurai would\n"
 "       participate."
-
-#: application/layouts/scripts/header.phtml:3
-msgid "Koryukan Dojo"
-msgstr "Koryukan Dojo"
 
 #: application/layouts/scripts/header.phtml:5
 #: application/layouts/scripts/header.phtml:13
