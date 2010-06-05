@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Koyukan Public\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-06-05 15:42-0500\n"
+"POT-Creation-Date: 2010-06-05 16:45-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: eric <eric@erichogue.ca>\n"
 "Language-Team: Koyukan <eric@koryukan.com>\n"
@@ -116,6 +116,10 @@ msgstr "Hisa Takuma"
 #: application/controllers/DaitoryuController.php:51
 msgid "HistoryOfDaitoRyuPageTitle"
 msgstr "L'histoire du Daito Ryu"
+
+#: application/controllers/ChildrenController.php:34
+msgid "Children - Family"
+msgstr "Enfants - Familles"
 
 #: application/controllers/NewsController.php:10
 msgid "NewsPageTitle"
@@ -1050,6 +1054,45 @@ msgstr "In February 2003, Medhat Darwish, David Biron and Anton Deinekin        
 #: application/views/scripts/articles/september-2005-training-camp-summary.phtml:87
 msgid "Click here for a more detailed account of our trip!"
 msgstr "Click here for a more detailed account of our trip!"
+
+#: application/views/scripts/children/index.phtml:2
+msgid "Children/family Classes*: "
+msgstr "Cours Enfant - famille *: "
+
+#: application/views/scripts/children/index.phtml:3
+msgid ""
+"Aiki jujutsu is art based on self defence and therefore a very peaceful.\n"
+"                The strikes that are used have only for goal to destabilize, to distract the adversary to let us control and attack\n"
+"                or to simply avoid or get rid of the aggressor to put an end to the attack."
+msgstr "L'Aiki Jujutsu est un art martial bas&eacute; sur l'auto d&eacute;fense, donc tr&egrave;s pacifique. Les frappes qui sont 		donn&eacute;es ont pour seul but de d&eacute;stabiliser, d'amener l'attention de l'adversaire ailleurs pour nous permettre de faire une technique. Les techniques enseign&eacute;es nous permettent 		de contr&ocirc;ler notre attaquant ou de tout simplement l'&eacute;viter, de nous en d&eacute;barrasser afin de mettre un terme &agrave; l'agression que l'on subit."
+
+#: application/views/scripts/children/index.phtml:6
+msgid ""
+"It is therefore difficult for children to use Aiki jujutsu in an aggressive way or to attack another child. We utilize the\n"
+"                strength, the speed and the body movement of the attacker to apply our techniques. No attack, no Aiki."
+msgstr "Il est donc difficile pour les enfants d'amener l'Aiki Jujutsu dans un contexte qui peut &ecirc;tre utilis&eacute; pour agresser, attaquer un autre enfant. Nous utilisons la force, la vitesse et le mouvement du corps de l'attaquant pour appliquer nos techniques. Pas d'attaque, pas d'Aiki."
+
+#: application/views/scripts/children/index.phtml:8
+msgid ""
+"An excellent form of self defence, which demands little or no strength, Aiki jujutsu is perfect for children. By practicing\n"
+"                regularly the basic movements as well as the falls and rolls, children become more efficient in their techniques while\n"
+"                minimizing their risk of injury."
+msgstr "Excellent moyen d'auto d&eacute;fense, qui demande peu ou pas de force, le Da&iuml;to Ryu convient parfaitement aux enfants. En pratiquant r&eacute;guli&egrave;rement les mouvements de base, ainsi que les chutes et les roulades, l'enfant accroit l'efficacit&eacute; de ces  techniques tout en minimisant le risque de blessure."
+
+#: application/views/scripts/children/index.phtml:11
+msgid ""
+"Aiki Jujutsu develops flexibility, strength, coordination, balance, confidence and concentration in children as young as 5\n"
+"                or 6 years of age and all of this in a fun environment. It also favours discipline, respect of others and self respect as\n"
+"                well. The belt system promotes advancement and motivates the child to persevere."
+msgstr "L'Aiki Jujutsu d&eacute;veloppe chez les jeunes, et cela d&egrave;s l'&acirc;ge de 5-6 ans, flexibilit&eacute;, force musculaire, coordination, &eacute;quilibre, confiance en soi, concentration et &ccedil;a tout en s'amusant.  Il favorise aussi la discipline et le respect des autres et de lui-m&ecirc;me. Le syst&egrave;me de ceinture t&eacute;moigne de l'avancement de l'enfant et le motive &agrave; pers&eacute;v&eacute;rer. <p />"
+
+#: application/views/scripts/children/index.phtml:14
+msgid ""
+"* Our program allows the parent to participate in the class if they desire which can reassure the child and help to\n"
+"                understand the Dojo rules. The child learns to play with the parent without the parent being the authority figure.\n"
+"                For the parent it is an excellent initiation to martial arts as well as offering the opportunity to exercise and stretch\n"
+"                while spending some nice family time on Sunday morning."
+msgstr "* Notre programme permet la participation du parent au cours, s'il le d&eacute;sire, ce qui permet de rassurer l'enfant  et de l'aider &agrave; comprendre les r&egrave;gles du Dojo.  L'enfant apprend &agrave; jouer avec le parent sans que ce dernier soit l'autorit&eacute;.  Pour le parent, il s'agit d'une excellente initiation aux arts martiaux en plus d'offrir l'opportunit&eacute; de faire de l'exercice, de l'&eacute;tirement tout en passant un dimanche matin en famille."
 
 #: application/views/scripts/onohaittoryu/index.phtml:2
 msgid "The main line of Ono Ha Itto Ryu was established in the early Edo period, around year 1630. Stemming from Itto Ryu kenjutsu of Ito Ittosai Kagehisa, Ono Ha Itto Ryu was founded by Ono Jirouemon Tadaaki."

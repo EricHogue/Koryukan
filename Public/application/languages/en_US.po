@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Koyukan Public\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-06-05 15:40-0500\n"
+"POT-Creation-Date: 2010-06-05 16:44-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: eric <eric@erichogue.ca>\n"
 "Language-Team: Koryukan <eric@koryukan.com>\n"
@@ -116,6 +116,10 @@ msgstr "Hisa Takuma"
 #: application/controllers/DaitoryuController.php:51
 msgid "HistoryOfDaitoRyuPageTitle"
 msgstr "History of Daito Ryu"
+
+#: application/controllers/ChildrenController.php:34
+msgid "Children - Family"
+msgstr "Children - Family"
 
 #: application/controllers/NewsController.php:10
 msgid "NewsPageTitle"
@@ -1299,6 +1303,60 @@ msgstr ""
 #: application/views/scripts/articles/september-2005-training-camp-summary.phtml:87
 msgid "Click here for a more detailed account of our trip!"
 msgstr "Click here for a more detailed account of our trip!"
+
+#: application/views/scripts/children/index.phtml:2
+msgid "Children/family Classes*: "
+msgstr "Children/family Classes*: "
+
+#: application/views/scripts/children/index.phtml:3
+msgid ""
+"Aiki jujutsu is art based on self defence and therefore a very peaceful.\n"
+"                The strikes that are used have only for goal to destabilize, to distract the adversary to let us control and attack\n"
+"                or to simply avoid or get rid of the aggressor to put an end to the attack."
+msgstr ""
+"Aiki jujutsu is art based on self defence and therefore a very peaceful.\n"
+"                The strikes that are used have only for goal to destabilize, to distract the adversary to let us control and attack\n"
+"                or to simply avoid or get rid of the aggressor to put an end to the attack."
+
+#: application/views/scripts/children/index.phtml:6
+msgid ""
+"It is therefore difficult for children to use Aiki jujutsu in an aggressive way or to attack another child. We utilize the\n"
+"                strength, the speed and the body movement of the attacker to apply our techniques. No attack, no Aiki."
+msgstr ""
+"It is therefore difficult for children to use Aiki jujutsu in an aggressive way or to attack another child. We utilize the\n"
+"                strength, the speed and the body movement of the attacker to apply our techniques. No attack, no Aiki."
+
+#: application/views/scripts/children/index.phtml:8
+msgid ""
+"An excellent form of self defence, which demands little or no strength, Aiki jujutsu is perfect for children. By practicing\n"
+"                regularly the basic movements as well as the falls and rolls, children become more efficient in their techniques while\n"
+"                minimizing their risk of injury."
+msgstr ""
+"An excellent form of self defence, which demands little or no strength, Aiki jujutsu is perfect for children. By practicing\n"
+"                regularly the basic movements as well as the falls and rolls, children become more efficient in their techniques while\n"
+"                minimizing their risk of injury."
+
+#: application/views/scripts/children/index.phtml:11
+msgid ""
+"Aiki Jujutsu develops flexibility, strength, coordination, balance, confidence and concentration in children as young as 5\n"
+"                or 6 years of age and all of this in a fun environment. It also favours discipline, respect of others and self respect as\n"
+"                well. The belt system promotes advancement and motivates the child to persevere."
+msgstr ""
+"Aiki Jujutsu develops flexibility, strength, coordination, balance, confidence and concentration in children as young as 5\n"
+"                or 6 years of age and all of this in a fun environment. It also favours discipline, respect of others and self respect as\n"
+"                well. The belt system promotes advancement and motivates the child to persevere."
+
+#: application/views/scripts/children/index.phtml:14
+msgid ""
+"* Our program allows the parent to participate in the class if they desire which can reassure the child and help to\n"
+"                understand the Dojo rules. The child learns to play with the parent without the parent being the authority figure.\n"
+"                For the parent it is an excellent initiation to martial arts as well as offering the opportunity to exercise and stretch\n"
+"                while spending some nice family time on Sunday morning."
+msgstr ""
+"* Our program allows the parent to participate in the class if they desire which can reassure the child and help to\n"
+"                understand the Dojo rules. The child learns to play with the parent without the parent being the authority figure.\n"
+"                For the parent it is an excellent initiation to martial arts as well as offering the opportunity to exercise and stretch\n"
+"                while spending some nice family time on Sunday morning."
 
 #: application/views/scripts/onohaittoryu/index.phtml:2
 msgid "The main line of Ono Ha Itto Ryu was established in the early Edo period, around year 1630. Stemming from Itto Ryu kenjutsu of Ito Ittosai Kagehisa, Ono Ha Itto Ryu was founded by Ono Jirouemon Tadaaki."
