@@ -24,9 +24,6 @@
  */
 class Koryukan_Model_News extends Koryukan_Model_Base
 {
-    const STATUS_ONLINE = 'online';
-    const STATUS_DELETED = 'deleted';
-
     /**
      * The db class name
      *

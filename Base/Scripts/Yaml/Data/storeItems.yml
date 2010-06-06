@@ -1,0 +1,258 @@
+Koryukan_Db_StoreItem:
+    storeItem1:
+        imageName: Revolver.png 
+        price: 10.00
+    storeItem2:
+        imageName: TantoCaou.png 
+        price: 7.00
+    storeItem3:
+        imageName: Jitte.gif 
+        price: 30.00
+    storeItem4:
+        imageName: TantoBois.png 
+        price: 8.50
+    storeItem5:
+        imageName: Bokken54.png 
+        price: 13.50
+    storeItem6:
+        imageName: Bokken75.png 
+        price: 16.50
+    storeItem7:
+        imageName: BokkenJapon.png 
+        price: 0
+    storeItem8:
+        imageName: Etui1.png 
+        price: 17.00
+    storeItem9:
+        imageName: Etui2.png 
+        price: 34.00
+    storeItem10:
+        imageName: GI.png 
+        price: 70.00
+    storeItem11:
+        imageName: Hakama.png 
+        price: 110.00
+    storeItem12:
+        imageName: Tabi.png 
+        price: 25.00
+    storeItem13:
+        imageName: ZoriRiz.png 
+        price: 18.00
+    storeItem14:
+        imageName: ZoriVinyle.png 
+        price: 20.00
+    storeItem15:
+        imageName: BookHiddenRoots.png 
+        price: 55.00
+    storeItem16:
+        imageName: MontagePierre.gif 
+        price: 0
+Koryukan_Db_StoreItemDetail:
+    detail1: 
+        StoreItem: storeItem1
+        language: 'fr'
+        name: Imitation de revolver 
+        description: | 
+            Imitation de revolver en caoutchouc.
+    detail2: 
+        StoreItem: storeItem2
+        language: 'fr'
+        name: TANTO EN caoutchouc 
+        description: | 
+            Imitation de couteau sans garde, en caoutchouc. 
+    detail3: 
+        StoreItem: storeItem3
+        language: 'fr'
+        name: JITTE en bois fait &agrave; la main 
+        description: | 
+            JITTE (arme courte) mesurant 38cm de longueur. 
+    detail4: 
+        StoreItem: storeItem4
+        language: 'fr'
+        name: TANTO EN BOIS 
+        description: | 
+            Petit couteau en bois de 29cm (11" 3/8). 
+    detail5: 
+        StoreItem: storeItem5
+        language: 'fr'
+        name: BOKKEN EN BOIS DUR DE 54 CM 
+        description: | 
+            Sabre en bois dur (ch&ecirc;ne). Longueur de 54cm.  
+    detail6: 
+        StoreItem: storeItem6
+        language: 'fr'
+        name: BOKKEN EN BOIS DUR DE 75 CM 
+        description: | 
+            Sabre en bois dur (ch&ecirc;ne). Longueur de 75cm.  
+    detail7: 
+        StoreItem: storeItem7
+        language: 'fr'
+        name: BOKKEN IMPORT&eacute; DU JAPON AVEC GARDE 
+        description: | 
+            Bokken import&eacute; du Japon avec garde en cuivre de tres bonne qualit&eacute; et beaucoup plus durable 
+    detail8: 
+        StoreItem: storeItem8
+        language: 'fr'
+        name: &eacute;tui COTON NOIR 1 SHINAI OU BOKKEN 
+        description: | 
+            Etui &eacute;troit en coton noir, pour le transport d'un seul Bokken ou Shinai.
+    detail9: 
+        StoreItem: storeItem9
+        language: 'fr'
+        name: &eacute;tui en COTON &agrave; motifs vari&eacute;s POUR SHINAI/BOKKEN 
+        description: | 
+            Etui en coton &agrave; motifs vari&eacute;s pouvant contenir plusieurs Bokken, Shinai ou Jo. Peut se porter en bandouli&egrave;re, le mod&egrave;le peut varier. 
+    detail10: 
+        StoreItem: storeItem10
+        language: 'fr'
+        name: GI 
+        description: | 
+            Uniforme 100% coton, utilis&eacute; pour la pratique de l'Aiki.
+    detail11: 
+        StoreItem: storeItem11
+        language: 'fr'
+        name: HAKAMA 100% COTON 
+        description: | 
+            Hakama, 100% coton, de couleur bleu marine. 
+    detail12: 
+        StoreItem: storeItem12
+        language: 'fr'
+        name: Tabi 
+        description: | 
+            Chaussette traditionnel japonaise de couleur blanche, utilis&eacute;es pour porter avec des zori 
+    detail13: 
+        StoreItem: storeItem13
+        language: 'fr'
+        name: ZORI SANDALES EN PAILLE DE RIZ 
+        description: | 
+            Sandale traditionnelle en paille de riz. Mod&egrave;le avec bandes de velours noir crois&eacute;es. 
+    detail14: 
+        StoreItem: storeItem14
+        language: 'fr'
+        name: ZORI SANDALES EN VINYLE 
+        description: | 
+            Sandale en vinyle avec bandes crois&eacute;es en velours noir. 
+    detail15: 
+        StoreItem: storeItem15
+        language: 'fr'
+        name: Livre HIDDEN ROOTS OF AIKIDO - OMIYA 
+        description: | 
+            Livre en anglais. THE HIDDEN ROOTS OF AIKIDO, (Aiki Jujutsu Daitoryu, Secret Techniques of an Ancient Martial Art) par Shiro Omiya. <br />
+            Le premier livre &agrave; parra&icirc;tre en anglais &agrave; offrir une introduction visuelle d&eacute;taill&eacute;e des technique de la tradition DAITORYU. 
+            Illustr&eacute; d'environ 800 photographies, il donne une image claire et compl&egrave;te des &eacute;tapes de pr&egrave;s de 90 techniques. Un livre en anglais 
+            &agrave; couverture rigide de 216 pages.
+    detail16: 
+        StoreItem: storeItem16
+        language: 'fr'
+        name: Meubles et articles fabriqu&eacute;s &agrave; la main. 
+        description: | 
+            Artisan du bois et &eacute;tudiant du dojo, Pierre fabrique &agrave; la main des meubles et articles de tout genre sur mesure, que ca soit pour 
+            d&eacute;cor&eacute; votre dojo ou pour garnir votre salon, meuble rustique saura vous satisfaire. 
+    detail17: 
+        StoreItem: storeItem1
+        language: 'en'
+        name: Revolver Imitation
+        description: | 
+            Rubber revolver imitation
+    detail18:   
+        StoreItem: storeItem2
+        language: 'en'
+        name: Rubber TANTO
+        description: | 
+            Rubber knife imitation.
+    detail19:   
+        StoreItem: storeItem3
+        language: 'en'
+        name: Wooden Hands Made Jitte
+        description: | 
+            38 cm long wooden JITTE             
+    detail20:
+        StoreItem: storeItem4
+        language: 'en'
+        name: Wooden TANTO
+        description: | 
+            Small wooden knife, 29 cm long (11" 3/8)
+    detail21:   
+        StoreItem: storeItem5
+        language: 'en'
+        name: Hard Wood 54 cm Bokken
+        description: | 
+            Hard wood sabre. 54 cm long. 
+    detail22:   
+        StoreItem: storeItem6
+        language: 'en'
+        name: Hard Wood 75 cm Bokken
+        description: | 
+            Hard wood sabre. 75 cm long. 
+    detail23:   
+        StoreItem: storeItem7
+        language: 'en'
+        name: Bokken With Guard Imported From Japan
+        description: | 
+            Japan imported Bokken with a copper guard. High quality and long lasting.
+    detail24:   
+        StoreItem: storeItem8
+        language: 'en'
+        name: Cotton Carrying Case for 1 SINAI Or BOKKEN
+        description: | 
+            Cotton Carrying Case for 1 SINAI Or BOKKEN
+    detail25:   
+        StoreItem: storeItem9
+        language: 'en'
+        name: Cotton Carrying Case with miltiple patterns for SINAI/BOKKEN
+        description: | 
+            Cotton case with a shoulder strap that can carry multtiple Bokken, Shinai or Jo. The model can differ.
+    detail26:   
+        StoreItem: storeItem10
+        language: 'en'
+        name: GI
+        description: | 
+            Uniform used for Aiki practice. Made of 100% cotton.
+    detail27:   
+        StoreItem: storeItem11
+        language: 'en'
+        name: HAKAMA 100% COTON
+        description: | 
+            Blue Hakama. Made of 100% cotton.
+    detail28:   
+        StoreItem: storeItem12
+        language: 'en'
+        name: Tabi
+        description: | 
+            Traditional japanese white socks. Should be worn with zoris.
+    detail29:   
+        StoreItem: storeItem13
+        language: 'en'
+        name: ZORI - SANDALS IN RICE STRAW
+        description: | 
+            Taditional sandals in rice straw.
+    detail30:   
+        StoreItem: storeItem14
+        language: 'en'
+        name: ZORI - Vinyl Sandals
+        description: | 
+            Vinyl sandals with black velvet straps
+    detail31:   
+        StoreItem: storeItem15
+        language: 'en'
+        name: Book HIDDEN ROOTS OF AIKIDO - OMIYA
+        description: |
+            The Daitoryu is a brutally effective fighting method thought to have been first developed more than a thousand years ago by members of the Japanese imperial family. It was then refined and honed in great secrecy through centuries of hand-to-hand combat by highly trained warriors. Its
+            techniques were jealously guarded until late in the nineteenth century, when it was first introduced to the world by master Sokaku Takeda, who began to accept students from around the country.<br /><br />
+
+            It was this tradition that Morihei Ueshiba spent years studying just before he set out on his own to found Aikido-which has in recent years become one of the world's most popular martial arts. The roots of Aikido are in the Daitoryu, and for that reason Aikido practitioners will want to learn all
+            they can about this martial art.<br /><br />
+            
+            The Hidden Roots of Aikido is the first book to appear in English that offers a detailed visual introduction to techniques of the Daitoryu tradition. Heavily illustrated with approximately 800 photographs, it gives a clear, complete picture of the steps involved in about 90 techniques. Its
+            substantial section on history and theory takes a close look at the Daitoryu's historical background and philosophy, while a glossary of terms provides a handy list of the most important terms.<br /><br />
+            
+            The Hidden Roots of Aikido will be an indispensable learning tool for students of the Daitoryu, and a valuable reference for other martial arts practitioners.<br /><br />
+             
+            216 pages hardcover book 
+    detail32:   
+        StoreItem: storeItem16
+        language: 'en'
+        name: Hands made furnitures and accessories
+        description: | 
+            Pierre is a wood craftsman and a student of the dojo. He build all kinds of furnitures and accessories. Good for your 
+                    dojo or you living room.

@@ -47,4 +47,46 @@ NewsText:
             local: newsId
             foreign: id
              
-            
+StoreItem:
+    columns:
+        id: 
+            type: integer(4)
+            notnull: true
+            unsigned: true
+            primary: true
+            autoincrement: true
+        imageName: 
+            type: string(255) 
+            notnull: true
+        price: 
+            type: decimal(8,2)
+            notnull: true
+            unsigned: true
+        status: 
+            type: enum
+            notnull: true
+            values: ['online', 'deleted']
+            default: 'online'
+StoreItemDetail:
+    columns:
+        itemId: 
+            type: integer(4)
+            notnull: true
+            unsigned: true
+            primary: true
+        language: 
+            type: enum
+            notnull: true
+            values: ['fr', 'en']
+            default: 'fr'
+            primary: true
+        name:
+            type: string(255)
+            notnull: true
+        description: 
+            type: text
+            notnull: true
+    relations:
+        StoreItem: 
+            local: itemId
+            foreign: id

@@ -1,1 +1,29 @@
-<?php
+<p><?php echo $this->purify($this->translate("Here's a list of the products offered by Koryukan. Please send your order at <a href='mailto:sale@koryukan.com'>sale@koryukan.com</a>.
+        We will contact you shortly for payement and delivery details.")); ?></p>
+<p><?php echo $this->purify($this->translate("All prices includes taxes.")); ?></p>
+
+
+
+
+<div class="storeitems">
+    <ul>
+        <?php foreach ($this->items as $item) { ?>
+            <li>
+                <?php $name = $this->purify($item->getName($this->lang)); ?>
+                <h2><?php echo $name; ?></h2>
+                <img alt="<?php echo $name; ?>" src="/Images/Store/<?php echo $item->getImageName(); ?>" />
+                <?php echo $this->purify($item->getDescription($this->lang)); ?>
+                <?php
+                    $price = $item->getPrice();
+                    if ($price->getvalue() < 0.01)
+                    {
+                        $priceString = $this->purify($this->translate('Negotiable'));
+                    } else {
+                        $priceString = $price->toString();
+                    }
+                ?>
+                <h3><?php echo $this->purify($priceString); ?></h3>
+            </li>
+        <?php } ?>
+    </ul>
+</div>

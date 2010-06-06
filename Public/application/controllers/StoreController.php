@@ -35,5 +35,9 @@ class StoreController extends Zend_Controller_Action
         $this->view->assign('pageTitle', $pageTitle);
         $this->view->assign('sideImage', 'store' . $this->getRequest()->getParam('lang', 'en') . '.png');
         $this->view->assign('sideImageAlt', $pageTitle);
+
+        $items = Koryukan_Model_StoreItem::getItems();
+        $this->view->assign('items', $items);
+        $this->view->assign('lang', $this->getRequest()->getParam('lang', 'en'));
     }
 }

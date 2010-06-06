@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Koyukan Public\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-06-05 17:37-0500\n"
+"POT-Creation-Date: 2010-06-06 10:22-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: eric <eric@erichogue.ca>\n"
 "Language-Team: Koyukan <eric@koryukan.com>\n"
@@ -1177,6 +1177,20 @@ msgid ""
 "                For the parent it is an excellent initiation to martial arts as well as offering the opportunity to exercise and stretch\n"
 "                while spending some nice family time on Sunday morning."
 msgstr "* Notre programme permet la participation du parent au cours, s'il le d&eacute;sire, ce qui permet de rassurer l'enfant  et de l'aider &agrave; comprendre les r&egrave;gles du Dojo.  L'enfant apprend &agrave; jouer avec le parent sans que ce dernier soit l'autorit&eacute;.  Pour le parent, il s'agit d'une excellente initiation aux arts martiaux en plus d'offrir l'opportunit&eacute; de faire de l'exercice, de l'&eacute;tirement tout en passant un dimanche matin en famille."
+
+#: application/views/scripts/store/index.phtml:1
+msgid ""
+"Here's a list of the products offered by Koryukan. Please send your order at <a href='mailto:sale@koryukan.com'>sale@koryukan.com</a>.\n"
+"        We will contact you shortly for payement and delivery details."
+msgstr "Voici la liste des produits offert par koryukan. S'il vous plait, envoyer votre commande &agrave; <a href='mailto:vente@koryukan.com'>vente@koryukan.com</a>. Nous vous 		contacterons dans les plus brefs delais avec les m&eacute;thodes de paiement et de livraison."
+
+#: application/views/scripts/store/index.phtml:3
+msgid "All prices includes taxes."
+msgstr "Tous les prix incluent les taxes."
+
+#: application/views/scripts/store/index.phtml:20
+msgid "Negotiable"
+msgstr "Négociable"
 
 #: application/views/scripts/onohaittoryu/index.phtml:2
 msgid "The main line of Ono Ha Itto Ryu was established in the early Edo period, around year 1630. Stemming from Itto Ryu kenjutsu of Ito Ittosai Kagehisa, Ono Ha Itto Ryu was founded by Ono Jirouemon Tadaaki."

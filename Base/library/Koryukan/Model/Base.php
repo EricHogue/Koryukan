@@ -24,6 +24,9 @@
  */
 abstract class Koryukan_Model_Base
 {
+    const STATUS_ONLINE = 'online';
+    const STATUS_DELETED = 'deleted';
+
     /**
      * Doctrine_Record
      *
