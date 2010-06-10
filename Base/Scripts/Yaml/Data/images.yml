@@ -1,0 +1,2650 @@
+Koryukan_Db_ImageSection:
+    section1:
+        sectionDate: '2009-10-17'
+    section2:
+        sectionDate: '2009-05-04'
+    section3:
+        sectionDate: '2008-12-06'
+    section4:
+        sectionDate: '2008-12-01'
+    section5:
+        sectionDate: '2008-10-12'
+    section6:
+        sectionDate: '2008-06-04'
+    section7:
+        sectionDate: '2008-02-03'
+    section8:
+        sectionDate: '2007-12-12'
+    section9:
+        sectionDate: '2007-12-09'
+    section10:
+        sectionDate: '2007-11-28'
+    section11:
+        sectionDate: '2006-03-01'
+    section12:
+        sectionDate: '2005-09-01'
+    section13:
+        sectionDate: '2004-10-01'
+    section14:
+        sectionDate: '2004-08-01'
+    section15:
+        sectionDate: '2004-06-01'
+    section16:
+        sectionDate: '2004-04-01'
+    section17:
+        sectionDate: '2004-02-01'
+    section18:
+        sectionDate: '2003-11-15'
+    section19:
+        sectionDate: '2003-11-01'
+    section20:
+        sectionDate: '2003-01-01'
+    section21:
+        sectionDate: '2001-10-01'
+    section22:
+        sectionDate: '2002-06-01'
+    section23:
+        sectionDate: '2003-09-01'
+    section24:
+        sectionDate: '2003-06-01'
+    section25:
+        sectionDate: '2003-05-01'
+    section26:
+        sectionDate: '2003-02-01'
+    section27:
+        sectionDate: '2002-03-01'
+    section28:
+        sectionDate: '2002-03-01'
+Koryukan_Db_ImageSectionText:
+    sectionText1:
+        ImageSection: section1
+        language: fr
+        title: S&eacute;minaire ext&eacute;rieur
+    sectionText2:
+        ImageSection: section1
+        language: en
+        title: Outdoor Seminar
+    sectionText3:
+        ImageSection: section2
+        language: fr
+        title: Examens
+    sectionText4:
+        ImageSection: section2
+        language: en
+        title: Examens
+    sectionText5:
+        ImageSection: section3
+        language: fr
+        title: Souper de no&euml;l
+    sectionText6:
+        ImageSection: section3
+        language: en
+        title: Christmas Diner
+    sectionText7:
+        ImageSection: section4
+        language: fr
+        title: Examens
+    sectionText8:
+        ImageSection: section4
+        language: en
+        title: Exams
+    sectionText9:
+        ImageSection: section5
+        language: fr
+        title: S&eacute;minaire points de pression
+    sectionText10:
+        ImageSection: section5
+        language: en
+        title: Pressure Points Seminar
+    sectionText11:
+        ImageSection: section6
+        language: fr
+        title: Examens
+    sectionText12:
+        ImageSection: section6
+        language: en
+        title: Exams
+    sectionText13:
+        ImageSection: section7
+        language: fr
+        title: Examen des enfants
+    sectionText14:
+        ImageSection: section7
+        language: en
+        title: Childrens Exams
+    sectionText15:
+        ImageSection: section8
+        language: fr
+        title: C&eacute;r&eacute;monie de remise des certficats
+    sectionText16:
+        ImageSection: section8
+        language: en
+        title: Certification Ceremony
+    sectionText17:
+        ImageSection: section9
+        language: fr
+        title: Souper de no&euml;l
+    sectionText18:
+        ImageSection: section9
+        language: en
+        title: Christmas Diner
+    sectionText19:
+        ImageSection: section10
+        language: fr
+        title: Examens
+    sectionText20:
+        ImageSection: section10
+        language: en
+        title: Exams
+    sectionText21:
+        ImageSection: section11
+        language: fr
+        title: Entra&icirc;nement conjoint avec le groupe des &Eacute;tats-Unis de James Mullins et Richard Kinville. 
+    sectionText22:
+        ImageSection: section11
+        language: en
+        title: Joint training with the US group of James Mullins and Richard Kinville
+    sectionText23:
+        ImageSection: section12
+        language: fr
+        title: Photos de la visite d'Okabayashi Sensei en 2005.
+    sectionText24:
+        ImageSection: section12
+        language: en
+        title: Pictures of Okabayashi Sensei's 2005 visit
+    sectionText25:
+        ImageSection: section13
+        language: fr
+        title: Photos de la visite d'Okabayashi Sensei en 2004
+    sectionText26:
+        ImageSection: section13
+        language: en
+        title: Photos of Okabayashi Sensei's 2004 tour
+    sectionText27:
+        ImageSection: section14
+        language: fr
+        title: Photos du festival japonais Matsuri, o&ugrave; le Koryukan participa &agrave; une d&eacute;monstration.
+    sectionText28:
+        ImageSection: section14
+        language: en
+        title: Photos of the Matsuri Japan festival, at which Koryukan demonstrated
+    sectionText29:
+        ImageSection: section15
+        language: fr
+        title: Okabayashi Sensei donna un s&eacute;minaire &agrave; nos coll&egrave;gues en Italie.  Voici quelques photos gracieusement fournies par M. James Mullins, qui s'y rendit des Etats-Unis pour pratiquer avec Sensei.
+    sectionText30:
+        ImageSection: section15
+        language: en
+        title: Okabayashi Sensei gave a seminar for our fellow practitioners in                                                                                 Italy. Here are a couple of snapshots kindly provided us by Mr.                                                                                 James Mullins, who travelled there from the U.S. to train with Sensei.
+    sectionText31:
+        ImageSection: section16
+        language: fr
+        title: Photos de la d&eacute;monstration &agrave; Aikido Qu&eacute;bec.
+    sectionText32:
+        ImageSection: section16
+        language: en
+        title: Photos of April's demonstration at Aikido Qu&eacute;bec
+    sectionText33:
+        ImageSection: section17
+        language: fr
+        title: Russel Haskin nous fait une demonstration des bons mouvements corporels.
+    sectionText34:
+        ImageSection: section17
+        language: en
+        title: Russel Haskin shows us proper body movement
+    sectionText35:
+        ImageSection: section18
+        language: fr
+        title: Okabayashi Sensei avec Peter Handley l'assistant, fit la demonstration de plusieurs katas de kenjutsu au s&eacute;minaire de Gloucester, England.
+    sectionText36:
+        ImageSection: section18
+        language: en
+        title: Okabayashi Sensei--with Peter Handley assisting--covered several sword kata at the seminar in Gloucester, England
+    sectionText37:
+        ImageSection: section19
+        language: fr
+        title: Un grand merci &agrave; Sensei Raynald Fleury, instructeur chef au Seuin Maru Dojo de nous avoir invite &agrave; participer au s&eacute;minaire du 30 novembre 2003.
+    sectionText38:
+        ImageSection: section19
+        language: en
+        title: Special thanks to Sensei Raynald Fleury, chief instructor of the                                                                                 Seuin Maru Dojo for inviting us to participate in a seminar on the                                                                                 30th of November 2003
+    sectionText39:
+        ImageSection: section20
+        language: fr
+        title: S&eacute;minaire ouvert avec le Dawson Kentokukan Karate Club
+    sectionText40:
+        ImageSection: section20
+        language: en
+        title: Open seminar with Dawson Kentokukan Karate Club
+    sectionText41:
+        ImageSection: section21
+        language: fr
+        title: R&eacute;cemment ajout&eacute; des archives: entra&icirc;nement avec Patrick Kell du Hakuho Ryu du Japon
+    sectionText42:
+        ImageSection: section21
+        language: en
+        title: Just added from the archives: Training session with Patrick Kell from Hakuho Ryu, Japan
+    sectionText43:
+        ImageSection: section22
+        language: fr
+        title: Un autre ajout des archives: entra&icirc;nement avec Roben Brown du Hakuho ryu de New York
+    sectionText44:
+        ImageSection: section22
+        language: en
+        title: Another new import from the archives: Training session with Roben Brown, Hakuho ryu, New York
+    sectionText45:
+        ImageSection: section23
+        language: fr
+        title: Rod Uhler nous rend visite!
+    sectionText46:
+        ImageSection: section23
+        language: en
+        title: Rod Uhler visits!
+    sectionText47:
+        ImageSection: section24
+        language: fr
+        title: Seminaire avec Russel Haskin du Hakuho ryu du Japon
+    sectionText48:
+        ImageSection: section24
+        language: en
+        title: Seminar with Russel Haskin from Hakuho ryu Japan
+    sectionText49:
+        ImageSection: section25
+        language: fr
+        title: Entra&icirc;nement avec James Mullins et Richard Kinville nous visitant des &eacute;tats-Unis.
+    sectionText50:
+        ImageSection: section25
+        language: en
+        title: Training session with special guests James Mullins and Richard Kinville visiting from the U.S
+    sectionText51:
+        ImageSection: section26
+        language: fr
+        title: Photos de notre entra&icirc;nement au Japon
+    sectionText52:
+        ImageSection: section26
+        language: en
+        title: Photos of Training In Japan
+    sectionText53:
+        ImageSection: section27
+        language: fr
+        title: S&eacute;minaire de Daito Ryu Hakuho Kai <br>avec Okabayashi Sensei et Rod Uhler
+    sectionText54:
+        ImageSection: section27
+        language: en
+        title: Daito Ryu Hakuho Kai Seminar with Okabayashi Sensei and Rod Uhler
+    sectionText55:
+        ImageSection: section28
+        language: fr
+        title: S&eacute;minaire de Daito Ryu Hakuho Kai
+    sectionText56:
+        ImageSection: section28
+        language: en
+        title: Daito Ryu Hakuho Kai Seminar
+Koryukan_Db_ImageFile:
+    image3:
+        ImageSection: section1
+        fileName: 20091017MichelEtPavel.JPG
+        imageType: normal
+        useOnSection: 
+    image1:
+        ImageSection: section1
+        fileName: 20091017MichelEtEric.JPG
+        imageType: normal
+        useOnSection: 1
+    image4:
+        ImageSection: section1
+        fileName: 20091017JeanMarcEtPavel.JPG
+        imageType: normal
+        useOnSection: 
+    image5:
+        ImageSection: section1
+        fileName: 20091017AviEtJeanMarc.JPG
+        imageType: normal
+        useOnSection: 
+    image6:
+        ImageSection: section1
+        fileName: 20091017MichelEtAvi.JPG
+        imageType: normal
+        useOnSection: 
+    image7:
+        ImageSection: section1
+        fileName: 20091017JeanMarcEtAvi.JPG
+        imageType: normal
+        useOnSection: 
+    image8:
+        ImageSection: section1
+        fileName: 20091017EricEtJeanMarc.JPG
+        imageType: normal
+        useOnSection: 
+    image9:
+        ImageSection: section1
+        fileName: 20091017JeanMarcEtMichel.JPG
+        imageType: normal
+        useOnSection: 
+    image10:
+        ImageSection: section1
+        fileName: 20091017EricEtJeanMarc2.JPG
+        imageType: normal
+        useOnSection: 
+    image13:
+        ImageSection: section2
+        fileName: 20090504ReneAnneEtYohan.JPG
+        imageType: normal
+        useOnSection: 
+    image14:
+        ImageSection: section2
+        fileName: 20090504YohanEtEric.JPG
+        imageType: normal
+        useOnSection: 
+    image15:
+        ImageSection: section2
+        fileName: 20090504PavelEtMichelW.JPG
+        imageType: normal
+        useOnSection: 
+    image16:
+        ImageSection: section2
+        fileName: 20090504IanEtMichelB.JPG
+        imageType: normal
+        useOnSection: 
+    image17:
+        ImageSection: section2
+        fileName: 20090504EricEtMichelW.JPG
+        imageType: normal
+        useOnSection: 
+    image18:
+        ImageSection: section2
+        fileName: 20090504DavidEtMichelB_1.JPG
+        imageType: normal
+        useOnSection: 
+    image19:
+        ImageSection: section2
+        fileName: 20090504DavidEtMichelB_2.JPG
+        imageType: normal
+        useOnSection: 
+    image20:
+        ImageSection: section2
+        fileName: 20090504DavidEtMichelB_3.JPG
+        imageType: normal
+        useOnSection: 
+    image11:
+        ImageSection: section2
+        fileName: 20090504ToutLeGroupe_1.JPG
+        imageType: normal
+        useOnSection: 1
+    image21:
+        ImageSection: section2
+        fileName: 20090504ToutLeGroupe_2.JPG
+        imageType: normal
+        useOnSection: 
+    image24:
+        ImageSection: section3
+        fileName: 20081206LesEnfants1.JPG
+        imageType: normal
+        useOnSection: 
+    image25:
+        ImageSection: section3
+        fileName: 20081206LesEnfants2.JPG
+        imageType: normal
+        useOnSection: 
+    image26:
+        ImageSection: section3
+        fileName: 20081206LesEtudiants.JPG
+        imageType: normal
+        useOnSection: 
+    image22:
+        ImageSection: section3
+        fileName: 20081206ToutLeMonde.JPG
+        imageType: normal
+        useOnSection: 1
+    image29:
+        ImageSection: section4
+        fileName: 20081201PawelMichelW.JPG
+        imageType: normal
+        useOnSection: 
+    image30:
+        ImageSection: section4
+        fileName: 20081201PavelMichelW.JPG
+        imageType: normal
+        useOnSection: 
+    image31:
+        ImageSection: section4
+        fileName: 20081201EricPierreKenjutsu.JPG
+        imageType: normal
+        useOnSection: 
+    image32:
+        ImageSection: section4
+        fileName: 20081201EricPierre1.JPG
+        imageType: normal
+        useOnSection: 
+    image33:
+        ImageSection: section4
+        fileName: 20081201EricPierre2.JPG
+        imageType: normal
+        useOnSection: 
+    image27:
+        ImageSection: section4
+        fileName: 20081201PlaqueSensei.JPG
+        imageType: normal
+        useOnSection: 1
+    image34:
+        ImageSection: section4
+        fileName: 20081201Groupe.JPG
+        imageType: normal
+        useOnSection: 
+    image37:
+        ImageSection: section5
+        fileName: 20081012Seminaire1.jpg
+        imageType: normal
+        useOnSection: 
+    image38:
+        ImageSection: section5
+        fileName: 20081012Seminaire2.jpg
+        imageType: normal
+        useOnSection: 
+    image39:
+        ImageSection: section5
+        fileName: 20081012Seminaire3.jpg
+        imageType: normal
+        useOnSection: 
+    image35:
+        ImageSection: section5
+        fileName: 20081012Seminaire4.jpg
+        imageType: normal
+        useOnSection: 1
+    image42:
+        ImageSection: section6
+        fileName: 20080604PawelPavel.JPG
+        imageType: normal
+        useOnSection: 
+    image43:
+        ImageSection: section6
+        fileName: 20080604KamalPhilippe.JPG
+        imageType: normal
+        useOnSection: 
+    image44:
+        ImageSection: section6
+        fileName: 20080604KamalPavel1.JPG
+        imageType: normal
+        useOnSection: 
+    image45:
+        ImageSection: section6
+        fileName: 20080604KamalPavel2.JPG
+        imageType: normal
+        useOnSection: 
+    image46:
+        ImageSection: section6
+        fileName: 20080604IanEric1.JPG
+        imageType: normal
+        useOnSection: 
+    image47:
+        ImageSection: section6
+        fileName: 20080604IanEric2.JPG
+        imageType: normal
+        useOnSection: 
+    image48:
+        ImageSection: section6
+        fileName: 20080604MichelBMichelW1.JPG
+        imageType: normal
+        useOnSection: 
+    image49:
+        ImageSection: section6
+        fileName: 20080604MichelBMichelW2.JPG
+        imageType: normal
+        useOnSection: 
+    image50:
+        ImageSection: section6
+        fileName: 20080604MichelBMichelW3.JPG
+        imageType: normal
+        useOnSection: 
+    image51:
+        ImageSection: section6
+        fileName: 20080604MichelBMichelW4.JPG
+        imageType: normal
+        useOnSection: 
+    image52:
+        ImageSection: section6
+        fileName: 20080604MichelBMichelW5.JPG
+        imageType: normal
+        useOnSection: 
+    image53:
+        ImageSection: section6
+        fileName: 20080604MichelBMichelW6.JPG
+        imageType: normal
+        useOnSection: 
+    image54:
+        ImageSection: section6
+        fileName: 20080604MichelBMichelW7.JPG
+        imageType: normal
+        useOnSection: 
+    image55:
+        ImageSection: section6
+        fileName: 20080604MichelBMichelW8.JPG
+        imageType: normal
+        useOnSection: 
+    image56:
+        ImageSection: section6
+        fileName: 20080604MichelBDavid.JPG
+        imageType: normal
+        useOnSection: 
+    image40:
+        ImageSection: section6
+        fileName: 20080604Groupe.JPG
+        imageType: normal
+        useOnSection: 1
+    image59:
+        ImageSection: section7
+        fileName: 20080203ShahinPrepare.jpg
+        imageType: normal
+        useOnSection: 
+    image60:
+        ImageSection: section7
+        fileName: 20080203GarielleSabrinaElody.jpg
+        imageType: normal
+        useOnSection: 
+    image61:
+        ImageSection: section7
+        fileName: 20080203Isabelle.jpg
+        imageType: normal
+        useOnSection: 
+    image62:
+        ImageSection: section7
+        fileName: 20080203GabrielleEtSabrina.jpg
+        imageType: normal
+        useOnSection: 
+    image63:
+        ImageSection: section7
+        fileName: 20080203Amanie.jpg
+        imageType: normal
+        useOnSection: 
+    image64:
+        ImageSection: section7
+        fileName: 20080203ZacharySePrepare.jpg
+        imageType: normal
+        useOnSection: 
+    image57:
+        ImageSection: section7
+        fileName: 20080203LeGroupeSalue.jpg
+        imageType: normal
+        useOnSection: 1
+    image65:
+        ImageSection: section7
+        fileName: 20080203RechaufementElody.jpg
+        imageType: normal
+        useOnSection: 
+    image66:
+        ImageSection: section7
+        fileName: 20080203Rechaufement.jpg
+        imageType: normal
+        useOnSection: 
+    image67:
+        ImageSection: section7
+        fileName: 20080203ExamenShahin.jpg
+        imageType: normal
+        useOnSection: 
+    image68:
+        ImageSection: section7
+        fileName: 20080203ExamenSabrinaGabrielle.jpg
+        imageType: normal
+        useOnSection: 
+    image69:
+        ImageSection: section7
+        fileName: 20080203ExamenAmanieElody1.jpg
+        imageType: normal
+        useOnSection: 
+    image70:
+        ImageSection: section7
+        fileName: 20080203ExamenAmanieElody2.jpg
+        imageType: normal
+        useOnSection: 
+    image71:
+        ImageSection: section7
+        fileName: 20080203ExamenIsabelle.jpg
+        imageType: normal
+        useOnSection: 
+    image74:
+        ImageSection: section8
+        fileName: 20071212Hakama.jpg
+        imageType: normal
+        useOnSection: 
+    image75:
+        ImageSection: section8
+        fileName: 20071212Kamal9thKyu.jpg
+        imageType: normal
+        useOnSection: 
+    image76:
+        ImageSection: section8
+        fileName: 20071212Pavel9thKyu.jpg
+        imageType: normal
+        useOnSection: 
+    image77:
+        ImageSection: section8
+        fileName: 20071212Philipe9thKyu.jpg
+        imageType: normal
+        useOnSection: 
+    image78:
+        ImageSection: section8
+        fileName: 20071212Terry9thKyu.jpg
+        imageType: normal
+        useOnSection: 
+    image79:
+        ImageSection: section8
+        fileName: 20071212Eric7thKyu.jpg
+        imageType: normal
+        useOnSection: 
+    image80:
+        ImageSection: section8
+        fileName: 20071212Glenn4thKyu.jpg
+        imageType: normal
+        useOnSection: 
+    image81:
+        ImageSection: section8
+        fileName: 20071212Pierre4thKyu.jpg
+        imageType: normal
+        useOnSection: 
+    image82:
+        ImageSection: section8
+        fileName: 20071212MichelW3rdKyu.jpg
+        imageType: normal
+        useOnSection: 
+    image83:
+        ImageSection: section8
+        fileName: 20071212Michel1stKyu.jpg
+        imageType: normal
+        useOnSection: 
+    image72:
+        ImageSection: section8
+        fileName: 20071212KoryukanGroup1.jpg
+        imageType: normal
+        useOnSection: 1
+    image84:
+        ImageSection: section8
+        fileName: 20071212KoryukanGroup2.jpg
+        imageType: normal
+        useOnSection: 
+    image87:
+        ImageSection: section9
+        fileName: 20071209Group1.jpg
+        imageType: normal
+        useOnSection: 
+    image88:
+        ImageSection: section9
+        fileName: 20071209Group2.jpg
+        imageType: normal
+        useOnSection: 
+    image89:
+        ImageSection: section9
+        fileName: 20071209Group3.jpg
+        imageType: normal
+        useOnSection: 
+    image90:
+        ImageSection: section9
+        fileName: 20071209Group4.jpg
+        imageType: normal
+        useOnSection: 
+    image91:
+        ImageSection: section9
+        fileName: 20071209Group5.jpg
+        imageType: normal
+        useOnSection: 
+    image85:
+        ImageSection: section9
+        fileName: 20071209Group6.jpg
+        imageType: normal
+        useOnSection: 1
+    image94:
+        ImageSection: section10
+        fileName: 20071128KamalPavel1.jpg
+        imageType: normal
+        useOnSection: 
+    image95:
+        ImageSection: section10
+        fileName: 20071128KamalPavel2.jpg
+        imageType: normal
+        useOnSection: 
+    image96:
+        ImageSection: section10
+        fileName: 20071128PhilippeTerry1.jpg
+        imageType: normal
+        useOnSection: 
+    image97:
+        ImageSection: section10
+        fileName: 20071128PhilippeTerry2.jpg
+        imageType: normal
+        useOnSection: 
+    image98:
+        ImageSection: section10
+        fileName: 20071128GlenPierre1.jpg
+        imageType: normal
+        useOnSection: 
+    image99:
+        ImageSection: section10
+        fileName: 20071128GlenPierre2.jpg
+        imageType: normal
+        useOnSection: 
+    image100:
+        ImageSection: section10
+        fileName: 20071128MichelBMichelW1.jpg
+        imageType: normal
+        useOnSection: 
+    image101:
+        ImageSection: section10
+        fileName: 20071128MichelBMichelW2.jpg
+        imageType: normal
+        useOnSection: 
+    image102:
+        ImageSection: section10
+        fileName: 20071128MichelBMichelW3.jpg
+        imageType: normal
+        useOnSection: 
+    image103:
+        ImageSection: section10
+        fileName: 20071128MichelBDavid.jpg
+        imageType: normal
+        useOnSection: 
+    image92:
+        ImageSection: section10
+        fileName: 20071128Group.jpg
+        imageType: normal
+        useOnSection: 1
+    image104:
+        ImageSection: section11
+        fileName: mont32006-010.jpg
+        imageType: normal
+        useOnSection: 1
+    image106:
+        ImageSection: section12
+        fileName: 100_2079.jpg
+        imageType: normal
+        useOnSection: 1
+    image108:
+        ImageSection: section12
+        fileName: 100_2070.jpg
+        imageType: normal
+        useOnSection: 
+    image109:
+        ImageSection: section12
+        fileName: 100_2049.jpg
+        imageType: normal
+        useOnSection: 
+    image110:
+        ImageSection: section12
+        fileName: 100_2054.jpg
+        imageType: normal
+        useOnSection: 
+    image111:
+        ImageSection: section12
+        fileName: 100_1991.jpg
+        imageType: normal
+        useOnSection: 
+    image112:
+        ImageSection: section12
+        fileName: 100_1992.jpg
+        imageType: normal
+        useOnSection: 
+    image113:
+        ImageSection: section12
+        fileName: 100_1997.jpg
+        imageType: normal
+        useOnSection: 
+    image116:
+        ImageSection: section13
+        fileName: 2004_10_8.jpg
+        imageType: normal
+        useOnSection: 
+    image117:
+        ImageSection: section13
+        fileName: 2004_10_1.jpg
+        imageType: normal
+        useOnSection: 
+    image118:
+        ImageSection: section13
+        fileName: 2004_10_2.jpg
+        imageType: normal
+        useOnSection: 
+    image119:
+        ImageSection: section13
+        fileName: 2004_10_3.jpg
+        imageType: normal
+        useOnSection: 
+    image120:
+        ImageSection: section13
+        fileName: 2004_10_4.jpg
+        imageType: normal
+        useOnSection: 
+    image114:
+        ImageSection: section13
+        fileName: 2004_10_5.jpg
+        imageType: normal
+        useOnSection: 1
+    image121:
+        ImageSection: section13
+        fileName: 2004_10_6.jpg
+        imageType: normal
+        useOnSection: 
+    image122:
+        ImageSection: section13
+        fileName: 2004_10_7.jpg
+        imageType: normal
+        useOnSection: 
+    image125:
+        ImageSection: section14
+        fileName: 2004_08_1.jpg
+        imageType: normal
+        useOnSection: 
+    image126:
+        ImageSection: section14
+        fileName: 2004_08_2.jpg
+        imageType: normal
+        useOnSection: 
+    image127:
+        ImageSection: section14
+        fileName: 2004_08_3.jpg
+        imageType: normal
+        useOnSection: 
+    image128:
+        ImageSection: section14
+        fileName: 2004_08_4.jpg
+        imageType: normal
+        useOnSection: 
+    image129:
+        ImageSection: section14
+        fileName: 2004_08_5.jpg
+        imageType: normal
+        useOnSection: 
+    image123:
+        ImageSection: section14
+        fileName: 2004_08_6.jpg
+        imageType: normal
+        useOnSection: 1
+    image130:
+        ImageSection: section14
+        fileName: 2004_08_7.jpg
+        imageType: normal
+        useOnSection: 
+    image131:
+        ImageSection: section14
+        fileName: 2004_08_8.jpg
+        imageType: normal
+        useOnSection: 
+    image132:
+        ImageSection: section14
+        fileName: 2004_08_9.jpg
+        imageType: normal
+        useOnSection: 
+    image133:
+        ImageSection: section14
+        fileName: 2004_08_10.jpg
+        imageType: normal
+        useOnSection: 
+    image134:
+        ImageSection: section14
+        fileName: 2004_08_11.jpg
+        imageType: normal
+        useOnSection: 
+    image135:
+        ImageSection: section14
+        fileName: 2004_08_12.jpg
+        imageType: normal
+        useOnSection: 
+    image136:
+        ImageSection: section14
+        fileName: 2004_08_13.jpg
+        imageType: normal
+        useOnSection: 
+    image137:
+        ImageSection: section14
+        fileName: 2004_08_14.jpg
+        imageType: normal
+        useOnSection: 
+    image138:
+        ImageSection: section15
+        fileName: 2004_06_1.jpg
+        imageType: normal
+        useOnSection: 1
+    image140:
+        ImageSection: section15
+        fileName: 2004_06_2.jpg
+        imageType: normal
+        useOnSection: 
+    image143:
+        ImageSection: section16
+        fileName: 2004_04_1.jpg
+        imageType: normal
+        useOnSection: 
+    image144:
+        ImageSection: section16
+        fileName: 2004_04_2.jpg
+        imageType: normal
+        useOnSection: 
+    image141:
+        ImageSection: section16
+        fileName: 2004_04_3.jpg
+        imageType: normal
+        useOnSection: 1
+    image145:
+        ImageSection: section16
+        fileName: 2004_04_4.jpg
+        imageType: normal
+        useOnSection: 
+    image146:
+        ImageSection: section16
+        fileName: 2004_04_5.jpg
+        imageType: normal
+        useOnSection: 
+    image147:
+        ImageSection: section16
+        fileName: 2004_04_6.jpg
+        imageType: normal
+        useOnSection: 
+    image150:
+        ImageSection: section17
+        fileName: 2004_02_1.jpg
+        imageType: normal
+        useOnSection: 
+    image151:
+        ImageSection: section17
+        fileName: 2004_02_2.jpg
+        imageType: normal
+        useOnSection: 
+    image148:
+        ImageSection: section17
+        fileName: 2004_02_3.jpg
+        imageType: normal
+        useOnSection: 1
+    image152:
+        ImageSection: section17
+        fileName: 2004_02_4.jpg
+        imageType: normal
+        useOnSection: 
+    image153:
+        ImageSection: section17
+        fileName: 2004_02_5.jpg
+        imageType: normal
+        useOnSection: 
+    image154:
+        ImageSection: section17
+        fileName: 2004_02_6.jpg
+        imageType: normal
+        useOnSection: 
+    image157:
+        ImageSection: section18
+        fileName: 2003_11_2.jpg
+        imageType: normal
+        useOnSection: 
+    image158:
+        ImageSection: section18
+        fileName: 2003_11_3.jpg
+        imageType: normal
+        useOnSection: 
+    image155:
+        ImageSection: section18
+        fileName: 2003_11_4.jpg
+        imageType: normal
+        useOnSection: 1
+    image159:
+        ImageSection: section19
+        fileName: 2003_11_1.jpg
+        imageType: normal
+        useOnSection: 1
+    image161:
+        ImageSection: section20
+        fileName: 100_1969.jpg
+        imageType: normal
+        useOnSection: 1
+    image163:
+        ImageSection: section20
+        fileName: 100_1966.jpg
+        imageType: normal
+        useOnSection: 
+    image164:
+        ImageSection: section20
+        fileName: 100_1967.jpg
+        imageType: normal
+        useOnSection: 
+    image165:
+        ImageSection: section20
+        fileName: 100_1980.jpg
+        imageType: normal
+        useOnSection: 
+    image168:
+        ImageSection: section21
+        fileName: 2001_10_1.jpg
+        imageType: normal
+        useOnSection: 
+    image166:
+        ImageSection: section21
+        fileName: 2001_10_2.jpg
+        imageType: normal
+        useOnSection: 1
+    image171:
+        ImageSection: section22
+        fileName: 2002_06_1.jpg
+        imageType: normal
+        useOnSection: 
+    image172:
+        ImageSection: section22
+        fileName: 2002_06_2.jpg
+        imageType: normal
+        useOnSection: 
+    image169:
+        ImageSection: section22
+        fileName: 2002_06_3.jpg
+        imageType: normal
+        useOnSection: 1
+    image173:
+        ImageSection: section22
+        fileName: 2002_06_4.jpg
+        imageType: normal
+        useOnSection: 
+    image176:
+        ImageSection: section23
+        fileName: 2003_09_1.jpg
+        imageType: normal
+        useOnSection: 
+    image177:
+        ImageSection: section23
+        fileName: 2003_09_2.jpg
+        imageType: normal
+        useOnSection: 
+    image174:
+        ImageSection: section23
+        fileName: 2003_09_3.jpg
+        imageType: normal
+        useOnSection: 1
+    image178:
+        ImageSection: section23
+        fileName: 2003_09_4.jpg
+        imageType: normal
+        useOnSection: 
+    image179:
+        ImageSection: section23
+        fileName: 2003_09_5.jpg
+        imageType: normal
+        useOnSection: 
+    image180:
+        ImageSection: section24
+        fileName: 2003_06_1.jpg
+        imageType: normal
+        useOnSection: 1
+    image182:
+        ImageSection: section24
+        fileName: 2003_06_2.jpg
+        imageType: normal
+        useOnSection: 
+    image183:
+        ImageSection: section24
+        fileName: 2003_06_3.jpg
+        imageType: normal
+        useOnSection: 
+    image184:
+        ImageSection: section24
+        fileName: 2003_06_4.jpg
+        imageType: normal
+        useOnSection: 
+    image185:
+        ImageSection: section24
+        fileName: 2003_06_5.jpg
+        imageType: normal
+        useOnSection: 
+    image186:
+        ImageSection: section25
+        fileName: 2003_05_1.jpg
+        imageType: normal
+        useOnSection: 1
+    image188:
+        ImageSection: section25
+        fileName: 2003_05_2.jpg
+        imageType: normal
+        useOnSection: 
+    image189:
+        ImageSection: section25
+        fileName: 2003_05_3.jpg
+        imageType: normal
+        useOnSection: 
+    image190:
+        ImageSection: section25
+        fileName: 2003_05_4.jpg
+        imageType: normal
+        useOnSection: 
+    image193:
+        ImageSection: section26
+        fileName: 2003_02_1.jpg
+        imageType: normal
+        useOnSection: 
+    image194:
+        ImageSection: section26
+        fileName: 2003_02_2.jpg
+        imageType: normal
+        useOnSection: 
+    image195:
+        ImageSection: section26
+        fileName: 2003_02_3.jpg
+        imageType: normal
+        useOnSection: 
+    image196:
+        ImageSection: section26
+        fileName: 2003_02_4.jpg
+        imageType: normal
+        useOnSection: 
+    image197:
+        ImageSection: section26
+        fileName: 2003_02_5.jpg
+        imageType: normal
+        useOnSection: 
+    image198:
+        ImageSection: section26
+        fileName: 2003_02_6.jpg
+        imageType: normal
+        useOnSection: 
+    image191:
+        ImageSection: section26
+        fileName: 2003_02_7.jpg
+        imageType: normal
+        useOnSection: 1
+    image199:
+        ImageSection: section26
+        fileName: 2003_02_8.jpg
+        imageType: normal
+        useOnSection: 
+    image200:
+        ImageSection: section26
+        fileName: 2003_02_9.jpg
+        imageType: normal
+        useOnSection: 
+    image201:
+        ImageSection: section26
+        fileName: 2003_02_10.jpg
+        imageType: normal
+        useOnSection: 
+    image202:
+        ImageSection: section26
+        fileName: 2003_02_11.jpg
+        imageType: normal
+        useOnSection: 
+    image203:
+        ImageSection: section26
+        fileName: 2003_02_12.jpg
+        imageType: normal
+        useOnSection: 
+    image204:
+        ImageSection: section26
+        fileName: 2003_02_13.jpg
+        imageType: normal
+        useOnSection: 
+    image205:
+        ImageSection: section26
+        fileName: 2003_02_14.jpg
+        imageType: normal
+        useOnSection: 
+    image206:
+        ImageSection: section27
+        fileName: gallery3.jpg
+        imageType: normal
+        useOnSection: 1
+    image208:
+        ImageSection: section28
+        fileName: gallery2.jpg
+        imageType: normal
+        useOnSection: 1
+    image210:
+        ImageSection: section28
+        fileName: gallery1.jpg
+        imageType: normal
+        useOnSection: 
+Koryukan_Db_ImageText:
+    imageText1:
+        ImageFile: image3
+        language: fr
+        description: Michel et Pavel
+    imageText2:
+        ImageFile: image3
+        language: en
+        description: Michel and Pavel
+    imageText3:
+        ImageFile: image1
+        language: fr
+        description: Michel et Eric
+    imageText4:
+        ImageFile: image1
+        language: en
+        description: Michel and Eric
+    imageText5:
+        ImageFile: image4
+        language: fr
+        description: Jean Marc et Pavel
+    imageText6:
+        ImageFile: image4
+        language: en
+        description: Jean Marc and Pavel
+    imageText7:
+        ImageFile: image5
+        language: fr
+        description: Avi et Jean Marc
+    imageText8:
+        ImageFile: image5
+        language: en
+        description: Avi and Jean Marc
+    imageText9:
+        ImageFile: image6
+        language: fr
+        description: Michel et Avi
+    imageText10:
+        ImageFile: image6
+        language: en
+        description: Michel and Avi
+    imageText11:
+        ImageFile: image7
+        language: fr
+        description: Jean Marc et Avi
+    imageText12:
+        ImageFile: image7
+        language: en
+        description: Jean Marc and Avi
+    imageText13:
+        ImageFile: image8
+        language: fr
+        description: Eric et Jean Marc
+    imageText14:
+        ImageFile: image8
+        language: en
+        description: Eric and Jean Marc
+    imageText15:
+        ImageFile: image9
+        language: fr
+        description: Jean Marc et Michel
+    imageText16:
+        ImageFile: image9
+        language: en
+        description: Jean Marc and Michel
+    imageText17:
+        ImageFile: image10
+        language: fr
+        description: Eric et Jean Marc
+    imageText18:
+        ImageFile: image10
+        language: en
+        description: Eric and Jean Marc
+    imageText19:
+        ImageFile: image13
+        language: fr
+        description: Ren&eacute;-Anne et Yohan
+    imageText20:
+        ImageFile: image13
+        language: en
+        description: Ren&eacute;-Anne And Yohan
+    imageText21:
+        ImageFile: image14
+        language: fr
+        description: Yohan et Eric
+    imageText22:
+        ImageFile: image14
+        language: en
+        description: Yohan And Eric
+    imageText23:
+        ImageFile: image15
+        language: fr
+        description: Pavel Et Michel W.
+    imageText24:
+        ImageFile: image15
+        language: en
+        description: Pavel And Michel W.
+    imageText25:
+        ImageFile: image16
+        language: fr
+        description: Ian Et Michel B.
+    imageText26:
+        ImageFile: image16
+        language: en
+        description: Ian And Michel B.
+    imageText27:
+        ImageFile: image17
+        language: fr
+        description: Eric Et Michel W.
+    imageText28:
+        ImageFile: image17
+        language: en
+        description: Eric And Michel W.
+    imageText29:
+        ImageFile: image18
+        language: fr
+        description: David Et Michel B
+    imageText30:
+        ImageFile: image18
+        language: en
+        description: David And Michel B
+    imageText31:
+        ImageFile: image19
+        language: fr
+        description: David Et Michel B
+    imageText32:
+        ImageFile: image19
+        language: en
+        description: David And Michel B
+    imageText33:
+        ImageFile: image20
+        language: fr
+        description: David Et Michel B
+    imageText34:
+        ImageFile: image20
+        language: en
+        description: David And Michel B
+    imageText35:
+        ImageFile: image11
+        language: fr
+        description: Tout Le Groupe
+    imageText36:
+        ImageFile: image11
+        language: en
+        description: Everyone
+    imageText37:
+        ImageFile: image21
+        language: fr
+        description: Tout Le Groupe
+    imageText38:
+        ImageFile: image21
+        language: en
+        description: Everyone
+    imageText39:
+        ImageFile: image24
+        language: fr
+        description: Les enfants 1
+    imageText40:
+        ImageFile: image24
+        language: en
+        description: The childrens 1
+    imageText41:
+        ImageFile: image25
+        language: fr
+        description: Les enfants 2
+    imageText42:
+        ImageFile: image25
+        language: en
+        description: The childrens 2
+    imageText43:
+        ImageFile: image26
+        language: fr
+        description: Les &eacute;tudiants
+    imageText44:
+        ImageFile: image26
+        language: en
+        description: The students
+    imageText45:
+        ImageFile: image22
+        language: fr
+        description: Tous
+    imageText46:
+        ImageFile: image22
+        language: en
+        description: Everyone
+    imageText47:
+        ImageFile: image29
+        language: fr
+        description: Pawel Vs Michel W
+    imageText48:
+        ImageFile: image29
+        language: en
+        description: Pawel Vs Michel W
+    imageText49:
+        ImageFile: image30
+        language: fr
+        description: Pavel Vs Michel W
+    imageText50:
+        ImageFile: image30
+        language: en
+        description: Pavel Vs Michel W
+    imageText51:
+        ImageFile: image31
+        language: fr
+        description: Kenjutsu Eric Vs Pierre
+    imageText52:
+        ImageFile: image31
+        language: en
+        description: Kenjutsu Eric Vs Pierre
+    imageText53:
+        ImageFile: image32
+        language: fr
+        description: Eric Vs Pierre 1
+    imageText54:
+        ImageFile: image32
+        language: en
+        description: Eric Vs Pierre 1
+    imageText55:
+        ImageFile: image33
+        language: fr
+        description: Eric Vs Pierre 2
+    imageText56:
+        ImageFile: image33
+        language: en
+        description: Eric Vs Pierre 2
+    imageText57:
+        ImageFile: image27
+        language: fr
+        description: Remise d'une plaque &agrave; Sensei
+    imageText58:
+        ImageFile: image27
+        language: en
+        description: Commemorative tablet given to Sensei
+    imageText59:
+        ImageFile: image34
+        language: fr
+        description: Photo du groupe
+    imageText60:
+        ImageFile: image34
+        language: en
+        description: Group Picture
+    imageText61:
+        ImageFile: image37
+        language: fr
+        description: S&eacute;minaire points de pression 1
+    imageText62:
+        ImageFile: image37
+        language: en
+        description: Pressure Points Seminar 1
+    imageText63:
+        ImageFile: image38
+        language: fr
+        description: S&eacute;minaire points de pression 2
+    imageText64:
+        ImageFile: image38
+        language: en
+        description: Pressure Points Seminar 2
+    imageText65:
+        ImageFile: image39
+        language: fr
+        description: S&eacute;minaire points de pression 3
+    imageText66:
+        ImageFile: image39
+        language: en
+        description: Pressure Points Seminar 3
+    imageText67:
+        ImageFile: image35
+        language: fr
+        description: S&eacute;minaire points de pression 4
+    imageText68:
+        ImageFile: image35
+        language: en
+        description: Pressure Points Seminar 4
+    imageText69:
+        ImageFile: image42
+        language: fr
+        description: Pawel vs Pavel
+    imageText70:
+        ImageFile: image42
+        language: en
+        description: Pawel vs Pavel
+    imageText71:
+        ImageFile: image43
+        language: fr
+        description: Kamal vs Philippe
+    imageText72:
+        ImageFile: image43
+        language: en
+        description: Kamal vs Philippe
+    imageText73:
+        ImageFile: image44
+        language: fr
+        description: Kamal vs Pavel 1
+    imageText74:
+        ImageFile: image44
+        language: en
+        description: Kamal vs Pavel 1
+    imageText75:
+        ImageFile: image45
+        language: fr
+        description: Kamal vs Pavel 2
+    imageText76:
+        ImageFile: image45
+        language: en
+        description: Kamal vs Pavel 2
+    imageText77:
+        ImageFile: image46
+        language: fr
+        description: Ian vs Eric 1
+    imageText78:
+        ImageFile: image46
+        language: en
+        description: Ian vs Eric 1
+    imageText79:
+        ImageFile: image47
+        language: fr
+        description: Ian vs Eric 2
+    imageText80:
+        ImageFile: image47
+        language: en
+        description: Ian vs Eric 2
+    imageText81:
+        ImageFile: image48
+        language: fr
+        description: Michel B vs Michel W 1
+    imageText82:
+        ImageFile: image48
+        language: en
+        description: Michel B vs Michel W 1
+    imageText83:
+        ImageFile: image49
+        language: fr
+        description: Michel B vs Michel W 2
+    imageText84:
+        ImageFile: image49
+        language: en
+        description: Michel B vs Michel W 2
+    imageText85:
+        ImageFile: image50
+        language: fr
+        description: Michel B vs Michel W 3
+    imageText86:
+        ImageFile: image50
+        language: en
+        description: Michel B vs Michel W 3
+    imageText87:
+        ImageFile: image51
+        language: fr
+        description: Michel B vs Michel W 4
+    imageText88:
+        ImageFile: image51
+        language: en
+        description: Michel B vs Michel W 4
+    imageText89:
+        ImageFile: image52
+        language: fr
+        description: Michel B vs Michel W 5
+    imageText90:
+        ImageFile: image52
+        language: en
+        description: Michel B vs Michel W 5
+    imageText91:
+        ImageFile: image53
+        language: fr
+        description: Michel B vs Michel W 6
+    imageText92:
+        ImageFile: image53
+        language: en
+        description: Michel B vs Michel W 6
+    imageText93:
+        ImageFile: image54
+        language: fr
+        description: Michel B vs Michel W 7
+    imageText94:
+        ImageFile: image54
+        language: en
+        description: Michel B vs Michel W 7
+    imageText95:
+        ImageFile: image55
+        language: fr
+        description: Michel B vs Michel W 8
+    imageText96:
+        ImageFile: image55
+        language: en
+        description: Michel B vs Michel W 8
+    imageText97:
+        ImageFile: image56
+        language: fr
+        description: Michel B vs David
+    imageText98:
+        ImageFile: image56
+        language: en
+        description: Michel B vs David
+    imageText99:
+        ImageFile: image40
+        language: fr
+        description: Photo du groupe
+    imageText100:
+        ImageFile: image40
+        language: en
+        description: Group Picture
+    imageText101:
+        ImageFile: image59
+        language: fr
+        description: Shahin se pr&eacute;pare
+    imageText102:
+        ImageFile: image59
+        language: en
+        description: Shahin get ready
+    imageText103:
+        ImageFile: image60
+        language: fr
+        description: Gabrielle, Sabrina et Elody
+    imageText104:
+        ImageFile: image60
+        language: en
+        description: Gabrielle, Sabrina and Elody
+    imageText105:
+        ImageFile: image61
+        language: fr
+        description: Isabelle se pr&eacute;pare
+    imageText106:
+        ImageFile: image61
+        language: en
+        description: Isabelle get ready
+    imageText107:
+        ImageFile: image62
+        language: fr
+        description: Gabrielle et Sabrina
+    imageText108:
+        ImageFile: image62
+        language: en
+        description: Gabrielle and Sabrina
+    imageText109:
+        ImageFile: image63
+        language: fr
+        description: Amanie se pr&eacute;pare
+    imageText110:
+        ImageFile: image63
+        language: en
+        description: Amanie get ready
+    imageText111:
+        ImageFile: image64
+        language: fr
+        description: Zachary se pr&eacute;pare
+    imageText112:
+        ImageFile: image64
+        language: en
+        description: Zachary get ready
+    imageText113:
+        ImageFile: image57
+        language: fr
+        description: Le groupe salue
+    imageText114:
+        ImageFile: image57
+        language: en
+        description: The group bows
+    imageText115:
+        ImageFile: image65
+        language: fr
+        description: R&eacute;chaufement Elody
+    imageText116:
+        ImageFile: image65
+        language: en
+        description: Elody warms up
+    imageText117:
+        ImageFile: image66
+        language: fr
+        description: R&eacute;chaufement
+    imageText118:
+        ImageFile: image66
+        language: en
+        description: Warm Up
+    imageText119:
+        ImageFile: image67
+        language: fr
+        description: Examen de Shahin
+    imageText120:
+        ImageFile: image67
+        language: en
+        description: Shahin's exam
+    imageText121:
+        ImageFile: image68
+        language: fr
+        description: Examen Sabrina et Gabrielle
+    imageText122:
+        ImageFile: image68
+        language: en
+        description: Sabrina's and Gabrielle's exam
+    imageText123:
+        ImageFile: image69
+        language: fr
+        description: Examen Amanie et Elody 1
+    imageText124:
+        ImageFile: image69
+        language: en
+        description: Amanie's and Elody's exam 1
+    imageText125:
+        ImageFile: image70
+        language: fr
+        description: Examen Amanie et Elody 2
+    imageText126:
+        ImageFile: image70
+        language: en
+        description: Amanie's and Elody's exam 2
+    imageText127:
+        ImageFile: image71
+        language: fr
+        description: Examen Isabelle
+    imageText128:
+        ImageFile: image71
+        language: en
+        description: Isabelle's exam
+    imageText129:
+        ImageFile: image74
+        language: fr
+        description: Comment mettre un Hakama
+    imageText130:
+        ImageFile: image74
+        language: en
+        description: Hakama Trainning
+    imageText131:
+        ImageFile: image75
+        language: fr
+        description: Kamal 9i&egrave;me Kyu
+    imageText132:
+        ImageFile: image75
+        language: en
+        description: Kamal 9th Kyu
+    imageText133:
+        ImageFile: image76
+        language: fr
+        description: Pavel 9i&egrave;me Kyu
+    imageText134:
+        ImageFile: image76
+        language: en
+        description: Pavel 9th Kyu
+    imageText135:
+        ImageFile: image77
+        language: fr
+        description: Philippe 9i&egrave;me Kyu
+    imageText136:
+        ImageFile: image77
+        language: en
+        description: Philippe 9th Kyu
+    imageText137:
+        ImageFile: image78
+        language: fr
+        description: Terry 9i&egrave;me Kyu
+    imageText138:
+        ImageFile: image78
+        language: en
+        description: Terry 9i&egrave;me Kyu
+    imageText139:
+        ImageFile: image79
+        language: fr
+        description: Eric 7i&egrave;me Kyu
+    imageText140:
+        ImageFile: image79
+        language: en
+        description: Eric 7th Kyu
+    imageText141:
+        ImageFile: image80
+        language: fr
+        description: Glen 4i&egrave;me Kyu
+    imageText142:
+        ImageFile: image80
+        language: en
+        description: Glen 4th Kyu
+    imageText143:
+        ImageFile: image81
+        language: fr
+        description: Pierre 4i&egrave;me Kyu
+    imageText144:
+        ImageFile: image81
+        language: en
+        description: Pierre 4th Kyu
+    imageText145:
+        ImageFile: image82
+        language: fr
+        description: Michel W. 3i&egrave;me Kyu
+    imageText146:
+        ImageFile: image82
+        language: en
+        description: Michel W. 3rd Kyu
+    imageText147:
+        ImageFile: image83
+        language: fr
+        description: Michel B. 1ier Kyu
+    imageText148:
+        ImageFile: image83
+        language: en
+        description: Michel B. 1st Kyu
+    imageText149:
+        ImageFile: image72
+        language: fr
+        description: Groupe Koryukan 1
+    imageText150:
+        ImageFile: image72
+        language: en
+        description: Koryukan Group 1
+    imageText151:
+        ImageFile: image84
+        language: fr
+        description: Groupe Koryukan 2
+    imageText152:
+        ImageFile: image84
+        language: en
+        description: Koryukan Group 2
+    imageText153:
+        ImageFile: image87
+        language: fr
+        description: Photo de groupe 1
+    imageText154:
+        ImageFile: image87
+        language: en
+        description: Group Picture 1
+    imageText155:
+        ImageFile: image88
+        language: fr
+        description: Photo de groupe 2
+    imageText156:
+        ImageFile: image88
+        language: en
+        description: Group Picture 2
+    imageText157:
+        ImageFile: image89
+        language: fr
+        description: Photo de groupe 3
+    imageText158:
+        ImageFile: image89
+        language: en
+        description: Group Picture 3
+    imageText159:
+        ImageFile: image90
+        language: fr
+        description: Photo de groupe 4
+    imageText160:
+        ImageFile: image90
+        language: en
+        description: Group Picture 4
+    imageText161:
+        ImageFile: image91
+        language: fr
+        description: Photo de groupe 5
+    imageText162:
+        ImageFile: image91
+        language: en
+        description: Group Picture 5
+    imageText163:
+        ImageFile: image85
+        language: fr
+        description: Photo de groupe 6
+    imageText164:
+        ImageFile: image85
+        language: en
+        description: Group Picture 6
+    imageText165:
+        ImageFile: image94
+        language: fr
+        description: Kamal vs Pavel 1
+    imageText166:
+        ImageFile: image94
+        language: en
+        description: Kamal vs Pavel 1
+    imageText167:
+        ImageFile: image95
+        language: fr
+        description: Kamal vs Pavel 2
+    imageText168:
+        ImageFile: image95
+        language: en
+        description: Kamal vs Pavel 2
+    imageText169:
+        ImageFile: image96
+        language: fr
+        description: Philippe vs Terry 1
+    imageText170:
+        ImageFile: image96
+        language: en
+        description: Philippe vs Terry 1
+    imageText171:
+        ImageFile: image97
+        language: fr
+        description: Philippe vs Terry 2
+    imageText172:
+        ImageFile: image97
+        language: en
+        description: Philippe vs Terry 2
+    imageText173:
+        ImageFile: image98
+        language: fr
+        description: Glen vs Pierre 1
+    imageText174:
+        ImageFile: image98
+        language: en
+        description: Glen vs Pierre 1
+    imageText175:
+        ImageFile: image99
+        language: fr
+        description: Glen vs Pierre 2
+    imageText176:
+        ImageFile: image99
+        language: en
+        description: Glen vs Pierre 2
+    imageText177:
+        ImageFile: image100
+        language: fr
+        description: Michel B vs Michel W 1
+    imageText178:
+        ImageFile: image100
+        language: en
+        description: Michel B vs Michel W 1
+    imageText179:
+        ImageFile: image101
+        language: fr
+        description: Michel B vs Michel W 2
+    imageText180:
+        ImageFile: image101
+        language: en
+        description: Michel B vs Michel W 2
+    imageText181:
+        ImageFile: image102
+        language: fr
+        description: Michel B vs Michel W 3
+    imageText182:
+        ImageFile: image102
+        language: en
+        description: Michel B vs Michel W 3
+    imageText183:
+        ImageFile: image103
+        language: fr
+        description: Michel B vs David
+    imageText184:
+        ImageFile: image103
+        language: en
+        description: Michel B vs David
+    imageText185:
+        ImageFile: image92
+        language: fr
+        description: Photo du groupe
+    imageText186:
+        ImageFile: image92
+        language: en
+        description: Group Picture
+    imageText187:
+        ImageFile: image104
+        language: fr
+        description: Photo 1
+    imageText188:
+        ImageFile: image104
+        language: en
+        description: Picture 1
+    imageText189:
+        ImageFile: image106
+        language: fr
+        description: Sensei avec les membres du Hakuho Ryu Montreal 
+    imageText190:
+        ImageFile: image106
+        language: en
+        description: Sensei w/ Members of Hakuho Ryu Montreal
+    imageText191:
+        ImageFile: image108
+        language: fr
+        description: Dan Sharp, Joseph Wilson, Medhat Darwish, Nicola Noldin and Quentin Ball
+    imageText192:
+        ImageFile: image108
+        language: en
+        description: Dan Sharp, Joseph Wilson, Medhat Darwish, Nicola Noldin and Quentin Ball
+    imageText193:
+        ImageFile: image109
+        language: fr
+        description: Groupe 1
+    imageText194:
+        ImageFile: image109
+        language: en
+        description: Group 1
+    imageText195:
+        ImageFile: image110
+        language: fr
+        description: Feu de camp 2
+    imageText196:
+        ImageFile: image110
+        language: en
+        description: Fire Camp 2
+    imageText197:
+        ImageFile: image111
+        language: fr
+        description: Petite pause(1)
+    imageText198:
+        ImageFile: image111
+        language: en
+        description: Relaxing between training(1)
+    imageText199:
+        ImageFile: image112
+        language: fr
+        description: Petite pause(2)
+    imageText200:
+        ImageFile: image112
+        language: en
+        description: Relaxing between training(2)
+    imageText201:
+        ImageFile: image113
+        language: fr
+        description: Petite pause(3)
+    imageText202:
+        ImageFile: image113
+        language: en
+        description: Relaxing between training(3)
+    imageText203:
+        ImageFile: image116
+        language: fr
+        description: Oakland University Mi
+    imageText204:
+        ImageFile: image116
+        language: en
+        description: Oakland University Mi
+    imageText205:
+        ImageFile: image117
+        language: fr
+        description: White oak dojo Mi
+    imageText206:
+        ImageFile: image117
+        language: en
+        description: White oak dojo Mi
+    imageText207:
+        ImageFile: image118
+        language: fr
+        description: Montreal, s&eacute;minaire ouvert
+    imageText208:
+        ImageFile: image118
+        language: en
+        description: Montreal open Seminar
+    imageText209:
+        ImageFile: image119
+        language: fr
+        description: Montreal, s&eacute;minaire ferm&eacute;
+    imageText210:
+        ImageFile: image119
+        language: en
+        description: Montreal closed Seminar
+    imageText211:
+        ImageFile: image120
+        language: fr
+        description: Sensei avec les membres du Hakuho Ryu Montreal
+    imageText212:
+        ImageFile: image120
+        language: en
+        description: Sensei w/ Members of Hakuho Ryu Montreal
+    imageText213:
+        ImageFile: image114
+        language: fr
+        description: Sensei en pleine d&eacute;monstration
+    imageText214:
+        ImageFile: image114
+        language: en
+        description: Sensei demonstrating
+    imageText215:
+        ImageFile: image121
+        language: fr
+        description: Sensei avec les membres du Hakuho Ryu Montreal
+    imageText216:
+        ImageFile: image121
+        language: en
+        description: Sensei w/ Members of Hakuho Ryu Montreal
+    imageText217:
+        ImageFile: image122
+        language: fr
+        description: Okabayashi Sensei avec Darwish Sensei
+    imageText218:
+        ImageFile: image122
+        language: en
+        description: Okabayashi Sensei w/ Darwish Sensei
+    imageText219:
+        ImageFile: image125
+        language: fr
+        description: Photo 1
+    imageText220:
+        ImageFile: image125
+        language: en
+        description: Picture 1
+    imageText221:
+        ImageFile: image126
+        language: fr
+        description: Photo 2
+    imageText222:
+        ImageFile: image126
+        language: en
+        description: Picture 2
+    imageText223:
+        ImageFile: image127
+        language: fr
+        description: Photo 3
+    imageText224:
+        ImageFile: image127
+        language: en
+        description: Picture 3
+    imageText225:
+        ImageFile: image128
+        language: fr
+        description: Photo 4
+    imageText226:
+        ImageFile: image128
+        language: en
+        description: Picture 4
+    imageText227:
+        ImageFile: image129
+        language: fr
+        description: Photo 5
+    imageText228:
+        ImageFile: image129
+        language: en
+        description: Picture 5
+    imageText229:
+        ImageFile: image123
+        language: fr
+        description: Photo 6
+    imageText230:
+        ImageFile: image123
+        language: en
+        description: Picture 6
+    imageText231:
+        ImageFile: image130
+        language: fr
+        description: Photo 7
+    imageText232:
+        ImageFile: image130
+        language: en
+        description: Picture 7
+    imageText233:
+        ImageFile: image131
+        language: fr
+        description: Photo 8
+    imageText234:
+        ImageFile: image131
+        language: en
+        description: Picture 8
+    imageText235:
+        ImageFile: image132
+        language: fr
+        description: Photo 9
+    imageText236:
+        ImageFile: image132
+        language: en
+        description: Picture 9
+    imageText237:
+        ImageFile: image133
+        language: fr
+        description: Photo 10
+    imageText238:
+        ImageFile: image133
+        language: en
+        description: Picture 10
+    imageText239:
+        ImageFile: image134
+        language: fr
+        description: Photo 11
+    imageText240:
+        ImageFile: image134
+        language: en
+        description: Picture 11
+    imageText241:
+        ImageFile: image135
+        language: fr
+        description: Photo 12
+    imageText242:
+        ImageFile: image135
+        language: en
+        description: Picture 12
+    imageText243:
+        ImageFile: image136
+        language: fr
+        description: Photo 13
+    imageText244:
+        ImageFile: image136
+        language: en
+        description: Picture 13
+    imageText245:
+        ImageFile: image137
+        language: fr
+        description: Photo 14
+    imageText246:
+        ImageFile: image137
+        language: en
+        description: Picture 14
+    imageText247:
+        ImageFile: image138
+        language: fr
+        description: Photo 1
+    imageText248:
+        ImageFile: image138
+        language: en
+        description: Picture 1
+    imageText249:
+        ImageFile: image140
+        language: fr
+        description: Photo 2
+    imageText250:
+        ImageFile: image140
+        language: en
+        description: Picture 2
+    imageText251:
+        ImageFile: image143
+        language: fr
+        description: Photo 1
+    imageText252:
+        ImageFile: image143
+        language: en
+        description: Picture 1
+    imageText253:
+        ImageFile: image144
+        language: fr
+        description: Photo 2
+    imageText254:
+        ImageFile: image144
+        language: en
+        description: Picture 2
+    imageText255:
+        ImageFile: image141
+        language: fr
+        description: Photo 3
+    imageText256:
+        ImageFile: image141
+        language: en
+        description: Picture 3
+    imageText257:
+        ImageFile: image145
+        language: fr
+        description: Photo 4
+    imageText258:
+        ImageFile: image145
+        language: en
+        description: Picture 4
+    imageText259:
+        ImageFile: image146
+        language: fr
+        description: Photo 5
+    imageText260:
+        ImageFile: image146
+        language: en
+        description: Picture 5
+    imageText261:
+        ImageFile: image147
+        language: fr
+        description: Photo 6
+    imageText262:
+        ImageFile: image147
+        language: en
+        description: Picture 6
+    imageText263:
+        ImageFile: image150
+        language: fr
+        description: Photo 1
+    imageText264:
+        ImageFile: image150
+        language: en
+        description: Picture 1
+    imageText265:
+        ImageFile: image151
+        language: fr
+        description: Photo 2
+    imageText266:
+        ImageFile: image151
+        language: en
+        description: Picture 2
+    imageText267:
+        ImageFile: image148
+        language: fr
+        description: Photo 3
+    imageText268:
+        ImageFile: image148
+        language: en
+        description: Picture 3
+    imageText269:
+        ImageFile: image152
+        language: fr
+        description: Photo  4
+    imageText270:
+        ImageFile: image152
+        language: en
+        description: Picture  4
+    imageText271:
+        ImageFile: image153
+        language: fr
+        description: Photo 5
+    imageText272:
+        ImageFile: image153
+        language: en
+        description: Picture 5
+    imageText273:
+        ImageFile: image154
+        language: fr
+        description: Photo 6
+    imageText274:
+        ImageFile: image154
+        language: en
+        description: Picture 6
+    imageText275:
+        ImageFile: image157
+        language: fr
+        description: Photo 1
+    imageText276:
+        ImageFile: image157
+        language: en
+        description: Picture 1
+    imageText277:
+        ImageFile: image158
+        language: fr
+        description: Photo 2
+    imageText278:
+        ImageFile: image158
+        language: en
+        description: Picture 2
+    imageText279:
+        ImageFile: image155
+        language: fr
+        description: Photo 3
+    imageText280:
+        ImageFile: image155
+        language: en
+        description: Picture 3
+    imageText281:
+        ImageFile: image159
+        language: fr
+        description: Photo 
+    imageText282:
+        ImageFile: image159
+        language: en
+        description: Picture 1
+    imageText283:
+        ImageFile: image161
+        language: fr
+        description: Photo  1
+    imageText284:
+        ImageFile: image161
+        language: en
+        description: Picture  1
+    imageText285:
+        ImageFile: image163
+        language: fr
+        description: Photo  2
+    imageText286:
+        ImageFile: image163
+        language: en
+        description: Picture  2
+    imageText287:
+        ImageFile: image164
+        language: fr
+        description: Photo  3
+    imageText288:
+        ImageFile: image164
+        language: en
+        description: Picture  3
+    imageText289:
+        ImageFile: image165
+        language: fr
+        description: Photo  4
+    imageText290:
+        ImageFile: image165
+        language: en
+        description: Picture  4
+    imageText291:
+        ImageFile: image168
+        language: fr
+        description: Photo 1
+    imageText292:
+        ImageFile: image168
+        language: en
+        description: Picture 1
+    imageText293:
+        ImageFile: image166
+        language: fr
+        description: Photo 2
+    imageText294:
+        ImageFile: image166
+        language: en
+        description: Picture 2
+    imageText295:
+        ImageFile: image171
+        language: fr
+        description: Photo  1
+    imageText296:
+        ImageFile: image171
+        language: en
+        description: Picture  1
+    imageText297:
+        ImageFile: image172
+        language: fr
+        description: Photo 2
+    imageText298:
+        ImageFile: image172
+        language: en
+        description: Picture 2
+    imageText299:
+        ImageFile: image169
+        language: fr
+        description: Photo 3
+    imageText300:
+        ImageFile: image169
+        language: en
+        description: Picture 3
+    imageText301:
+        ImageFile: image173
+        language: fr
+        description: Photo 4
+    imageText302:
+        ImageFile: image173
+        language: en
+        description: Picture 4
+    imageText303:
+        ImageFile: image176
+        language: fr
+        description: Photo 1
+    imageText304:
+        ImageFile: image176
+        language: en
+        description: Picture 1
+    imageText305:
+        ImageFile: image177
+        language: fr
+        description: Photo 2
+    imageText306:
+        ImageFile: image177
+        language: en
+        description: Picture 2
+    imageText307:
+        ImageFile: image174
+        language: fr
+        description: Photo 3
+    imageText308:
+        ImageFile: image174
+        language: en
+        description: Picture 3
+    imageText309:
+        ImageFile: image178
+        language: fr
+        description: Photo 4
+    imageText310:
+        ImageFile: image178
+        language: en
+        description: Picture 4
+    imageText311:
+        ImageFile: image179
+        language: fr
+        description: Photo 5
+    imageText312:
+        ImageFile: image179
+        language: en
+        description: Picture 5
+    imageText313:
+        ImageFile: image180
+        language: fr
+        description: Photo 1
+    imageText314:
+        ImageFile: image180
+        language: en
+        description: Picture 1
+    imageText315:
+        ImageFile: image182
+        language: fr
+        description: Photo 2
+    imageText316:
+        ImageFile: image182
+        language: en
+        description: Picture 2
+    imageText317:
+        ImageFile: image183
+        language: fr
+        description: Photo 3
+    imageText318:
+        ImageFile: image183
+        language: en
+        description: Picture 3
+    imageText319:
+        ImageFile: image184
+        language: fr
+        description: Photo 4
+    imageText320:
+        ImageFile: image184
+        language: en
+        description: Picture 4
+    imageText321:
+        ImageFile: image185
+        language: fr
+        description: Photo 5
+    imageText322:
+        ImageFile: image185
+        language: en
+        description: Picture 5
+    imageText323:
+        ImageFile: image186
+        language: fr
+        description: Photo 1
+    imageText324:
+        ImageFile: image186
+        language: en
+        description: Picture 1
+    imageText325:
+        ImageFile: image188
+        language: fr
+        description: Photo 2
+    imageText326:
+        ImageFile: image188
+        language: en
+        description: Picture 2
+    imageText327:
+        ImageFile: image189
+        language: fr
+        description: Photo 3
+    imageText328:
+        ImageFile: image189
+        language: en
+        description: Picture 3
+    imageText329:
+        ImageFile: image190
+        language: fr
+        description: Photo 4
+    imageText330:
+        ImageFile: image190
+        language: en
+        description: Picture 4
+    imageText331:
+        ImageFile: image193
+        language: fr
+        description: Photo 1
+    imageText332:
+        ImageFile: image193
+        language: en
+        description: Picture 1
+    imageText333:
+        ImageFile: image194
+        language: fr
+        description: Photo 2
+    imageText334:
+        ImageFile: image194
+        language: en
+        description: Picture 2
+    imageText335:
+        ImageFile: image195
+        language: fr
+        description: Photo 3
+    imageText336:
+        ImageFile: image195
+        language: en
+        description: Picture 3
+    imageText337:
+        ImageFile: image196
+        language: fr
+        description: Photo 4
+    imageText338:
+        ImageFile: image196
+        language: en
+        description: Picture 4
+    imageText339:
+        ImageFile: image197
+        language: fr
+        description: Photo 5
+    imageText340:
+        ImageFile: image197
+        language: en
+        description: Picture 5
+    imageText341:
+        ImageFile: image198
+        language: fr
+        description: Photo 6
+    imageText342:
+        ImageFile: image198
+        language: en
+        description: Picture 6
+    imageText343:
+        ImageFile: image191
+        language: fr
+        description: Photo 7
+    imageText344:
+        ImageFile: image191
+        language: en
+        description: Picture 7
+    imageText345:
+        ImageFile: image199
+        language: fr
+        description: Photo 8
+    imageText346:
+        ImageFile: image199
+        language: en
+        description: Picture 8
+    imageText347:
+        ImageFile: image200
+        language: fr
+        description: Photo 9
+    imageText348:
+        ImageFile: image200
+        language: en
+        description: Picture 9
+    imageText349:
+        ImageFile: image201
+        language: fr
+        description: Photo 10
+    imageText350:
+        ImageFile: image201
+        language: en
+        description: Picture 10
+    imageText351:
+        ImageFile: image202
+        language: fr
+        description: Photo 11
+    imageText352:
+        ImageFile: image202
+        language: en
+        description: Picture 11
+    imageText353:
+        ImageFile: image203
+        language: fr
+        description: Photo 12
+    imageText354:
+        ImageFile: image203
+        language: en
+        description: Picture 12
+    imageText355:
+        ImageFile: image204
+        language: fr
+        description: Photo 13
+    imageText356:
+        ImageFile: image204
+        language: en
+        description: Picture 13
+    imageText357:
+        ImageFile: image205
+        language: fr
+        description: Photo 14
+    imageText358:
+        ImageFile: image205
+        language: en
+        description: Picture 14
+    imageText359:
+        ImageFile: image206
+        language: fr
+        description: Photo 1
+    imageText360:
+        ImageFile: image206
+        language: en
+        description: Picture 1
+    imageText361:
+        ImageFile: image208
+        language: fr
+        description: De la gauche : Medhat Darwish, Okabayashi Shogen Sensei, Rod Uhler, Anton Deinekin
+    imageText362:
+        ImageFile: image208
+        language: en
+        description: From the left: Medhat Darwish, Okabayashi Shogen Sensei, Rod Uhler, Anton Deinekin
+    imageText363:
+        ImageFile: image210
+        language: fr
+        description: S'entra&icirc;na avec Okabayashi Sensei
+    imageText364:
+        ImageFile: image210
+        language: en
+        description: training with Okabayashi Sensei

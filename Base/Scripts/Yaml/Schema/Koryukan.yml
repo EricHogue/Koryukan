@@ -90,3 +90,81 @@ StoreItemDetail:
         StoreItem: 
             local: itemId
             foreign: id
+ImageSection:
+    columns: 
+        sectionId: 
+            type: integer(4)
+            notnull: true
+            unsigned: true
+            primary: true
+            autoincrement: true
+        sectionDate: 
+            type: date
+            notnull: true
+ImageSectionText:
+    columns:
+        sectionId: 
+            type: integer(4)
+            notnull: true
+            unsigned: true
+            primary: true
+        language: 
+            type: enum
+            notnull: true
+            values: ['fr', 'en']
+            default: 'fr'
+            primary: true
+        title: 
+            type: text
+            notnull: true
+    relations:
+        ImageSection: 
+            local: sectionId
+            foreign: sectionId
+ImageFile: 
+    columns: 
+        imageId: 
+            type: integer(4)
+            notnull: true
+            unsigned: true
+            primary: true
+            autoincrement: true
+        sectionId: 
+            type: integer(4)
+            notnull: true
+            unsigned: true
+        fileName: 
+            type: string(128)
+            notnull: true
+        imageType: 
+            type: enum
+            notnull: true
+            values: ['normal', 'thumb']
+        useOnSection:
+            type: int(1) 
+            notnull: true
+            unsigned: true
+    relations:
+        ImageSection: 
+            local: sectionId
+            foreign: sectionId
+ImageText:
+    columns:
+        imageId: 
+            type: integer(4)
+            notnull: true
+            unsigned: true
+            primary: true
+        language: 
+            type: enum
+            notnull: true
+            values: ['fr', 'en']
+            default: 'fr'
+            primary: true
+        description: 
+            type: text
+            notnull: true
+    relations:
+        ImageFile: 
+            local: imageId
+            foreign: imageId
