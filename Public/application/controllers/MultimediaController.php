@@ -35,5 +35,8 @@ class MultimediaController extends Zend_Controller_Action
         $this->view->assign('pageTitle', $pageTitle);
         $this->view->assign('sideImage', 'Multimedia.jpg');
         $this->view->assign('sideImageAlt', $pageTitle);
+
+        $sections = Koryukan_Model_ImageSection::getAllSectionWithImages();
+        $this->view->assign('imageSections', $sections);
     }
 }

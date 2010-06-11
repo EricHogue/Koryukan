@@ -1,1 +1,45 @@
-<?php
+<table class="ImagesTable" cellpadding=5>
+    <?php foreach ($this->imageSections as $imageSection) { ?>
+        <tr>
+            <td>Secgtion</td>
+            <td>
+
+                <b><?php
+                    echo $imageSection->getSectionDate()->toString(Zend_Date::DATES);
+                    ?></b><br />
+            </td>
+        </tr>
+    <?php } ?>
+</table>
+
+<?php return; ?>
+
+
+    <?php foreach ($this->imageSections as $imageSection): ?>
+        <tr>
+            <td>
+                <?php
+                    $urlmain = 'montrerphoto/MontrerPhoto/' . $imageSection['SectionMainImage'];
+                    $urlmain = url_lang::site($urlmain);
+                ?>
+                <a href=javascript:OpenImageWindow('<?php echo $urlmain; ?>')>
+                    <img border=0 src="/media/Images/Multimedia/<?php echo $ImageSection['SectionSmallImage']; ?>" />
+                </a>
+            </td>
+            <td>
+                <b><?php echo $ImageSection['SectionDate']; ?></b><br />
+                <?php echo $ImageSection['SectionTitle']; ?><br />
+
+                <?php
+                    foreach ($ImageSection['Images'] as $Image):
+                        $urlimage = 'montrerphoto/MontrerPhoto/' . $Image['Image'];
+                        $urlimage = url_lang::site($urlimage);
+                ?>
+
+                    <a href=javascript:OpenImageWindow('<?php echo $urlimage; ?>')><?php echo $Image['Description']; ?></a> <br />
+                <?php endforeach ?>
+            </td>
+        </tr>
+    <?php endforeach ?>
+
+

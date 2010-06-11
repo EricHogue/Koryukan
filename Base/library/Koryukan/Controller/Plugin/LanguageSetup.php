@@ -23,6 +23,7 @@ class Koryukan_Controller_Plugin_LanguageSetup extends Zend_Controller_Plugin_Ab
 
         $localeString = $this->_languages[$lang];
         $locale = new Zend_Locale($localeString);
+        Zend_Locale::setDefault($localeString);
         $file = $this->_dir . '/'. $localeString . '.mo';
 
 
@@ -34,7 +35,7 @@ class Koryukan_Controller_Plugin_LanguageSetup extends Zend_Controller_Plugin_Ab
 
         Zend_Registry::set('lang', $lang);
         Zend_Registry::set('localeString', $localeString);
-        Zend_Registry::set('locale', $locale);
+        Zend_Registry::set('Zend_Locale', $locale);
         Zend_Registry::set('Zend_Translate', $translate);
     }
 
