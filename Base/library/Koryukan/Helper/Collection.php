@@ -27,13 +27,6 @@ class Koryukan_Helper_Collection implements Countable, Iterator
     const SERIALIZATION_DEEP = 10;
 
     /**
-     * The query
-     *
-     * @var Doctrine_Query
-     */
-    protected $_query;
-
-    /**
      * The data
      *
      * @var Doctrine_Collection
@@ -61,27 +54,28 @@ class Koryukan_Helper_Collection implements Countable, Iterator
      */
     protected $_modelClassName;
 
-
-
-
     /**
      * Constructor
      *
      * @return void
      */
-    public function __construct(Doctrine_Query $query, $modelClassName)
+    public function __construct($data, $modelClassName)
     {
-        $this->_query = $query;
-        $this->_cacheKey = sha1($query->getSqlQuery() . serialize($query->getParams()));
         $this->_modelClassName = $modelClassName;
 
-        $cache = Zend_Registry::get('mainCache');
+        if (true === ($data instanceof Doctrine_Query)) {
+            $this->_cacheKey = sha1($data->getSqlQuery() . serialize($data->getParams()));
 
-        if ($cache->test($this->_cacheKey)) {
-            $this->_loadFromCache($cache);
+            $cache = Zend_Registry::get('mainCache');
+
+            if ($cache->test($this->_cacheKey)) {
+                $this->_loadFromCache($cache);
+            } else {
+                $this->_dbData = $data->execute();
+                $this->_saveInCache($cache);
+            }
         } else {
-            $this->_dbData = $this->_query->execute();
-            $this->_saveInCache($cache);
+            $this->_dbData = $data;
         }
 
         $this->_iterator = $this->_dbData->getIterator();
@@ -116,7 +110,15 @@ class Koryukan_Helper_Collection implements Countable, Iterator
         $this->_dbData = $dbData;
     }
 
-
+    /**
+     * Return the item at an index
+     *
+     * @return void
+     */
+    public function getAtIndex($index)
+    {
+        return new $this->_modelClassName($this->_dbData[$index]);
+    }
 
     /**
      * Return how many items are in the collection
@@ -125,7 +127,7 @@ class Koryukan_Helper_Collection implements Countable, Iterator
      */
     public function count()
     {
-        return $this->_data->count();
+        return $this->_dbData->count();
     }
 
 

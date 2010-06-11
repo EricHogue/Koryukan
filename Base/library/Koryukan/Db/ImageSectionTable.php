@@ -28,7 +28,7 @@ class Koryukan_Db_ImageSectionTable extends Doctrine_Table
         $query->innerJoin('section.ImageSectionText');
         $query->innerJoin('section.ImageFile file');
         $query->innerJoin('file.ImageText');
-        $query->orderBy('section.sectiondate Desc');
+        $query->orderBy('section.sectiondate Desc, file.useonsection Desc');
 
         return $query;
     }

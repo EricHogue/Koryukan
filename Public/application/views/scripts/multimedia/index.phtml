@@ -1,12 +1,26 @@
 <table class="ImagesTable" cellpadding=5>
-    <?php foreach ($this->imageSections as $imageSection) { ?>
-        <tr>
-            <td>Secgtion</td>
-            <td>
+    <?php
+        foreach ($this->imageSections as $imageSection) {
+            $images = $imageSection->getImages();
+            $mainImageFileName = $images->getAtIndex(0)->getFileName();
 
-                <b><?php
-                    echo $imageSection->getSectionDate()->toString(Zend_Date::DATES);
-                    ?></b><br />
+    ?>
+        <tr>
+            <td>
+                 <a href=javascript:OpenImageWindow('<?php echo $mainImageFileName; ?>')>
+                    <img src="/Images/Multimedia/<?php echo $mainImageFileName; ?>" />
+                </a>
+            </td>
+            <td>
+                <b><?php echo $imageSection->getSectionDate()->toString(Zend_Date::DATES); ?></b><br />
+                <?php echo $imageSection->getSectionTitle($this->lang); ?><br />
+                <?php
+                    foreach ($images as $image) {
+                ?>
+                        <a href=javascript:OpenImageWindow('<?php echo $image->getFileName();; ?>')><?php echo $image->getDescription($this->lang); ?></a> <br />
+                <?php
+                    }
+                ?>
             </td>
         </tr>
     <?php } ?>

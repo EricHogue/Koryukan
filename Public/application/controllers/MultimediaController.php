@@ -38,5 +38,6 @@ class MultimediaController extends Zend_Controller_Action
 
         $sections = Koryukan_Model_ImageSection::getAllSectionWithImages();
         $this->view->assign('imageSections', $sections);
+        $this->view->assign('lang', $this->getRequest()->getParam('lang', 'en'));
     }
 }

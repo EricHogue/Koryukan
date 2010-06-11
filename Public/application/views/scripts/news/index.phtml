@@ -2,7 +2,7 @@
     <?php foreach ($this->newsCollection as $news): ?>
         <li>
             <h3><?php echo $this->purify($news->getTitle($this->lang)); ?></h3>
-            <h6><?php echo $this->purify($news->getPublicationDate()); ?></h6>
+            <h6><?php echo $this->purify($news->getPublicationDate()->toString(Zend_Date::DATES)); ?></h6>
             <?php echo $this->purify($news->getContent(Zend_Registry::get('lang'))); ?>
         </li>
     <?php endforeach ?>

@@ -55,6 +55,44 @@ class Koryukan_Model_ImageSection extends Koryukan_Model_Base
     }
 
     /**
+     * Return the section images
+     *
+     * @return void
+     */
+    public function getImages()
+    {
+        return new Koryukan_Helper_Collection($this->_dbRecord->get('ImageFile'), 'Koryukan_Model_ImageFile');
+    }
+
+    /**
+     * Return the section title for a language
+     *
+     * @return void
+     */
+    public function getSectionTitle($language)
+    {
+        $sectionText = $this->_getSectionsTextForLanguage($language);
+        return $sectionText->get('title');
+    }
+
+    /**
+     * Return the ImageSectionText object for the selected language
+     *
+     * @return Koryukan_Db_ImageSectionText
+     */
+    private function _getSectionsTextForLanguage($language)
+    {
+        $sectionTexts = $this->_dbRecord->get('ImageSectionText');
+        foreach ($sectionTexts as $sectionText) {
+            if (0 === strcasecmp($sectionText->get('language'), $language)) {
+                return $sectionText;
+            }
+        }
+
+        return null;
+    }
+
+    /**
      * Return the name of the db class
      *
      * @return string

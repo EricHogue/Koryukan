@@ -305,6 +305,11 @@ table.ImagesTable tr td {
 	border: 2px ridge #FAEDDA;
 	margin: none;
 }
+
+table.ImagesTable tr td img {
+    border: none;
+    width: 200px;
+}
 /** /Multimedia */
 
 
