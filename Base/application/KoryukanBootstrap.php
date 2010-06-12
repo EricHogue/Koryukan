@@ -84,6 +84,8 @@ class KoryukanBootstrap extends Zend_Application_Bootstrap_Bootstrap
             $cache = $this->getResource('mainCache');
             $options['plugins']['Cache']['backend'] = $cache->getBackend();
 
+            $options['jquery_path'] = '/js/' . $config['jqueryfile'];
+
             $debug = new ZFDebug_Controller_Plugin_Debug($options);
 
             $this->bootstrap('frontController');
@@ -212,5 +214,18 @@ class KoryukanBootstrap extends Zend_Application_Bootstrap_Bootstrap
 
         $view = $this->getResource('View');
         $view->registerHelper($purifyHelper, 'purify');
+    }
+
+    /**
+     * Init the config
+     *
+     * @return void
+     */
+    protected function _initConfig()
+    {
+        $config = new Zend_Config($this->getOptions(), true);
+        Zend_Registry::set('config', $config);
+
+        return $config;
     }
 }
