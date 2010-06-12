@@ -3,22 +3,24 @@
         foreach ($this->imageSections as $imageSection) {
             $images = $imageSection->getImages();
             $mainImageFileName = $images->getAtIndex(0)->getFileName();
+            $purifiedSectionTitle = $this->purify($imageSection->getSectionTitle($this->lang));
 
     ?>
         <tr>
             <td>
-                 <a href="/Images/Multimedia/<?php echo $mainImageFileName; ?>")>
+                 <a href="/Images/Multimedia/<?php echo $mainImageFileName; ?>" title="<?php echo $purifiedSectionTitle; ?>">
                     <img src="/Images/Multimedia/<?php echo $mainImageFileName; ?>" />
                 </a>
             </td>
             <td>
                 <b><?php echo $imageSection->getSectionDate()->toString(Zend_Date::DATES); ?></b><br />
-                <?php echo $imageSection->getSectionTitle($this->lang); ?><br />
+                <?php echo $purifiedSectionTitle; ?><br />
                 <?php
                     foreach ($images as $image) {
+                        $purifiedDescription = $this->purify($image->getDescription($this->lang));
                 ?>
-                        <a href="/Images/Multimedia/<?php echo $image->getFileName(); ?>")>
-                            <?php echo $image->getDescription($this->lang); ?>
+                        <a href="/Images/Multimedia/<?php echo $image->getFileName();?>" title="<?php echo $purifiedDescription; ?>">
+                            <?php echo $purifiedDescription; ?>
                         </a>
                         <br />
                 <?php
@@ -53,7 +55,7 @@ $(function() {
                     $urlmain = 'montrerphoto/MontrerPhoto/' . $imageSection['SectionMainImage'];
                     $urlmain = url_lang::site($urlmain);
                 ?>
-                <a href=javascript:OpenImageWindow('<?php echo $urlmain; ?>')>
+                <a href=javascript:OpenImageWindow('<?php echo $urlmain; ?>') >
                     <img border=0 src="/media/Images/Multimedia/<?php echo $ImageSection['SectionSmallImage']; ?>" />
                 </a>
             </td>
