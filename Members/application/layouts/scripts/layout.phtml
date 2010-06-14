@@ -21,29 +21,8 @@
 </head>
 <body>
 
-    <!-- Page Header -->
-    <?php echo $this->partial('header.phtml', array('pageTitle' => $this->pageTitle)); ?>
-
-
-    <div id="page">
-        <div id="leftsidebar">
-            <?php echo $this->partial('sidebar.phtml', array('sideImage' => $this->sideImage,
-                'sideImageAlt' => $this->sideImageAlt));?>
-        </div>
-
-        <div id="maincontent">
-            <?php echo $this->layout()->content ?>
-        </div>
-
-        <div id="footer">
-            <!-- No footer -->
-        </div>
+    <div id="maincontent">
+        <?php echo $this->layout()->content; ?>
     </div>
-
-
-
-
-
-
 </body>
 </html>

@@ -1,7 +1,7 @@
 detect_relations: true
 options:
     type: INNODB
-    collate: utf8_unicode_ci
+    collate: utf8_general_ci
     charset: utf8
 
 News:
