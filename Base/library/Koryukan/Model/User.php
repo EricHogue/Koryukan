@@ -24,6 +24,8 @@
  */
 class Koryukan_Model_User extends Koryukan_Model_Base
 {
+    const HASH_ITERATION_COUNT = 15;
+
     /**
      * The db class name
      *
@@ -56,7 +58,8 @@ class Koryukan_Model_User extends Koryukan_Model_Base
      */
     public function validatePassword($password)
     {
-        return (0 === strcmp($password, $this->_dbRecord->get('password')));
+        $hasher = new Phpass_PasswordHash(self::HASH_ITERATION_COUNT, true);
+        return $hasher->CheckPassword($password, $this->_dbRecord->get('password'));
     }
 
     /**

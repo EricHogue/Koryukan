@@ -1,7 +1,7 @@
 Koryukan_Db_User:
     user1:
         username: ehogue
-        password: 123456
+        password: $P$IplcCZPIauaHHyztxNDqhPZ1ZjFxL61
         firstName: Eric
         lastName: Hogue
         status: active
