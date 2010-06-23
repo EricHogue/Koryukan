@@ -1,4 +1,16 @@
-<?php echo $this->doctype() ?>
+<?php
+    echo $this->doctype();
+
+    $config = Zend_Registry::get('config');
+    $jQueryFile = $config->jqueryfile;
+    $jQueryUITheme = $config->jqueryui->theme;
+
+    $this->headLink()->appendStylesheet('/css/koryukanMembers.css');
+    $this->headScript()->appendFile('/js/' . $jQueryFile, 'text/javascript');
+    $this->headScript()->appendFile('/js/jquery-ui-1.8.2.custom.min.js', 'text/javascript');
+
+    $this->headLink()->appendStylesheet('/css/jQueryUI/' . $jQueryUITheme . '/jquery-ui-1.8.2.custom.css');
+?>
 
 <html>
 <head>
@@ -8,20 +20,18 @@
 
 
     <title>Koryukan</title>
-    <?php echo $this->headLink()->appendStylesheet('/css/koryukan.css'); ?>
 
     <?php
-        $config = Zend_Registry::get('config');
-        $jQueryFile = $config->jqueryfile;
-        $jQueryLightBoxFile = $config->jquerylightboxfile;
+        echo $this->headLink();
+        echo $this->headScript();
     ?>
-    <script type="text/javascript" src="/js/<?php echo $jQueryFile; ?>"></script>
-    <script type="text/javascript" src="/js/<?php echo $jQueryLightBoxFile; ?>"></script>
-    <link rel="stylesheet" type="text/css" href="/css/jquery.lightbox-0.5.css" media="screen" />
+
 </head>
 <body>
+    <!-- Page Header -->
+    <?php echo $this->partial('header.phtml', array()); ?>
 
-    <div id="maincontent">
+    <div id="maincontent" class="ui-widget">
         <?php echo $this->layout()->content; ?>
     </div>
 </body>

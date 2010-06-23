@@ -41,7 +41,7 @@ abstract class Koryukan_Db_BaseImageSectionText extends Doctrine_Record
              ));
 
         $this->option('type', 'INNODB');
-        $this->option('collate', 'utf8_unicode_ci');
+        $this->option('collate', 'utf8_general_ci');
         $this->option('charset', 'utf8');
     }
 

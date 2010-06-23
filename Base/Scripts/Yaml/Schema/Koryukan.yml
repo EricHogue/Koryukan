@@ -168,3 +168,33 @@ ImageText:
         ImageFile: 
             local: imageId
             foreign: imageId
+User: 
+    columns: 
+        userId:
+            type: integer(4)
+            notnull: true
+            unsigned: true
+            primary: true
+            autoincrement: true
+        username: 
+            type: string(64)
+            notnull: true
+        password:
+            type: string(64)
+            notnull: true
+        firstName:
+            type: string(128)
+            notnull: true
+        lastName:
+            type: string(128)
+            notnull: true
+        status: 
+            type: enum
+            notnull: true
+            values: ['active', 'deleted', 'locked']
+            default: 'active'
+    indexes:
+        usernameIdx:
+            fields:
+                username: []
+            type: unique

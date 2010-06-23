@@ -20,7 +20,7 @@ set_include_path(implode(PATH_SEPARATOR, array(
 require_once 'Zend/Application.php';
 
 // Create application, bootstrap, and run
-$config = array('config' => array(realpath(BASE_PATH . '/application/configs/application.ini')));
+$config = array('config' => array(realpath(BASE_PATH . '/configs/application.ini')));
 $application = new Zend_Application($env, $config);
 
 
@@ -51,3 +51,5 @@ Doctrine_Core::createTablesFromModels($options['db']['objectsPath']);
 Doctrine_Core::loadData(BASE_PATH . '/Scripts/Yaml/Data/news.yml');
 Doctrine_Core::loadData(BASE_PATH . '/Scripts/Yaml/Data/storeItems.yml');
 Doctrine_Core::loadData(BASE_PATH . '/Scripts/Yaml/Data/images.yml');
+Doctrine_Core::loadData(BASE_PATH . '/Scripts/Yaml/Data/users.yml');
+

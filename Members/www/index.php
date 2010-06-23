@@ -1,5 +1,5 @@
 <?php
-
+try {
 // Define path to application directory
 defined('APPLICATION_PATH')
     || define('APPLICATION_PATH', realpath(dirname(__FILE__) . '/../application'));
@@ -22,7 +22,7 @@ set_include_path(implode(PATH_SEPARATOR, array(
 require_once 'Zend/Application.php';
 
 // Create application, bootstrap, and run
-$config = array('config' => array(realpath(BASE_PATH . '/application/configs/application.ini'),
+$config = array('config' => array(realpath(BASE_PATH . '/configs/application.ini'),
     realpath(APPLICATION_PATH . '/../configs/application.ini')));
 
 $application = new Zend_Application(
@@ -30,5 +30,16 @@ $application = new Zend_Application(
     $config
 );
 
+
 $application->bootstrap()
             ->run();
+
+Zend_Session::writeClose(true);
+
+} catch (Exception $e) {
+    /*echo $e->getCode() . '<br />';
+    echo $e->getMessage() . '<br />';
+    echo $e->getFile() . '<br />';
+    echo $e->getLine() . '<br />';
+    echo $e->getTraceAsString() . '<br />';*/
+}

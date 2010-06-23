@@ -22,7 +22,7 @@ set_include_path(implode(PATH_SEPARATOR, array(
 require_once 'Zend/Application.php';
 
 // Create application, bootstrap, and run
-$config = array('config' => array(realpath(BASE_PATH . '/application/configs/application.ini'),
+$config = array('config' => array(realpath(BASE_PATH . '/configs/application.ini'),
     realpath(APPLICATION_PATH . '/../configs/application.ini')));
 
 $application = new Zend_Application(

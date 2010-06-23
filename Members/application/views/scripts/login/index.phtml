@@ -1,0 +1,21 @@
+<div id="logindiv">
+    <div class="ui-widget-header">Please login</div>
+
+    <form method="post" id="loginform" class="ui-widget-content">
+        <label for="username"><?php echo $this->purify($this->translate('User Name')); ?>: </label>
+        <input type="text" id="username" name="username" value="<?php echo $this->purify($this->username); ?>" />
+
+        <label for="password"><?php echo $this->purify($this->translate('Password')); ?>: </label>
+        <input type="password" id="password" name="password" value="<?php echo $this->purify($this->password); ?>" />
+
+        <div class="actions">
+            <input type="submit" id="submitbutton" name="submitbutton" value="<?php echo $this->purify($this->translate('Login')); ?>" />
+        </div>
+    </form>
+</div>
+
+<script type="text/javascript">
+$(function() {
+	$('#submitbutton').button();
+});
+</script>
