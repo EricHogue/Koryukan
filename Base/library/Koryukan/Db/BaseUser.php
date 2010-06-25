@@ -11,6 +11,10 @@
  * @property string $firstName
  * @property string $lastName
  * @property enum $status
+ * @property Doctrine_Collection $UserGroups
+ * @property Doctrine_Collection $UserGroup
+ * @property Doctrine_Collection $GroupMembership
+ * @property Doctrine_Collection $Permission
  * 
  * @package    ##PACKAGE##
  * @subpackage ##SUBPACKAGE##
@@ -29,15 +33,15 @@ abstract class Koryukan_Db_BaseUser extends Doctrine_Record
              'autoincrement' => true,
              'length' => '4',
              ));
-        $this->hasColumn('username', 'string', 64, array(
+        $this->hasColumn('username', 'string', 128, array(
              'type' => 'string',
              'notnull' => true,
-             'length' => '64',
+             'length' => '128',
              ));
-        $this->hasColumn('password', 'string', 64, array(
+        $this->hasColumn('password', 'string', 128, array(
              'type' => 'string',
              'notnull' => true,
-             'length' => '64',
+             'length' => '128',
              ));
         $this->hasColumn('firstName', 'string', 128, array(
              'type' => 'string',
@@ -79,6 +83,22 @@ abstract class Koryukan_Db_BaseUser extends Doctrine_Record
     public function setUp()
     {
         parent::setUp();
-        
+        $this->hasMany('Koryukan_Db_UserGroup as UserGroups', array(
+             'refClass' => 'Koryukan_Db_GroupMembership',
+             'local' => 'userId',
+             'foreign' => 'groupid'));
+
+        $this->hasMany('Koryukan_Db_UserGroup as UserGroup', array(
+             'refClass' => 'Koryukan_Db_GroupMembership',
+             'local' => 'userId',
+             'foreign' => 'groupId'));
+
+        $this->hasMany('Koryukan_Db_GroupMembership as GroupMembership', array(
+             'local' => 'userId',
+             'foreign' => 'userId'));
+
+        $this->hasMany('Koryukan_Db_Permission as Permission', array(
+             'local' => 'userId',
+             'foreign' => 'userId'));
     }
 }

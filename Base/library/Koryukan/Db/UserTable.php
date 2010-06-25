@@ -29,4 +29,18 @@ class Koryukan_Db_UserTable extends Doctrine_Table
 
         return $query->fetchOne();
     }
+
+    /**
+     * Return all the users
+     *
+     * @return Doctrine_Query
+     */
+    public function getAllUsers()
+    {
+        $query = $this->createQuery('user');
+        $query->innerJoin('user.UserGroups');
+        $query->addWhere('status = ?', 'active');
+
+        return $query;
+    }
 }

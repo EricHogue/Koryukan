@@ -35,7 +35,7 @@ class Koryukan_Model_News extends Koryukan_Model_Base
     /**
      * Return the news
      *
-     * @return void
+     * @return Koryukan_Helper_Collection
      */
     public static function getNews()
     {

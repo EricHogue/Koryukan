@@ -1,0 +1,42 @@
+    group2: 
+        groupName: kyu10
+        ParentGroup: group1
+    group3: 
+        groupName: kyu09
+        ParentGroup: group2
+    group4: 
+        groupName: kyu08
+        ParentGroup: group3
+    group5: 
+        groupName: kyu07
+        ParentGroup: group4
+    group6: 
+        groupName: kyu06
+        ParentGroup: group5
+    group7: 
+        groupName: kyu05
+        ParentGroup: group6
+    group8: 
+        groupName: kyu04
+        ParentGroup: group7
+    group9: 
+        groupName: kyu03
+        ParentGroup: group8
+    group10: 
+        groupName: kyu02
+        ParentGroup: group9
+    group11: 
+        groupName: kyu01
+        ParentGroup: group10
+    group12: 
+        groupName: shodan
+        ParentGroup: group11
+    group13: 
+        groupName: nidan
+        ParentGroup: group12
+    group14: 
+        groupName: sandan
+        ParentGroup: group13
+    group15: 
+        groupName: shidan
+        ParentGroup: group14

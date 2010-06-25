@@ -1,0 +1,38 @@
+Koryukan_Db_UserGroup: 
+    group1: 
+        groupName: User
+    group2: 
+        groupName: PowerUser
+        ParentGroup: group1
+    group3: 
+        groupName: Administrator
+        ParentGroup: group2
+Koryukan_Db_User:
+    user1:
+        username: ehogue
+        password: $P$IplcCZPIauaHHyztxNDqhPZ1ZjFxL61
+        firstName: Eric
+        lastName: Hogue
+        status: active
+    user2:
+        username: test
+        password: $P$IplcCZPIauaHHyztxNDqhPZ1ZjFxL61
+        firstName: Test
+        lastName: Test
+        status: active
+Koryukan_Db_GroupMembership:
+    member1: 
+        User: user1
+        UserGroup: group3
+    member3: 
+        User: user2
+        UserGroup: group1
+Koryukan_Db_Resource:
+    resource1: 
+        controllerName: index
+        actionName: index
+Koryukan_Db_Permission:
+    permission1: 
+        User: user1
+        Resource: resource1
+        granted: 1

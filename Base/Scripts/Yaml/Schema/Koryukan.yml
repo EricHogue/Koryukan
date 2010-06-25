@@ -177,10 +177,10 @@ User:
             primary: true
             autoincrement: true
         username: 
-            type: string(64)
+            type: string(128)
             notnull: true
         password:
-            type: string(64)
+            type: string(128)
             notnull: true
         firstName:
             type: string(128)
@@ -197,4 +197,102 @@ User:
         usernameIdx:
             fields:
                 username: []
+            type: unique
+    relations:
+        UserGroups:
+            class: UserGroup
+            local: userId
+            foreign: groupid
+            refClass: GroupMembership
+UserGroup: 
+    columns: 
+        groupId: 
+            type: integer(4)
+            notnull: true
+            unsigned: true
+            primary: true
+            autoincrement: true
+        groupName: 
+            type: string(64)
+            notnull: true
+        parentGroupId: 
+            type: integer(4)
+            unsigned: true
+    relations:
+        ParentGroup: 
+            class: UserGroup
+            local: parentGroupId
+            foreign: groupId
+            foreignAlias: SubGroups
+        Users:
+            class: User
+            local: groupId
+            foreign: userId
+            refClass: GroupMembership
+GroupMembership:
+    columns: 
+        userId: 
+            type: integer(4)
+            notnull: true
+            unsigned: true
+            primary: true
+        groupId: 
+            type: integer(4)
+            notnull: true
+            unsigned: true
+            primary: true
+    relations: 
+        User: 
+            local: userId
+            foreign: userId
+        UserGroup: 
+            local: groupId
+            foreign: groupId
+Resource: 
+    columns: 
+        resourceId: 
+            type: integer(4)
+            notnull: true
+            unsigned: true
+            primary: true
+            autoincrement: true
+        controllerName: 
+            type: string(128) 
+            notnull: true
+        actionName: 
+            type: string(128) 
+            notnull: true
+Permission: 
+    columns:
+        permissionId: 
+            type: integer(4)
+            notnull: true
+            unsigned: true
+            primary: true
+            autoincrement: true
+        userId: 
+            type: integer(4)
+            notnull: true
+            unsigned: true
+        resourceId: 
+            type: integer(4)
+            notnull: true
+            unsigned: true
+        granted:
+            type: integer(1)
+            notnull: true
+            unsigned: true
+            default: 0
+    relations:
+        User: 
+            local: userId
+            foreign: userId
+        Resource: 
+            local: resourceId
+            foreign: resourceId
+    indexes:
+        user_resourceIdx:
+            fields:
+                userId: []
+                resourceId: []
             type: unique

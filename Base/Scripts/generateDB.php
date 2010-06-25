@@ -51,5 +51,5 @@ Doctrine_Core::createTablesFromModels($options['db']['objectsPath']);
 Doctrine_Core::loadData(BASE_PATH . '/Scripts/Yaml/Data/news.yml');
 Doctrine_Core::loadData(BASE_PATH . '/Scripts/Yaml/Data/storeItems.yml');
 Doctrine_Core::loadData(BASE_PATH . '/Scripts/Yaml/Data/images.yml');
-Doctrine_Core::loadData(BASE_PATH . '/Scripts/Yaml/Data/users.yml');
+Doctrine_Core::loadData(BASE_PATH . '/Scripts/Yaml/Data/security.yml');
 

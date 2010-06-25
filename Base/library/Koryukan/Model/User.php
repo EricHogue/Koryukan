@@ -22,7 +22,7 @@
  * @subpackage Base
  * @author     Eric Hogue <eric@erichogue.ca>
  */
-class Koryukan_Model_User extends Koryukan_Model_Base
+class Koryukan_Model_User extends Koryukan_Model_Base implements Zend_Acl_Role_Interface
 {
     const HASH_ITERATION_COUNT = 15;
 
@@ -52,6 +52,19 @@ class Koryukan_Model_User extends Koryukan_Model_Base
     }
 
     /**
+     * Return all the users
+     *
+     * @return void
+     */
+    public static function getAllUsers()
+    {
+        $table = Doctrine_Core::getTable(self::DB_CLASS_NAME);
+        $users = $table->getAllUsers();
+
+        return new Koryukan_Helper_Collection($users, 'Koryukan_Model_User');
+    }
+
+    /**
      * Validate the password
      *
      * @return void
@@ -60,6 +73,46 @@ class Koryukan_Model_User extends Koryukan_Model_Base
     {
         $hasher = new Phpass_PasswordHash(self::HASH_ITERATION_COUNT, true);
         return $hasher->CheckPassword($password, $this->_dbRecord->get('password'));
+    }
+
+    /**
+     * Return the user id
+     *
+     * @return void
+     */
+    public function getId()
+    {
+        return (int) $this->_dbRecord->get('userId');
+    }
+
+    /**
+     * Return the role id (group id)
+     *
+     * @return integer
+     */
+    public function getRoleId()
+    {
+        return 'user' . $this->getId();
+    }
+
+    /**
+     * Return the user name
+     *
+     * @return string
+     */
+    public function getUsername()
+    {
+        return $this->_dbRecord->get('username');
+    }
+
+    /**
+     * Return the groups that the user is member of
+     *
+     * @return Koryukan_Helper_Collection
+     */
+    public function getGroups()
+    {
+        return new Koryukan_Helper_Collection($this->_dbRecord->get('UserGroups'), 'Koryukan_Model_UserGroup');
     }
 
     /**

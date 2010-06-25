@@ -22,4 +22,33 @@ class MembersBootstrap extends KoryukanBootstrap
         $frontController->registerPlugin(new KoryukanMembers_Controller_Plugin_AccessControl(), 98);
     }
 
+    /**
+     * Initialize the Acl
+     *
+     * @return void
+     */
+    protected function _initAcl()
+    {
+        $this->bootstrap('Doctrine');
+        $this->bootstrap('MainCache');
+        $this->bootstrap('ZFDebug');
+
+        $mainCache = $this->getResource('MainCache');
+        $cacheKey = 'KoryukanMembersAcl';
+
+        if ($mainCache->test($cacheKey)) {
+            $aclString = $mainCache->load($cacheKey);
+            $acl = unserialize($aclString);
+        } else {
+            $acl = new KoryukanMembers_Acl();
+            $aclString = serialize($acl);
+            $mainCache->save($aclString, $cacheKey);
+        }
+
+
+        Zend_Registry::set('acl', $acl);
+
+        return $acl;
+    }
+
 }
