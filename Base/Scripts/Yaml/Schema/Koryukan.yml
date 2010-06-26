@@ -204,6 +204,7 @@ User:
             local: userId
             foreign: groupid
             refClass: GroupMembership
+            foreignAlias: Users
 UserGroup: 
     columns: 
         groupId: 
@@ -229,6 +230,7 @@ UserGroup:
             local: groupId
             foreign: userId
             refClass: GroupMembership
+            foreignAlias: UserGroups
 GroupMembership:
     columns: 
         userId: 
@@ -241,13 +243,7 @@ GroupMembership:
             notnull: true
             unsigned: true
             primary: true
-    relations: 
-        User: 
-            local: userId
-            foreign: userId
-        UserGroup: 
-            local: groupId
-            foreign: groupId
+    
 Resource: 
     columns: 
         resourceId: 

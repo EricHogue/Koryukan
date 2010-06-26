@@ -10,9 +10,7 @@
  * @property integer $parentGroupId
  * @property Koryukan_Db_UserGroup $ParentGroup
  * @property Doctrine_Collection $Users
- * @property Doctrine_Collection $User
  * @property Doctrine_Collection $SubGroups
- * @property Doctrine_Collection $GroupMembership
  * 
  * @package    ##PACKAGE##
  * @subpackage ##SUBPACKAGE##
@@ -59,17 +57,8 @@ abstract class Koryukan_Db_BaseUserGroup extends Doctrine_Record
              'local' => 'groupId',
              'foreign' => 'userId'));
 
-        $this->hasMany('Koryukan_Db_User as User', array(
-             'refClass' => 'Koryukan_Db_GroupMembership',
-             'local' => 'groupid',
-             'foreign' => 'userId'));
-
         $this->hasMany('Koryukan_Db_UserGroup as SubGroups', array(
              'local' => 'groupId',
              'foreign' => 'parentGroupId'));
-
-        $this->hasMany('Koryukan_Db_GroupMembership as GroupMembership', array(
-             'local' => 'groupId',
-             'foreign' => 'groupId'));
     }
 }

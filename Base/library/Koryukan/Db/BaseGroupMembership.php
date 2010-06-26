@@ -7,8 +7,6 @@
  * 
  * @property integer $userId
  * @property integer $groupId
- * @property Koryukan_Db_User $User
- * @property Koryukan_Db_UserGroup $UserGroup
  * 
  * @package    ##PACKAGE##
  * @subpackage ##SUBPACKAGE##
@@ -41,12 +39,6 @@ abstract class Koryukan_Db_BaseGroupMembership extends Doctrine_Record
     public function setUp()
     {
         parent::setUp();
-        $this->hasOne('Koryukan_Db_User as User', array(
-             'local' => 'userId',
-             'foreign' => 'userId'));
-
-        $this->hasOne('Koryukan_Db_UserGroup as UserGroup', array(
-             'local' => 'groupId',
-             'foreign' => 'groupId'));
+        
     }
 }
