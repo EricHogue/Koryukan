@@ -32,11 +32,33 @@ class KoryukanMembers_Controller_Plugin_AccessControl extends Zend_Controller_Pl
     public function preDispatch($request)
     {
         $auth = Zend_Auth::getInstance();
+        $request = $this->getRequest();
 
         if ($auth->hasIdentity()) {
+            $user = $auth->getIdentity();
+            $this->_validatePermission($user);
         } else {
-            $this->getRequest()->setControllerName('Login');
-            $this->getRequest()->setActionName('index');
+            $request->setControllerName('Login');
+            $request->setActionName('index');
+        }
+    }
+
+    /**
+     * Validate that the user has permission to view the controller/action
+     *
+     * @return void
+     */
+    private function _validatePermission(Koryukan_Model_User $user)
+    {
+        $request = $this->getRequest();
+        $controllerName = $request->getControllerName();
+        $actionName = $request->getActionName();
+
+        $acl = Zend_Registry::get('acl');
+        if ($acl->hasPermission($user, $controllerName, $actionName)) {
+            echo 'Allowed';
+        } else {
+            echo 'Denied';
         }
     }
 }

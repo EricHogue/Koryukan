@@ -12,7 +12,6 @@
  * @property string $lastName
  * @property enum $status
  * @property Doctrine_Collection $UserGroups
- * @property Doctrine_Collection $Permission
  * 
  * @package    ##PACKAGE##
  * @subpackage ##SUBPACKAGE##
@@ -85,9 +84,5 @@ abstract class Koryukan_Db_BaseUser extends Doctrine_Record
              'refClass' => 'Koryukan_Db_GroupMembership',
              'local' => 'userId',
              'foreign' => 'groupid'));
-
-        $this->hasMany('Koryukan_Db_Permission as Permission', array(
-             'local' => 'userId',
-             'foreign' => 'userId'));
     }
 }

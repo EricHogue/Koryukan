@@ -28,4 +28,18 @@ class Koryukan_Db_ResourceTable extends Doctrine_Table
 
         return $query;
     }
+
+    /**
+     * Return a resource from it's controller and action name
+     *
+     * @return void
+     */
+    public function getByControllerAndActionName($controllerName, $actionName)
+    {
+        $query = $this->createQuery();
+        $query->addWhere('controllerName = ?', $controllerName);
+        $query->addWhere('actionName = ?', $actionName);
+
+        return $query->fetchOne();
+    }
 }

@@ -46,6 +46,23 @@ class Koryukan_Model_Resource extends Koryukan_Model_Base implements Zend_Acl_Re
     }
 
     /**
+     * Get a resource by the controller and action name
+     *
+     * @return void
+     */
+    public static function getByControllerAndActionName($controllerName, $actionName)
+    {
+        $table = Doctrine_Core::getTable(self::DB_CLASS_NAME);
+        $record = $table->getByControllerAndActionName($controllerName, $actionName);
+
+        if (false !== $record) {
+            return new self($record);
+        }
+
+        return null;
+    }
+
+    /**
      * Return the resource id
      *
      * @return integer

@@ -24,7 +24,7 @@
  */
 class Koryukan_Helper_Collection implements Countable, Iterator
 {
-    const SERIALIZATION_DEEP = 10;
+    const SERIALIZATION_DEEP = 60;
 
     /**
      * The data

@@ -35,6 +35,6 @@ Koryukan_Db_Resource:
         actionName: index
 Koryukan_Db_Permission:
     permission1: 
-        User: user1
+        UserGroup: group1
         Resource: resource1
         granted: 1

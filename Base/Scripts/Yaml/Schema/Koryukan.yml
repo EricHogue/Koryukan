@@ -266,7 +266,7 @@ Permission:
             unsigned: true
             primary: true
             autoincrement: true
-        userId: 
+        groupId: 
             type: integer(4)
             notnull: true
             unsigned: true
@@ -280,15 +280,15 @@ Permission:
             unsigned: true
             default: 0
     relations:
-        User: 
-            local: userId
-            foreign: userId
+        UserGroup: 
+            local: groupId
+            foreign: groupId
         Resource: 
             local: resourceId
             foreign: resourceId
     indexes:
         user_resourceIdx:
             fields:
-                userId: []
+                groupId: []
                 resourceId: []
             type: unique

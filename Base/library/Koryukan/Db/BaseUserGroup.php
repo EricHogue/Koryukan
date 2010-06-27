@@ -11,6 +11,7 @@
  * @property Koryukan_Db_UserGroup $ParentGroup
  * @property Doctrine_Collection $Users
  * @property Doctrine_Collection $SubGroups
+ * @property Doctrine_Collection $Permission
  * 
  * @package    ##PACKAGE##
  * @subpackage ##SUBPACKAGE##
@@ -60,5 +61,9 @@ abstract class Koryukan_Db_BaseUserGroup extends Doctrine_Record
         $this->hasMany('Koryukan_Db_UserGroup as SubGroups', array(
              'local' => 'groupId',
              'foreign' => 'parentGroupId'));
+
+        $this->hasMany('Koryukan_Db_Permission as Permission', array(
+             'local' => 'groupId',
+             'foreign' => 'groupId'));
     }
 }

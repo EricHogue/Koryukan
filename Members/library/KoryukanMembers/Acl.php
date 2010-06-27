@@ -35,6 +35,18 @@ class KoryukanMembers_Acl extends Zend_Acl
     }
 
     /**
+     * Check if the user has permission to access the resource
+     *
+     * @return boolean
+     */
+    public function hasPermission(Koryukan_Model_User $user, $controllerName, $actionName)
+    {
+        $resource = Koryukan_Model_Resource::getByControllerAndActionName($controllerName, $actionName);
+
+        return $this->isAllowed($user, $resource);
+    }
+
+    /**
      * Load the acl rules
      *
      * @return void
@@ -44,6 +56,7 @@ class KoryukanMembers_Acl extends Zend_Acl
         $this->_loadRoles();
         $this->_loadResources();
         $this->_loadUsers();
+        $this->_loadPermissions();
     }
 
     /**
@@ -118,5 +131,26 @@ class KoryukanMembers_Acl extends Zend_Acl
         }
 
         $this->addRole($user, $parents);
+    }
+
+    /**
+     * Load the permissions
+     *
+     * @return void
+     */
+    private function _loadPermissions()
+    {
+        $permissions = Koryukan_Model_Permission::getAllPermission();
+
+        foreach ($permissions as $permission) {
+            $userGroup = $permission->getGroup();
+            $resource = $permission->getResource();
+
+            if (true === $permission->isGranted()) {
+                $this->allow($userGroup->getRoleId(), $resource->getResourceId());
+            } else {
+                $this->deny($userGroup->getRoleId(), $resource->getResourceId());
+            }
+        }
     }
 }
