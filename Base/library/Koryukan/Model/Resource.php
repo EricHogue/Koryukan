@@ -48,7 +48,7 @@ class Koryukan_Model_Resource extends Koryukan_Model_Base implements Zend_Acl_Re
     /**
      * Get a resource by the controller and action name
      *
-     * @return void
+     * @return Koryukan_Model_Resource
      */
     public static function getByControllerAndActionName($controllerName, $actionName)
     {

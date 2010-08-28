@@ -25,8 +25,9 @@ class Koryukan_Db_UserGroupTable extends Doctrine_Table
     public function getAllUserGroups()
     {
         $query = $this->createQuery('groups');
-        $query->innerJoin('groups.SubGroups');
+        $query->leftJoin('groups.SubGroups');
         $query->orderBy('parentGroupId');
+        //echo $query->getSqlQuery() . '<br>';
 
         return $query;
     }
