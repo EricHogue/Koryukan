@@ -1,8 +1,58 @@
-DirectoryIndex index.php
-
-RewriteEngine On
+RewriteEngine on
 RewriteBase /
 
-RewriteEngine on
+RewriteRule En/index.html /en/ [R=301,L]
+RewriteRule En/koryukan.html /en/ [R=301,L]
+RewriteRule En/daitoryu.html /en/daitoryu/history_of_daitoryu [R=301,L]
+RewriteRule En/ittoryu.html /en/onohaittoryu [R=301,L]
+RewriteRule En/articles.html en/articles/september_2005_training_camp_summary [R=301,L]
+RewriteRule En/gallery.html /en/multimedia [R=301,L]
+RewriteRule En/EnfantFamille.html /en/children [R=301,L]
+RewriteRule En/store.html /en/store [R=301,L]
+RewriteRule En/directory.html /en/contacts [R=301,L]
+
+RewriteRule Fr/index.html /fr/ [R=301,L]
+RewriteRule Fr/koryukan.html /fr/ [R=301,L]
+RewriteRule Fr/daitoryu.html /fr/daitoryu/history_of_daitoryu [R=301,L]
+RewriteRule Fr/ittoryu.html /fr/onohaittoryu [R=301,L]
+RewriteRule Fr/articles.html /fr/articles/september_2005_training_camp_summary [R=301,L]
+RewriteRule Fr/gallery.html /fr/multimedia [R=301,L]
+RewriteRule Fr/EnfantFamille.html /fr/children [R=301,L]
+RewriteRule Fr/store.html /fr/store [R=301,L]
+RewriteRule Fr/boutique.html /fr/store [R=301,L]
+RewriteRule Fr/directory.html /fr/contacts [R=301,L]
+
+
+RewriteRule en/home /en/ [R=301,L]
+RewriteRule en/daitoryu$ /en/daitoryu/history_of_daitoryu [R=301,L]
+RewriteRule en/daitoryu/daito /en/daitoryu/history_of_daitoryu [R=301,L]
+RewriteRule en/daitoryu/sokaku en/daitoryu/takeda_sokaku [R=301,L]
+RewriteRule en/daitoryu/tokimune en/daitoryu/takeda_tokimune [R=301,L]
+RewriteRule en/daitoryu/takuma en/daitoryu/hisa_takuma [R=301,L]
+RewriteRule en/articles$ en/articles/september_2005_training_camp_summary [R=301,L]
+RewriteRule en/articles/sept2005trainningcamp en/articles/september_2005_training_camp_summary [R=301,L]
+RewriteRule en/articles/benefitsofaaoomm en/articles/the_benefits_of_aaOoMm [R=301,L]
+RewriteRule en/articles/interviewwithokabayashisensei en/articles/interview_with_okabayashi_sensei [R=301,L]
+RewriteRule en/articles/traininginjapan en/articles/training_in_japan [R=301,L]
+RewriteRule en/articles/bodymovements en/articles/body_movements_by_russel_haskin [R=301,L]
+
+RewriteRule fr/home /fr/ [R=301,L]
+RewriteRule fr/daitoryu$ /fr/daitoryu/history_of_daitoryu [R=301,L]
+RewriteRule fr/daitoryu/daito /fr/daitoryu/history_of_daitoryu [R=301,L]
+RewriteRule fr/daitoryu/sokaku fr/daitoryu/takeda_sokaku [R=301,L]
+RewriteRule fr/daitoryu/tokimune fr/daitoryu/takeda_tokimune [R=301,L]
+RewriteRule fr/daitoryu/takuma fr/daitoryu/hisa_takuma [R=301,L]
+RewriteRule fr/articles$ fr/articles/september_2005_training_camp_summary [R=301,L]
+RewriteRule fr/articles/sept2005trainningcamp fr/articles/september_2005_training_camp_summary [R=301,L]
+RewriteRule fr/articles/benefitsofaaoomm fr/articles/the_benefits_of_aaOoMm [R=301,L]
+RewriteRule fr/articles/interviewwithokabayashisensei fr/articles/interview_with_okabayashi_sensei [R=301,L]
+RewriteRule fr/articles/traininginjapan fr/articles/training_in_japan [R=301,L]
+RewriteRule fr/articles/bodymovements fr/articles/body_movements_by_russel_haskin [R=301,L]
+
+RewriteRule fr/home /fr/ [R=301,L]
+
+
+DirectoryIndex index.php
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule .* index.php
