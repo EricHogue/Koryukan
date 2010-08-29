@@ -45,7 +45,6 @@ class MembersBootstrap extends KoryukanBootstrap
             $mainCache->save($aclString, $cacheKey);
         }
 
-
         Zend_Registry::set('acl', $acl);
 
         return $acl;

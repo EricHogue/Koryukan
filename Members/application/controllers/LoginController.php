@@ -53,6 +53,8 @@ class LoginController extends Zend_Controller_Action
             if ($this->_checkLoginInfo()) {
                 $lang = $this->getRequest()->getParam('lang', 'en');
                 $this->_helper->redirector->gotoSimple('index', 'index', null, array('lang' => $lang));
+                //$this->_helper->redirector('index', 'index');
+                //$this->_redirector('/index/index');
             }
         }
 

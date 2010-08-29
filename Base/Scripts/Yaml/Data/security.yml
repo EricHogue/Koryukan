@@ -15,20 +15,6 @@ Koryukan_Db_User:
         lastName: Hogue
         status: active
         UserGroups: [group3]
-    user2:
-        username: testPowerUser
-        password: $P$IplcCZPIauaHHyztxNDqhPZ1ZjFxL61
-        firstName: Test
-        lastName: Test
-        status: active
-        UserGroups: [group2]
-    user3:
-        username: testUser
-        password: $P$IplcCZPIauaHHyztxNDqhPZ1ZjFxL61
-        firstName: Test
-        lastName: Test
-        status: active
-        UserGroups: [group1]
 Koryukan_Db_Resource:
     resource1: 
         controllerName: index

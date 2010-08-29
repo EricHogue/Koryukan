@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Koyukan Members\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-06-13 20:21-0500\n"
+"POT-Creation-Date: 2010-08-28 19:37-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: eric <eric@erichogue.ca>\n"
 "Language-Team: Koryukan <eric@koryukan.com>\n"
@@ -15,6 +15,34 @@ msgstr ""
 "X-Poedit-KeywordsList: translate;_;setLabel;setValue;setMessage;setLegend;_refresh;append;prepend\n"
 "X-Poedit-Basepath: /media/Data/Workspace/Koryukan/Members\n"
 "X-Poedit-SearchPath-0: application\n"
+
+#: application/controllers/ErrorController.php:21
+msgid "Page not found"
+msgstr "Page inexistante"
+
+#: application/controllers/ErrorController.php:25
+msgid "Access Denied"
+msgstr "Accès refusé"
+
+#: application/controllers/ErrorController.php:30
+msgid "Application error"
+msgstr "Une erreur c'est produite"
+
+#: application/views/scripts/login/index.phtml:5
+msgid "User Name"
+msgstr "Nom d'usager"
+
+#: application/views/scripts/login/index.phtml:8
+msgid "Password"
+msgstr "Mot de passe"
+
+#: application/views/scripts/login/index.phtml:12
+msgid "Login"
+msgstr "Connection"
+
+#: application/views/scripts/error/error.phtml:8
+msgid "An error occurred"
+msgstr "Une erreur c'est produite"
 
 #: application/views/scripts/index/index.phtml:2
 msgid "Test"

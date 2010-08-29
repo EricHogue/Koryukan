@@ -42,8 +42,6 @@ class KoryukanMembers_Acl extends Zend_Acl
     public function hasPermission(Koryukan_Model_User $user, $controllerName, $actionName)
     {
         $resource = Koryukan_Model_Resource::getByControllerAndActionName($controllerName, $actionName);
-        /*echo $user->getRoleId() . '<br />';
-        echo $resource->getResourceId() . '<br />';*/
 
         return $this->isAllowed($user, $resource);
     }

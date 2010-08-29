@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Koyukan Public\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-06-06 10:22-0500\n"
+"POT-Creation-Date: 2010-08-28 20:09-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: eric <eric@erichogue.ca>\n"
 "Language-Team: Koryukan <eric@koryukan.com>\n"
@@ -127,6 +127,14 @@ msgstr "History of Daito Ryu"
 #: application/controllers/ChildrenController.php:34
 msgid "Children - Family"
 msgstr "Children - Family"
+
+#: application/controllers/ErrorController.php:19
+msgid "Page not found"
+msgstr "The requested page does not exists."
+
+#: application/controllers/ErrorController.php:24
+msgid "Application error"
+msgstr "An error occurred in the application"
 
 #: application/controllers/MultimediaController.php:34
 msgid "Multimedia"
@@ -1457,6 +1465,10 @@ msgstr "All prices includes taxes."
 #: application/views/scripts/store/index.phtml:20
 msgid "Negotiable"
 msgstr "Negotiable"
+
+#: application/views/scripts/error/error.phtml:8
+msgid "An error occurred"
+msgstr "An error occurred"
 
 #: application/views/scripts/onohaittoryu/index.phtml:2
 msgid "The main line of Ono Ha Itto Ryu was established in the early Edo period, around year 1630. Stemming from Itto Ryu kenjutsu of Ito Ittosai Kagehisa, Ono Ha Itto Ryu was founded by Ono Jirouemon Tadaaki."

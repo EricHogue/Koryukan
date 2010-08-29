@@ -29,10 +29,9 @@ class KoryukanMembers_Controller_Plugin_AccessControl extends Zend_Controller_Pl
      *
      * @return void
      */
-    public function preDispatch($request)
+    public function preDispatch(Zend_Controller_Request_Abstract $request)
     {
         $auth = Zend_Auth::getInstance();
-        $request = $this->getRequest();
 
         if ($auth->hasIdentity()) {
             $user = $auth->getIdentity();
@@ -41,6 +40,16 @@ class KoryukanMembers_Controller_Plugin_AccessControl extends Zend_Controller_Pl
             $request->setControllerName('Login');
             $request->setActionName('index');
         }
+    }
+
+    /**
+     * Post dispatched
+     *
+     * @return void
+     */
+    public function postDispatch($request)
+    {
+        //print_r($this->getResponse());
     }
 
     /**
@@ -54,11 +63,18 @@ class KoryukanMembers_Controller_Plugin_AccessControl extends Zend_Controller_Pl
         $controllerName = $request->getControllerName();
         $actionName = $request->getActionName();
 
+        if (0 === strcasecmp('error', $controllerName)) {
+            return;
+        }
+
+
+
         $acl = Zend_Registry::get('acl');
         if ($acl->hasPermission($user, $controllerName, $actionName)) {
-            echo 'Allowed';
+        } elseif (0 === strcasecmp('error', $controllerName)) {
+            //Do nothing
         } else {
-            echo 'Denied';
+            throw new KoryukanMembers_AccessDeniedException('Access denied');
         }
     }
 }

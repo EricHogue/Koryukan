@@ -13,19 +13,24 @@ class ErrorController Extends Zend_Controller_Action
         switch ($errors->type) {
             case Zend_Controller_Plugin_ErrorHandler::EXCEPTION_NO_CONTROLLER:
             case Zend_Controller_Plugin_ErrorHandler::EXCEPTION_NO_ACTION:
-
                 // 404 error -- controller or action not found
                 $this->getResponse()->setHttpResponseCode(404);
-                $this->view->message = 'Page not found';
+                $this->view->message = $this->view->translate('Page not found');
+                break;
+            case Zend_Controller_Plugin_ErrorHandler::EXCEPTION_OTHER:
+                $this->getResponse()->setHttpResponseCode(500);
+                $this->view->message = $this->view->translate('Application error');
                 break;
             default:
                 // application error
                 $this->getResponse()->setHttpResponseCode(500);
-                $this->view->message = 'Application error';
+                $this->view->message = $this->view->translate('Application error');
                 break;
         }
 
+        $this->getResponse()->clearBody();
         $this->view->exception = $errors->exception;
         $this->view->request   = $errors->request;
     }
+
 }
