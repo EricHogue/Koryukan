@@ -7,6 +7,14 @@ Koryukan_Db_News:
         publishedDate: '2010-05-24'
         creationDate: '2010-05-24'
         status: 'online'
+    news3: 
+        publishedDate: '2010-08-28'
+        creationDate: '2010-08-28'
+        status: 'online'
+    news4: 
+        publishedDate: '2010-08-29'
+        creationDate: '2010-08-29'
+        status: 'online'
 Koryukan_Db_NewsText:
     text1: 
         News: news1
@@ -43,3 +51,25 @@ Koryukan_Db_NewsText:
             On June 1st and 3rd at the Aumais park chalet. 
             <br />
             <a href='/Images/News/CirculaireSteAnneEn.jpg' target='_blank' style='border: none;'><img src='/Images/News/CirculaireSteAnneEn.jpg'  style='width: 400px; border: none;' /></a>
+    text5:
+        News: news3
+        language: 'en'
+        title: Beginning of the autumn session in Lasalle
+        content: |
+            The new session for the child and family class at the Lasalle dojo will begin on September 12 at 10 AM. For directions, please refer to the <a href='/en/contacts'>contacts page</a>.
+    text6:
+        News: news3
+        language: fr
+        title: Début de la session d'automne au dojo de Lasalle
+        content: |
+            La nouvelle session du cours enfants - familles débutera dimanche le 12 septembre à 10:00. Pour l'emplacement, ou si vous avez des questions, référez-vous à la <a href='/fr/contacts'>page des contacts</a>.
+    text7:
+        News: news4
+        language: en
+        title: Inscriptions for the Sainte-Anne's Dojo
+        content: A session of inscriptions for the new dojo in Ste-Anne will be held on September 10th at 5PM. Come <a href='/en/contacts'>see us</a> to learn more about Daito-Ryu and enroll for the classes. 
+    text8:
+        News: news4
+        language: fr
+        title: Inscriptions au dojo de Sainte-Anne
+        content: Une session d'inscriptions aura lieu au dojo de Ste-Anne le 10 septembre à 17:00. <a href='/fr/contacts'>Venez nous voir</a> pour en apprendre plus sur le Daito-Ryu et pour vous inscrire aux cours. 

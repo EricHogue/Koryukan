@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Koyukan Public\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-29 12:39-0500\n"
+"POT-Creation-Date: 2010-08-29 16:07-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: eric <eric@erichogue.ca>\n"
 "Language-Team: Koryukan <eric@koryukan.com>\n"
@@ -177,7 +177,7 @@ msgstr "8:00 PM to 10:00 PM"
 #: application/views/scripts/contacts/index.phtml:20
 #: application/views/scripts/contacts/index.phtml:23
 #: application/views/scripts/contacts/index.phtml:58
-#: application/views/scripts/contacts/index.phtml:90
+#: application/views/scripts/contacts/index.phtml:93
 msgid "Sunday"
 msgstr "Sunday"
 
@@ -195,7 +195,7 @@ msgstr "10:00 AM to 11:00 AM"
 
 #: application/views/scripts/contacts/index.phtml:33
 #: application/views/scripts/contacts/index.phtml:68
-#: application/views/scripts/contacts/index.phtml:100
+#: application/views/scripts/contacts/index.phtml:103
 msgid "View Larger Map"
 msgstr "View Larger Map"
 
@@ -220,7 +220,6 @@ msgid "H1X 3A5"
 msgstr "H1X 3A5"
 
 #: application/views/scripts/contacts/index.phtml:59
-#: application/views/scripts/contacts/index.phtml:91
 msgid "03:00 PM to 04:30 PM"
 msgstr "03:00 PM to 04:30 PM"
 
@@ -239,6 +238,18 @@ msgstr "300, Cypihot street,"
 #: application/views/scripts/contacts/index.phtml:83
 msgid "Sainte-Anne-de-Bellevue, QC"
 msgstr "Sainte-Anne-de-Bellevue, QC"
+
+#: application/views/scripts/contacts/index.phtml:90
+msgid "Friday"
+msgstr "Friday"
+
+#: application/views/scripts/contacts/index.phtml:91
+msgid "06:30 PM to 08:00 PM"
+msgstr "06:30 PM to 08:00 PM"
+
+#: application/views/scripts/contacts/index.phtml:94
+msgid "11:15 AM to 12:45 PM"
+msgstr "11:15 AM to 12:45 PM"
 
 #: application/views/scripts/articles/body-movements-by-russel-haskin.phtml:6
 msgid "Brief Background of Russel Haskin"
