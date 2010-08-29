@@ -1,15 +1,15 @@
 <div>
     <div class='topBanner'>
-        <div class='text textleft'><?php echo $this->escape($this->translate('Koryukan Dojo')); ?></div>
+        <div class='text textleft'><?php echo $this->purify($this->translate('Koryukan Dojo')); ?></div>
         <div class='takedalogo'><img alt='Takeda' src="/Images/Menu/TakedaLogo.gif" /></div>
-        <div class='text textright'><?php echo $this->escape($this->translate('Daito Ryu Aiki Budo')); ?></div>
+        <div class='text textright'><?php echo $this->purify($this->translate('Daito Ryu Aiki Budo')); ?></div>
     </div>
     <br />
     <div>
         <?php echo $this->layout()->menu; ?>
     </div>
     <div class="pageTitle">
-        <h1><?php echo $this->escape($this->pageTitle) ?></h1>
-        <img src="/Images/Menu/Kenji.gif" alt="<?php echo $this->escape($this->translate('Daito Ryu Aiki Budo')); ?>"  />
+        <h1><?php echo $this->purify($this->pageTitle) ?></h1>
+        <img src="/Images/Menu/Kenji.gif" alt="<?php echo $this->purify($this->translate('Daito Ryu Aiki Budo')); ?>"  />
     </div>
 </div>

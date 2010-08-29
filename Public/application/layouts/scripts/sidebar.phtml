@@ -1,5 +1,5 @@
 <td valign="top" class='image' >
-    <img src="/Images/Pages/<?php echo $this->sideImage; ?>"  alt="<?php echo $this->escape($this->sideImageAlt); ?>">
+    <img src="/Images/Pages/<?php echo $this->sideImage; ?>"  alt="<?php echo $this->purify($this->sideImageAlt); ?>">
 
     <div class='sidebarMenu'>
         <?php echo $this->placeholder('sidebarmenu'); ?>

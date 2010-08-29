@@ -31,9 +31,15 @@ class ContactsController extends Zend_Controller_Action
      */
     public function indexAction()
     {
+        $lang = $this->getRequest()->getParam('lang', 'en');
+        if (!in_array($lang, array('en', 'fr'))) {
+            $lang = 'en';
+        }
+
         $pageTitle = $this->view->translate('Dojo & Contact Info');
         $this->view->assign('pageTitle', $pageTitle);
         $this->view->assign('sideImage', 'contacts.jpg');
         $this->view->assign('sideImageAlt', $pageTitle);
+        $this->view->assign('mapLanguage', $lang);
     }
 }

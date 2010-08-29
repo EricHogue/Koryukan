@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Koyukan Public\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-28 20:09-0500\n"
+"POT-Creation-Date: 2010-08-29 12:40-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: eric <eric@erichogue.ca>\n"
 "Language-Team: Koyukan <eric@koryukan.com>\n"
@@ -68,7 +68,7 @@ msgstr "Boutique en ligne"
 msgid "Welcome to Koryukan"
 msgstr "Bienvenue chez Koryukan"
 
-#: application/controllers/ContactsController.php:34
+#: application/controllers/ContactsController.php:39
 msgid "Dojo & Contact Info"
 msgstr "Contact & Info"
 
@@ -157,8 +157,10 @@ msgid "LaSalle Quebec"
 msgstr "LaSalle Quebec"
 
 #: application/views/scripts/contacts/index.phtml:16
-msgid "Class Times:"
-msgstr "Horaires des cours:"
+#: application/views/scripts/contacts/index.phtml:57
+#: application/views/scripts/contacts/index.phtml:89
+msgid "Class Times"
+msgstr "Horaires des cours"
 
 #: application/views/scripts/contacts/index.phtml:17
 msgid "Adult"
@@ -174,7 +176,8 @@ msgstr "20h00 &agrave; 22h00"
 
 #: application/views/scripts/contacts/index.phtml:20
 #: application/views/scripts/contacts/index.phtml:23
-#: application/views/scripts/contacts/index.phtml:45
+#: application/views/scripts/contacts/index.phtml:58
+#: application/views/scripts/contacts/index.phtml:90
 msgid "Sunday"
 msgstr "Dimanche"
 
@@ -190,33 +193,52 @@ msgstr "Enfants - Familles"
 msgid "10:00 AM to 11:00 AM"
 msgstr "10h00 &agrave; 11h00"
 
-#: application/views/scripts/contacts/index.phtml:31
+#: application/views/scripts/contacts/index.phtml:33
+#: application/views/scripts/contacts/index.phtml:68
+#: application/views/scripts/contacts/index.phtml:100
+msgid "View Larger Map"
+msgstr "Agrandir le plan"
+
+#: application/views/scripts/contacts/index.phtml:44
 msgid "Dokyoo Dojo"
 msgstr "Dojo Dokyoo"
 
-#: application/views/scripts/contacts/index.phtml:35
+#: application/views/scripts/contacts/index.phtml:48
 msgid "Sainte-Sophie Orthodox Ukrainian Cathedral,"
 msgstr "Cath&eacute;drale Orthodoxe Ukrainienne Sainte-Sophie,"
 
-#: application/views/scripts/contacts/index.phtml:36
+#: application/views/scripts/contacts/index.phtml:49
 msgid "6250 12 i&egrave;me avenue"
 msgstr "6250 12ème avenue"
 
-#: application/views/scripts/contacts/index.phtml:37
+#: application/views/scripts/contacts/index.phtml:50
 msgid "Montr&eacute;al, QC"
 msgstr "Montréal, QC"
 
-#: application/views/scripts/contacts/index.phtml:38
+#: application/views/scripts/contacts/index.phtml:51
 msgid "H1X 3A5"
 msgstr "H1X 3A5"
 
-#: application/views/scripts/contacts/index.phtml:44
-msgid "Class Times"
-msgstr "Horaires des cours:"
-
-#: application/views/scripts/contacts/index.phtml:46
+#: application/views/scripts/contacts/index.phtml:59
+#: application/views/scripts/contacts/index.phtml:91
 msgid "03:00 PM to 04:30 PM"
 msgstr "15:00 &agrave; 16:30"
+
+#: application/views/scripts/contacts/index.phtml:77
+msgid "Sainte-Anne's Dojo"
+msgstr "Dojo de Sainte-Anne"
+
+#: application/views/scripts/contacts/index.phtml:81
+msgid "Chalet Peter Williamson, Parc Aumais"
+msgstr "Chalet Peter Williamson, Parc Aumais"
+
+#: application/views/scripts/contacts/index.phtml:82
+msgid "300, Cypihot street,"
+msgstr "300, rue Cypihot,"
+
+#: application/views/scripts/contacts/index.phtml:83
+msgid "Sainte-Anne-de-Bellevue, QC"
+msgstr "Sainte-Anne-de-Bellevue, QC"
 
 #: application/views/scripts/articles/body-movements-by-russel-haskin.phtml:6
 msgid "Brief Background of Russel Haskin"
@@ -1795,6 +1817,8 @@ msgstr "Le trait&eacute; mettant fin &agrave; la guerre civile, 'R&egrave;glemen
 msgid "Daito Ryu Aiki Budo"
 msgstr "Daito Ryu Aiki Budo"
 
+#~ msgid "Class Times:"
+#~ msgstr "Horaires des cours:"
 #~ msgid "gratitude to dr Thivierge"
 #~ msgstr ""
 #~ "Les membres du dojo Koryukan souhaitent remercier le Dr Thivierge pour sa "
