@@ -6,7 +6,7 @@ defined('APPLICATION_PATH')
 
 // Define application environment
 defined('APPLICATION_ENV')
-    || define('APPLICATION_ENV', (getenv('APPLICATION_ENV') ? getenv('APPLICATION_ENV') : 'staging'));
+    || define('APPLICATION_ENV', (getenv('APPLICATION_ENV') ? getenv('APPLICATION_ENV') : 'production'));
 
 defined('BASE_PATH')
     || define('BASE_PATH', realpath(APPLICATION_PATH . '/../../Base'));
