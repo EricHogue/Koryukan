@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Koyukan Public\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-29 20:53-0500\n"
+"POT-Creation-Date: 2010-08-30 19:01-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: eric <eric@erichogue.ca>\n"
 "Language-Team: Koryukan <eric@koryukan.com>\n"
@@ -161,8 +161,8 @@ msgid "LaSalle Quebec"
 msgstr "LaSalle Quebec"
 
 #: application/views/scripts/contacts/index.phtml:22
-#: application/views/scripts/contacts/index.phtml:63
-#: application/views/scripts/contacts/index.phtml:97
+#: application/views/scripts/contacts/index.phtml:67
+#: application/views/scripts/contacts/index.phtml:101
 msgid "Class Times"
 msgstr "Class Times"
 
@@ -175,12 +175,13 @@ msgid "Mondays and Wednesdays"
 msgstr "Mondays and Wednesdays"
 
 #: application/views/scripts/contacts/index.phtml:25
+#: application/views/scripts/contacts/index.phtml:34
 msgid "8:00 PM to 10:00 PM"
 msgstr "8:00 PM to 10:00 PM"
 
 #: application/views/scripts/contacts/index.phtml:26
 #: application/views/scripts/contacts/index.phtml:29
-#: application/views/scripts/contacts/index.phtml:64
+#: application/views/scripts/contacts/index.phtml:68
 msgid "Sunday"
 msgstr "Sunday"
 
@@ -196,65 +197,73 @@ msgstr "Children - Family"
 msgid "10:00 AM to 11:00 AM"
 msgstr "10:00 AM to 11:00 AM"
 
-#: application/views/scripts/contacts/index.phtml:39
-#: application/views/scripts/contacts/index.phtml:75
-#: application/views/scripts/contacts/index.phtml:111
+#: application/views/scripts/contacts/index.phtml:32
+msgid "Weapons Class (Bo-jutsu and Ken-jutsu)"
+msgstr "Weapons Class (Bo-jutsu and Ken-jutsu)"
+
+#: application/views/scripts/contacts/index.phtml:33
+msgid "Thursday"
+msgstr "Thursday"
+
+#: application/views/scripts/contacts/index.phtml:43
+#: application/views/scripts/contacts/index.phtml:79
+#: application/views/scripts/contacts/index.phtml:115
 msgid "View Larger Map"
 msgstr "View Larger Map"
 
-#: application/views/scripts/contacts/index.phtml:50
+#: application/views/scripts/contacts/index.phtml:54
 msgid "Dokyoo Dojo"
 msgstr "Dokyoo Dojo"
 
-#: application/views/scripts/contacts/index.phtml:54
+#: application/views/scripts/contacts/index.phtml:58
 msgid "Sainte-Sophie Orthodox Ukrainian Cathedral,"
 msgstr "Sainte-Sophie Orthodox Ukrainian Cathedral,"
 
-#: application/views/scripts/contacts/index.phtml:55
+#: application/views/scripts/contacts/index.phtml:59
 msgid "6250 12 i&egrave;me avenue"
 msgstr "6250 12 i&egrave;me avenue"
 
-#: application/views/scripts/contacts/index.phtml:56
+#: application/views/scripts/contacts/index.phtml:60
 msgid "Montr&eacute;al, QC"
 msgstr "Montr&eacute;al, QC"
 
-#: application/views/scripts/contacts/index.phtml:57
+#: application/views/scripts/contacts/index.phtml:61
 msgid "H1X 3A5"
 msgstr "H1X 3A5"
 
-#: application/views/scripts/contacts/index.phtml:65
+#: application/views/scripts/contacts/index.phtml:69
 msgid "03:00 PM to 04:30 PM"
 msgstr "03:00 PM to 04:30 PM"
 
-#: application/views/scripts/contacts/index.phtml:85
+#: application/views/scripts/contacts/index.phtml:89
 msgid "Sainte-Anne's Dojo"
 msgstr "Sainte-Anne's Dojo"
 
-#: application/views/scripts/contacts/index.phtml:89
+#: application/views/scripts/contacts/index.phtml:93
 msgid "Chalet Peter Williamson, Parc Aumais"
 msgstr "Chalet Peter Williamson, Parc Aumais"
 
-#: application/views/scripts/contacts/index.phtml:90
+#: application/views/scripts/contacts/index.phtml:94
 msgid "300, Cypihot street,"
 msgstr "300, Cypihot street,"
 
-#: application/views/scripts/contacts/index.phtml:91
+#: application/views/scripts/contacts/index.phtml:95
 msgid "Sainte-Anne-de-Bellevue, QC"
 msgstr "Sainte-Anne-de-Bellevue, QC"
 
-#: application/views/scripts/contacts/index.phtml:98
+#: application/views/scripts/contacts/index.phtml:102
 msgid "Friday"
 msgstr "Friday"
 
-#: application/views/scripts/contacts/index.phtml:99
-msgid "06:30 PM to 08:00 PM"
-msgstr "06:30 PM to 08:00 PM"
+#: application/views/scripts/contacts/index.phtml:103
+msgid "06:30 PM to 07:30 PM"
+msgstr "06:30 PM to 07:30 PM"
 
-#: application/views/scripts/contacts/index.phtml:101
+#: application/views/scripts/contacts/index.phtml:105
 msgid "Saturday"
 msgstr "Saturday"
 
-#: application/views/scripts/contacts/index.phtml:102
+#: application/views/scripts/contacts/index.phtml:106
 msgid "12:15 AM to 1:15 PM"
 msgstr "12:15 AM to 1:15 PM"
 
