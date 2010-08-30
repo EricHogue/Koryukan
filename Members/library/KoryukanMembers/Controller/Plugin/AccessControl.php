@@ -37,6 +37,7 @@ class KoryukanMembers_Controller_Plugin_AccessControl extends Zend_Controller_Pl
             $user = $auth->getIdentity();
             $this->_validatePermission($user);
         } else {
+            if (0 === strcasecmp('menu', $request->getControllerName())) return;
             $request->setControllerName('Login');
             $request->setActionName('index');
         }
@@ -63,7 +64,7 @@ class KoryukanMembers_Controller_Plugin_AccessControl extends Zend_Controller_Pl
         $controllerName = $request->getControllerName();
         $actionName = $request->getActionName();
 
-        if (0 === strcasecmp('error', $controllerName)) {
+        if (0 === strcasecmp('error', $controllerName) || 0 === strcasecmp('menu', $controllerName)) {
             return;
         }
 

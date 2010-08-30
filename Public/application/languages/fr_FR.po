@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Koyukan Public\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-29 16:07-0500\n"
+"POT-Creation-Date: 2010-08-29 20:52-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: eric <eric@erichogue.ca>\n"
 "Language-Team: Koyukan <eric@koryukan.com>\n"
@@ -144,112 +144,119 @@ msgstr "Multimedia"
 msgid "NewsPageTitle"
 msgstr "Nouvelles"
 
-#: application/views/scripts/contacts/index.phtml:2
+#: application/views/scripts/contacts/index.phtml:3
+msgid "Koryukan Dojo in now on"
+msgstr "Le dojo Koryukan est maintenant sur"
+
+#: application/views/scripts/contacts/index.phtml:8
 msgid "Koryukan Dojo"
 msgstr "Koryukan Dojo"
 
-#: application/views/scripts/contacts/index.phtml:7
+#: application/views/scripts/contacts/index.phtml:13
 msgid "Gym Zone, 8351 Newman Boulevard"
 msgstr "Gym Zone, 8351 Newman Boulevard"
 
-#: application/views/scripts/contacts/index.phtml:8
+#: application/views/scripts/contacts/index.phtml:14
 msgid "LaSalle Quebec"
 msgstr "LaSalle Quebec"
 
-#: application/views/scripts/contacts/index.phtml:16
-#: application/views/scripts/contacts/index.phtml:57
-#: application/views/scripts/contacts/index.phtml:89
+#: application/views/scripts/contacts/index.phtml:22
+#: application/views/scripts/contacts/index.phtml:63
+#: application/views/scripts/contacts/index.phtml:97
 msgid "Class Times"
 msgstr "Horaires des cours"
 
-#: application/views/scripts/contacts/index.phtml:17
+#: application/views/scripts/contacts/index.phtml:23
 msgid "Adult"
 msgstr "Adulte"
 
-#: application/views/scripts/contacts/index.phtml:18
+#: application/views/scripts/contacts/index.phtml:24
 msgid "Mondays and Wednesdays"
 msgstr "Lundi et Mercredi"
 
-#: application/views/scripts/contacts/index.phtml:19
+#: application/views/scripts/contacts/index.phtml:25
 msgid "8:00 PM to 10:00 PM"
 msgstr "20h00 &agrave; 22h00"
 
-#: application/views/scripts/contacts/index.phtml:20
-#: application/views/scripts/contacts/index.phtml:23
-#: application/views/scripts/contacts/index.phtml:58
-#: application/views/scripts/contacts/index.phtml:93
+#: application/views/scripts/contacts/index.phtml:26
+#: application/views/scripts/contacts/index.phtml:29
+#: application/views/scripts/contacts/index.phtml:64
 msgid "Sunday"
 msgstr "Dimanche"
 
-#: application/views/scripts/contacts/index.phtml:21
+#: application/views/scripts/contacts/index.phtml:27
 msgid "11:00 AM to 12:30 AM"
 msgstr "11h00 &agrave; 12h30"
 
-#: application/views/scripts/contacts/index.phtml:22
+#: application/views/scripts/contacts/index.phtml:28
 msgid "Children-Family"
 msgstr "Enfants - Familles"
 
-#: application/views/scripts/contacts/index.phtml:24
+#: application/views/scripts/contacts/index.phtml:30
 msgid "10:00 AM to 11:00 AM"
 msgstr "10h00 &agrave; 11h00"
 
-#: application/views/scripts/contacts/index.phtml:33
-#: application/views/scripts/contacts/index.phtml:68
-#: application/views/scripts/contacts/index.phtml:103
+#: application/views/scripts/contacts/index.phtml:39
+#: application/views/scripts/contacts/index.phtml:75
+#: application/views/scripts/contacts/index.phtml:111
 msgid "View Larger Map"
 msgstr "Agrandir le plan"
 
-#: application/views/scripts/contacts/index.phtml:44
+#: application/views/scripts/contacts/index.phtml:50
 msgid "Dokyoo Dojo"
 msgstr "Dojo Dokyoo"
 
-#: application/views/scripts/contacts/index.phtml:48
+#: application/views/scripts/contacts/index.phtml:54
 msgid "Sainte-Sophie Orthodox Ukrainian Cathedral,"
 msgstr "Cath&eacute;drale Orthodoxe Ukrainienne Sainte-Sophie,"
 
-#: application/views/scripts/contacts/index.phtml:49
+#: application/views/scripts/contacts/index.phtml:55
 msgid "6250 12 i&egrave;me avenue"
 msgstr "6250 12ème avenue"
 
-#: application/views/scripts/contacts/index.phtml:50
+#: application/views/scripts/contacts/index.phtml:56
 msgid "Montr&eacute;al, QC"
 msgstr "Montréal, QC"
 
-#: application/views/scripts/contacts/index.phtml:51
+#: application/views/scripts/contacts/index.phtml:57
 msgid "H1X 3A5"
 msgstr "H1X 3A5"
 
-#: application/views/scripts/contacts/index.phtml:59
+#: application/views/scripts/contacts/index.phtml:65
 msgid "03:00 PM to 04:30 PM"
 msgstr "15:00 &agrave; 16:30"
 
-#: application/views/scripts/contacts/index.phtml:77
+#: application/views/scripts/contacts/index.phtml:85
 msgid "Sainte-Anne's Dojo"
 msgstr "Dojo de Sainte-Anne"
 
-#: application/views/scripts/contacts/index.phtml:81
+#: application/views/scripts/contacts/index.phtml:89
 msgid "Chalet Peter Williamson, Parc Aumais"
 msgstr "Chalet Peter Williamson, Parc Aumais"
 
-#: application/views/scripts/contacts/index.phtml:82
+#: application/views/scripts/contacts/index.phtml:90
 msgid "300, Cypihot street,"
 msgstr "300, rue Cypihot,"
 
-#: application/views/scripts/contacts/index.phtml:83
+#: application/views/scripts/contacts/index.phtml:91
 msgid "Sainte-Anne-de-Bellevue, QC"
 msgstr "Sainte-Anne-de-Bellevue, QC"
 
-#: application/views/scripts/contacts/index.phtml:90
+#: application/views/scripts/contacts/index.phtml:98
 msgid "Friday"
 msgstr "Vendredi"
 
-#: application/views/scripts/contacts/index.phtml:91
+#: application/views/scripts/contacts/index.phtml:99
 msgid "06:30 PM to 08:00 PM"
 msgstr "18:30 à 20:00"
 
-#: application/views/scripts/contacts/index.phtml:94
-msgid "11:15 AM to 12:45 PM"
-msgstr "11:15 à 12:45"
+#: application/views/scripts/contacts/index.phtml:101
+msgid "Saturday"
+msgstr "Samedi"
+
+#: application/views/scripts/contacts/index.phtml:102
+msgid "12:15 AM to 1:15 PM"
+msgstr "12:15 à 13:15"
 
 #: application/views/scripts/articles/body-movements-by-russel-haskin.phtml:6
 msgid "Brief Background of Russel Haskin"

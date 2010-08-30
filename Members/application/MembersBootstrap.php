@@ -19,7 +19,7 @@ class MembersBootstrap extends KoryukanBootstrap
         $this->bootstrap('frontController');
 
         $frontController = $this->getResource('frontController');
-        $frontController->registerPlugin(new KoryukanMembers_Controller_Plugin_AccessControl(), 98);
+        $frontController->registerPlugin(new KoryukanMembers_Controller_Plugin_AccessControl(), 97);
     }
 
     /**
@@ -48,6 +48,15 @@ class MembersBootstrap extends KoryukanBootstrap
         Zend_Registry::set('acl', $acl);
 
         return $acl;
+    }
+
+    protected function _initActionSetupPlugin()
+    {
+        $this->bootstrap('MembersAutoLoad');
+        $this->bootstrap('frontController');
+
+        $frontController = $this->getResource('frontController');
+        $frontController->registerPlugin(new KoryukanMembers_Controller_Plugin_ActionSetup(), 96);
     }
 
 }

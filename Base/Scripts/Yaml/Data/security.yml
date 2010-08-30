@@ -19,8 +19,15 @@ Koryukan_Db_Resource:
     resource1: 
         controllerName: index
         actionName: index
+    resource2: 
+        controllerName: menu
+        actionName: menu
 Koryukan_Db_Permission:
     permission1: 
         UserGroup: group1
         Resource: resource1
+        granted: 1
+    permission2: 
+        UserGroup: group1
+        Resource: resource2
         granted: 1
