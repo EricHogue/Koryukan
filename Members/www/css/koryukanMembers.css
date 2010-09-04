@@ -56,3 +56,9 @@ div.actions input {
     margin-left: auto;
 }
 
+div.clear {
+    clear: both;
+    float: none;
+    margin-bottom: 1em;
+}
+

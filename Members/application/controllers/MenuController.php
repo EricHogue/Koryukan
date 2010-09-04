@@ -31,6 +31,29 @@ class MenuController extends Zend_Controller_Action
      */
     public function menuAction()
     {
+        $connectedUser = $this->_getUser();
+        if (true !== isset($connectedUser)) $mainMenu = array();
+        else {
+            $menuBuilder = new KoryukanMembers_MenuBuilder(Zend_Registry::get('acl'), $connectedUser,
+                Zend_Registry::get('lang'), $this->view);
+            $mainMenu = $menuBuilder->buildMenu();
+        }
 
+        $this->view->menu = $mainMenu;
+        $this->_helper->viewRenderer->setResponseSegment('menu');
+        $this->view->lang = Zend_Registry::get('lang');
+    }
+
+    /**
+     * Get user
+     *
+     * @return Koryukan_Model_User
+     */
+    private function _getUser()
+    {
+        $auth = Zend_Auth::getInstance();
+
+        if ($auth->hasIdentity()) return $auth->getIdentity();
+        else return null;
     }
 }

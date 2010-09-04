@@ -22,6 +22,18 @@ Koryukan_Db_Resource:
     resource2: 
         controllerName: menu
         actionName: menu
+    resource3: 
+        controllerName: forum
+        actionName: index
+    resource4: 
+        controllerName: profile
+        actionName: index
+    resource5: 
+        controllerName: administration
+        actionName: news
+    resource6: 
+        controllerName: administration
+        actionName: users
 Koryukan_Db_Permission:
     permission1: 
         UserGroup: group1
@@ -30,4 +42,20 @@ Koryukan_Db_Permission:
     permission2: 
         UserGroup: group1
         Resource: resource2
+        granted: 1
+    permission3: 
+        UserGroup: group1
+        Resource: resource3
+        granted: 1
+    permission4: 
+        UserGroup: group1
+        Resource: resource4
+        granted: 1
+    permission5: 
+        UserGroup: group3
+        Resource: resource5
+        granted: 1
+    permission6: 
+        UserGroup: group3
+        Resource: resource6
         granted: 1

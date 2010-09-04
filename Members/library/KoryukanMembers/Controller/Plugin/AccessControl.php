@@ -68,10 +68,9 @@ class KoryukanMembers_Controller_Plugin_AccessControl extends Zend_Controller_Pl
             return;
         }
 
-
-
         $acl = Zend_Registry::get('acl');
         if ($acl->hasPermission($user, $controllerName, $actionName)) {
+            //Do Nothing
         } elseif (0 === strcasecmp('error', $controllerName)) {
             //Do nothing
         } else {

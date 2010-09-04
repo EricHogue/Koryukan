@@ -43,7 +43,9 @@ class KoryukanMembers_Acl extends Zend_Acl
     {
         $resource = Koryukan_Model_Resource::getByControllerAndActionName($controllerName, $actionName);
 
-        return $this->isAllowed($user, $resource);
+        //By default, allow the page if no resource exits
+        if (!isset($resource)) return true;
+        else return $this->isAllowed($user, $resource);
     }
 
     /**

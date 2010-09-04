@@ -1,0 +1,17 @@
+<?php
+    if (strlen($this->controller) > 0 && strlen($this->action) > 0) {
+        $url = $this->url(array('lang'=> $this->lang, 'controller' => $this->controller, 'action' => $this->action), null, true);
+    } else {
+        $url = '';
+    }
+?>
+<li>
+    <a href="<?php echo $url ?>"><?php echo $this->purify($this->title); ?></a>
+    <?php
+        if (isset($this->submenu)) {
+            echo '<ul>';
+            echo $this->partialLoop('menu/_menuItem.phtml', $this->submenu);
+            echo '</ul>';
+        }
+    ?>
+</li>
