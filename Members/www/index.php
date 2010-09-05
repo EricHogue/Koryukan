@@ -5,8 +5,13 @@ defined('APPLICATION_PATH')
     || define('APPLICATION_PATH', realpath(dirname(__FILE__) . '/../application'));
 
 // Define application environment
-defined('APPLICATION_ENV')
-    || define('APPLICATION_ENV', (getenv('APPLICATION_ENV') ? getenv('APPLICATION_ENV') : 'production'));
+$environment = getenv('APPLICATION_ENV') ? getenv('APPLICATION_ENV') : 'production';
+
+if (array_key_exists('SERVER_NAME', $_SERVER) && 0 === strpos($_SERVER['SERVER_NAME'], 'staging')) {
+    $environment = 'staging';
+}
+
+define('APPLICATION_ENV', $environment);
 
 defined('BASE_PATH')
     || define('BASE_PATH', realpath(APPLICATION_PATH . '/../../Base'));
