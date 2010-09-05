@@ -80,10 +80,10 @@ class KoryukanMembers_MenuBuilder
             array('lang' => $lang, 'title' => $this->_view->translate('My Profile'), 'controller' => 'profile', 'action' => 'index'),
             array(
                 'lang' => $lang, 'title'  =>  $this->_view->translate('Administration'), 'controller' => '', 'action' => '',
-                'submenu' => array(
+                /*'submenu' => array(
                     array('lang' => $lang, 'title' => $this->_view->translate('News'), 'controller' => 'administration', 'action' => 'news'),
                     array('lang' => $lang, 'title' => $this->_view->translate('Users'), 'controller' => 'administration', 'action' => 'users'),
-                )
+                )*/
             )
         );
 

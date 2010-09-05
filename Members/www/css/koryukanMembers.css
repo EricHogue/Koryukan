@@ -22,7 +22,7 @@ body {
 
 .siteheader h1 {
 	margin: auto; 
-    font-size: 3em;
+    font-size: 2em;
     text-align: center;
     padding-top: 30px;
 }
@@ -62,3 +62,23 @@ div.clear {
     margin-bottom: 1em;
 }
 
+.mainMenu {
+	border: 1px solid red;
+    height: 29px; 
+    width: 50%; 
+    margin: auto;
+}
+
+.mainMenu li {
+    float: left;
+    list-style: none;
+    margin: auto;
+    width: 20%;
+}
+
+.mainMenu li {
+}
+
+ul.mainMenu li ul {
+	display: none;
+}

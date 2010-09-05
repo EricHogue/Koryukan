@@ -8,10 +8,10 @@
     $this->headLink()->appendStylesheet('/css/koryukanMembers.css');
     $this->headScript()->appendFile('/js/' . $jQueryFile, 'text/javascript');
     $this->headScript()->appendFile('/js/jquery-ui-1.8.2.custom.min.js', 'text/javascript');
-    $this->headScript()->appendFile('/js/superfish.js', 'text/javascript');
+    //$this->headScript()->appendFile('/js/superfish.js', 'text/javascript');
 
     $this->headLink()->appendStylesheet('/css/jQueryUI/' . $jQueryUITheme . '/jquery-ui-1.8.2.custom.css');
-    $this->headLink()->appendStylesheet('/css/superfish.css');
+    //$this->headLink()->appendStylesheet('/css/superfish.css');
 ?>
 
 <html>
@@ -29,7 +29,7 @@
     ?>
 
 </head>
-<body>
+<body class="ui-widget ui-widget-content">
     <!-- Page Header -->
     <?php echo $this->partial('header.phtml', array()); ?>
 
@@ -39,14 +39,4 @@
 
 
 </body>
-<script type="text/javascript">
-
-    $(document).ready(function() {
-    	$('ul.sf-menu').superfish({
-            delay:       1000,                            // one second delay on mouseout
-            hoverClass:    'sfHover',
-        });
-    });
-
-</script>
 </html>
