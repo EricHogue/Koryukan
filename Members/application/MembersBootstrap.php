@@ -59,4 +59,18 @@ class MembersBootstrap extends KoryukanBootstrap
         $frontController->registerPlugin(new KoryukanMembers_Controller_Plugin_ActionSetup(), 96);
     }
 
+    /**
+     * Init the session
+     *
+     * @return void
+     */
+    protected function _initSession()
+    {
+        $config        = $this->getOptions();
+        $cookiesDomain = $config['cookiesDomain'];
+        $cookiesName   = $config['cookieName'];
+
+        Zend_Session::setOptions(array('cookie_domain' => $cookiesDomain, 'name' => $cookiesName));
+    }
+
 }
