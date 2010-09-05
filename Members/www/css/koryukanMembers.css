@@ -5,14 +5,15 @@
 }
 
 html {
-	height: 100%;
 }
 
 body {
     border: none;
-    height: 100%;
+    background-color: #F4F0EC;
 }
 
+
+/** LAYOUT */
 .siteheader {
 	height: 130px;
 	margin: 0px; 
@@ -27,6 +28,24 @@ body {
     padding-top: 30px;
 }
 
+#page {
+	height: 100%; 
+	width: 90%; 
+	margin: auto; 
+	margin-top: 20px;
+}
+
+#page div#divmenu {
+	float: left; 
+	width: 19%;
+}
+
+#page div#maincontent {
+	float: right;
+	width: 80%; 
+}
+
+/* LOGIN */
 div#logindiv {
 	margin: auto;
 	max-width:600px;
@@ -62,23 +81,22 @@ div.clear {
     margin-bottom: 1em;
 }
 
-.mainMenu {
-	border: 1px solid red;
-    height: 29px; 
-    width: 50%; 
+
+/* Menu */
+ul.mainMenu {     
     margin: auto;
+    width: 100%;
+    max-width:200px;
 }
 
-.mainMenu li {
-    float: left;
+ul.mainMenu li {
+	margin-bottom: 7px;
+    padding: 3px 5px;
     list-style: none;
-    margin: auto;
-    width: 20%;
 }
 
-.mainMenu li {
+ul.mainMenu li a {
+    width: 100%;
+    display: block;
 }
 
-ul.mainMenu li ul {
-	display: none;
-}

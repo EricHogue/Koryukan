@@ -78,13 +78,8 @@ class KoryukanMembers_MenuBuilder
         $mainMenu = array(
             array('lang' => $lang, 'title' => $this->_view->translate('Forum'), 'controller' => 'forum', 'action' => 'index'),
             array('lang' => $lang, 'title' => $this->_view->translate('My Profile'), 'controller' => 'profile', 'action' => 'index'),
-            array(
-                'lang' => $lang, 'title'  =>  $this->_view->translate('Administration'), 'controller' => '', 'action' => '',
-                /*'submenu' => array(
-                    array('lang' => $lang, 'title' => $this->_view->translate('News'), 'controller' => 'administration', 'action' => 'news'),
-                    array('lang' => $lang, 'title' => $this->_view->translate('Users'), 'controller' => 'administration', 'action' => 'users'),
-                )*/
-            )
+            array('lang' => $lang, 'title' => $this->_view->translate('Manage News'), 'controller' => 'administration', 'action' => 'news'),
+            array('lang' => $lang, 'title' => $this->_view->translate('Manage Users'), 'controller' => 'administration', 'action' => 'users'),
         );
 
         return $this->_getAuthorizedMenus($mainMenu);
