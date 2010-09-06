@@ -116,6 +116,26 @@ class Koryukan_Model_User extends Koryukan_Model_Base implements Zend_Acl_Role_I
     }
 
     /**
+     * Return the user full name
+     *
+     * @return string
+     */
+    public function getFullName()
+    {
+        return $this->_dbRecord->get('firstName') . ' ' . $this->_dbRecord->get('lastName');
+    }
+
+    /**
+     * Return the user email address
+     *
+     * @return string
+     */
+    public function getEmail()
+    {
+        return $this->_dbRecord->get('email');
+    }
+
+    /**
      * Return the name of the db class
      *
      * @return string

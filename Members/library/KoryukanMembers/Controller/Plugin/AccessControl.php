@@ -25,19 +25,30 @@
 class KoryukanMembers_Controller_Plugin_AccessControl extends Zend_Controller_Plugin_Abstract
 {
     /**
+     * A list of pages that can be show without being loged in
+     *
+     * @var array
+     */
+    protected $_pagesThatRequiresNoAuthentication = array(
+        'error', 'menu', 'vanillaauth', 'login'
+    );
+
+
+    /**
      * Make the user is loged in and has access
      *
      * @return void
      */
     public function preDispatch(Zend_Controller_Request_Abstract $request)
     {
+        if ($this->_shoudBypassCheck()) return;
+
         $auth = Zend_Auth::getInstance();
 
         if ($auth->hasIdentity()) {
             $user = $auth->getIdentity();
             $this->_validatePermission($user);
         } else {
-            if (0 === strcasecmp('menu', $request->getControllerName())) return;
             $request->setControllerName('Login');
             $request->setActionName('index');
         }
@@ -64,10 +75,6 @@ class KoryukanMembers_Controller_Plugin_AccessControl extends Zend_Controller_Pl
         $controllerName = $request->getControllerName();
         $actionName = $request->getActionName();
 
-        if (0 === strcasecmp('error', $controllerName) || 0 === strcasecmp('menu', $controllerName)) {
-            return;
-        }
-
         $acl = Zend_Registry::get('acl');
         if ($acl->hasPermission($user, $controllerName, $actionName)) {
             //Do Nothing
@@ -76,5 +83,18 @@ class KoryukanMembers_Controller_Plugin_AccessControl extends Zend_Controller_Pl
         } else {
             throw new KoryukanMembers_AccessDeniedException('Access denied');
         }
+    }
+
+    /**
+     * Check if we should bypass check because the current page does not require authentication
+     *
+     * @return boolean
+     */
+    private function _shoudBypassCheck()
+    {
+        $request = $this->getRequest();
+        $controllerName = $request->getControllerName();
+
+        return in_array($controllerName, $this->_pagesThatRequiresNoAuthentication);
     }
 }

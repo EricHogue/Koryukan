@@ -10,6 +10,7 @@
  * @property string $password
  * @property string $firstName
  * @property string $lastName
+ * @property string $email
  * @property enum $status
  * @property Doctrine_Collection $UserGroups
  * 
@@ -49,6 +50,11 @@ abstract class Koryukan_Db_BaseUser extends Doctrine_Record
              'type' => 'string',
              'notnull' => true,
              'length' => '128',
+             ));
+        $this->hasColumn('email', 'string', 255, array(
+             'type' => 'string',
+             'notnull' => true,
+             'length' => '255',
              ));
         $this->hasColumn('status', 'enum', null, array(
              'type' => 'enum',

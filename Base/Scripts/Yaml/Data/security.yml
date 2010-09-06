@@ -13,6 +13,7 @@ Koryukan_Db_User:
         password: $P$IplcCZPIauaHHyztxNDqhPZ1ZjFxL61
         firstName: Eric
         lastName: Hogue
+        email: eric.hogue@gmail.com
         status: active
         UserGroups: [group3]
 Koryukan_Db_Resource:

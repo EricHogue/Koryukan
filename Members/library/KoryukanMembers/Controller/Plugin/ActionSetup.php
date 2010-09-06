@@ -39,8 +39,12 @@ class KoryukanMembers_Controller_Plugin_ActionSetup extends Zend_Controller_Plug
             $actionStack = $front->getPlugin('Zend_Controller_Plugin_ActionStack');
         }
 
-        $menuAction = clone($request);
-        $menuAction->setActionName('menu')->setControllerName('menu');
-        $actionStack->pushStack($menuAction);
+        $controllerName = $request->getControllerName();
+
+        if (0 !== strcasecmp('vanillaauth', $controllerName)) {
+            $menuAction = clone($request);
+            $menuAction->setActionName('menu')->setControllerName('menu');
+            $actionStack->pushStack($menuAction);
+        }
     }
 }
