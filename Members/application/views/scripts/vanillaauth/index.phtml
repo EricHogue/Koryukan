@@ -1,9 +1,9 @@
 <?php
     if (isset($this->user)) {
 ?>
-UniqueID=<?php echo $this->user->getId(); ?><br />
-Name=<?php echo $this->user->getFullName(); ?><br />
-Email=<?php echo $this->user->getEmail(); ?><br />
+UniqueID=<?php echo $this->user->getId() . "\n"; ?>
+Name=<?php echo $this->user->getFullName() . "\n"; ?>
+Email=<?php echo $this->user->getEmail() . "\n"; ?>
 <?php
     }
 ?>

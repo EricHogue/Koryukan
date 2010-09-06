@@ -31,7 +31,6 @@ class VanillaauthController extends Zend_Controller_Action
      */
     public function indexAction()
     {
-        error_log('IN');
         $this->_helper->layout->disableLayout();
         $this->view->assign('user', $this->_getLogedInUser());
     }
