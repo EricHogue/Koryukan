@@ -1,5 +1,7 @@
 <?php
-    if (strlen($this->controller) > 0 && strlen($this->action) > 0) {
+    if (strlen($this->url) > 0) {
+        $url = $this->url;
+    } elseif (strlen($this->controller) > 0 && strlen($this->action) > 0) {
         $url = $this->url(array('lang'=> $this->lang, 'controller' => $this->controller, 'action' => $this->action), null, true);
     } else {
         $url = '';

@@ -53,13 +53,22 @@ class LoginController extends Zend_Controller_Action
             if ($this->_checkLoginInfo()) {
                 $lang = $this->getRequest()->getParam('lang', 'en');
                 $this->_helper->redirector->gotoSimple('index', 'index', null, array('lang' => $lang));
-                //$this->_helper->redirector('index', 'index');
-                //$this->_redirector('/index/index');
             }
         }
 
         $this->view->assign('username', $this->_username);
         $this->view->assign('password', $this->_password);
+    }
+
+    /**
+     * Logout the user
+     *
+     * @return void
+     */
+    public function logoutAction()
+    {
+        Zend_Auth::getInstance()->clearIdentity();
+        $this->_helper->redirector->gotoSimple('index', 'index', null, array('lang' => $lang));
     }
 
     /**

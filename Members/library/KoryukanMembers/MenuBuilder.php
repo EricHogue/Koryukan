@@ -74,9 +74,13 @@ class KoryukanMembers_MenuBuilder
      */
     public function buildMenu()
     {
-        $lang = $this->_language;
+        $lang   = $this->_language;
+        $config = Zend_Registry::get('config');
+        $forumConfig = $config->get('forum');
+        $url = $forumConfig->get('url');
+
         $mainMenu = array(
-            array('lang' => $lang, 'title' => $this->_view->translate('Forum'), 'controller' => 'forum', 'action' => 'index'),
+            array('lang' => $lang, 'title' => $this->_view->translate('Forum'), 'url' => $url, 'controller' => 'forum', 'action' => 'index'),
             array('lang' => $lang, 'title' => $this->_view->translate('My Profile'), 'controller' => 'profile', 'action' => 'index'),
             array('lang' => $lang, 'title' => $this->_view->translate('Manage News'), 'controller' => 'administration', 'action' => 'news'),
             array('lang' => $lang, 'title' => $this->_view->translate('Manage Users'), 'controller' => 'administration', 'action' => 'users'),
