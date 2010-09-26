@@ -31,6 +31,8 @@ class KoryukanMembers_Controller_Plugin_ActionSetup extends Zend_Controller_Plug
      */
     public function dispatchLoopStartup(Zend_Controller_Request_Abstract $request)
     {
+        if ($request->isXmlHttpRequest()) return;
+
         $front = Zend_Controller_Front::getInstance();
         if (!$front->hasPlugin('Zend_Controller_Plugin_ActionStack')) {
             $actionStack = new Zend_Controller_Plugin_ActionStack();

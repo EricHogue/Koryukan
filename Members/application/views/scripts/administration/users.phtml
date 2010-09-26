@@ -1,0 +1,22 @@
+<h2><?php echo $this->purify($this->translate('Manage Users')); ?></h2>
+
+<table id="list2"></table>
+<div id="pager2"></div>
+
+
+<script type="text/javascript">
+$(function() {
+
+
+    jQuery("#list2").jqGrid({
+        url:'/en/administration/getusers?q=2',
+        datatype: "json",
+        colNames:['Inv No'],
+        colModel:[
+            {name:'id',index:'id', width:55}
+        ],
+        caption:"JSON Example"
+    });
+    //jQuery("#list2").jqGrid('navGrid','#pager2',{edit:false,add:false,del:false});
+});
+</script>
