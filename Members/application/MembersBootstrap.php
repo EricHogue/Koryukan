@@ -71,7 +71,6 @@ class MembersBootstrap extends KoryukanBootstrap
         $cookiesName   = $config['cookieName'];
 
         Zend_Session::setOptions(array('cookie_domain' => $cookiesDomain, 'name' => $cookiesName));
-        //vanillaauth
     }
 
 }

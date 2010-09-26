@@ -68,6 +68,9 @@ class LoginController extends Zend_Controller_Action
     public function logoutAction()
     {
         Zend_Auth::getInstance()->clearIdentity();
+        $this->_forumLogout();
+
+        $lang = $this->getRequest()->getParam('lang', 'en');
         $this->_helper->redirector->gotoSimple('index', 'index', null, array('lang' => $lang));
     }
 
@@ -82,5 +85,19 @@ class LoginController extends Zend_Controller_Action
         $authResult = Zend_Auth::getInstance()->authenticate($adapter);
 
         return $authResult->isValid();
+    }
+
+    /**
+     * Logout of the forum
+     *
+     * @return void
+     */
+    private function _forumLogout()
+    {
+        $config        = Zend_Registry::get('config');
+        $cookiesDomain = $config->get('cookiesDomain');
+
+        setcookie('Vanilla', ' ', time() - 3600, '/', '.' . $cookiesDomain);
+        unset($_COOKIE['Vanilla']);
     }
 }

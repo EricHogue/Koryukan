@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Koyukan Members\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-28 19:37-0500\n"
+"POT-Creation-Date: 2010-09-06 19:06-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: eric <eric@erichogue.ca>\n"
 "Language-Team: Koryukan <eric@koryukan.com>\n"
@@ -15,18 +15,32 @@ msgstr ""
 "X-Poedit-KeywordsList: translate;_;setLabel;setValue;setMessage;setLegend;_refresh;append;prepend\n"
 "X-Poedit-Basepath: /media/Data/Workspace/Koryukan/Members\n"
 "X-Poedit-SearchPath-0: application\n"
+"X-Poedit-SearchPath-1: library\n"
 
-#: application/controllers/ErrorController.php:21
+#: application/controllers/ErrorController.php:18
 msgid "Page not found"
 msgstr "Page inexistante"
 
-#: application/controllers/ErrorController.php:25
-msgid "Access Denied"
-msgstr "Accès refusé"
-
-#: application/controllers/ErrorController.php:30
+#: application/controllers/ErrorController.php:22
+#: application/controllers/ErrorController.php:27
 msgid "Application error"
 msgstr "Une erreur c'est produite"
+
+#: library/KoryukanMembers/MenuBuilder.php:83
+msgid "Forum"
+msgstr "Forum"
+
+#: library/KoryukanMembers/MenuBuilder.php:84
+msgid "My Profile"
+msgstr "Mon profil"
+
+#: library/KoryukanMembers/MenuBuilder.php:85
+msgid "Manage News"
+msgstr "Gérer les nouvelles"
+
+#: library/KoryukanMembers/MenuBuilder.php:86
+msgid "Manage Users"
+msgstr "Gérer les usagers"
 
 #: application/views/scripts/login/index.phtml:5
 msgid "User Name"
@@ -47,4 +61,7 @@ msgstr "Une erreur c'est produite"
 #: application/views/scripts/index/index.phtml:2
 msgid "Test"
 msgstr "Ceci est un test"
+
+#~ msgid "Access Denied"
+#~ msgstr "Accès refusé"
 
