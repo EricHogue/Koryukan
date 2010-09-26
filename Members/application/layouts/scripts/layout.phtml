@@ -9,9 +9,12 @@
     $this->headScript()->appendFile('/js/' . $jQueryFile, 'text/javascript');
     $this->headScript()->appendFile('/js/jquery-ui-1.8.2.custom.min.js', 'text/javascript');
     $this->headScript()->appendFile('/js/menu.js', 'text/javascript');
+
+    $this->headScript()->appendFile('/js/grid_i18n/grid.locale-' . $this->lang . '.js', 'text/javascript');
     $this->headScript()->appendFile('/js/jquery.jqGrid.min.js', 'text/javascript');
 
     $this->headLink()->appendStylesheet('/css/jQueryUI/' . $jQueryUITheme . '/jquery-ui-1.8.2.custom.css');
+    $this->headLink()->appendStylesheet('/css/ui.jqgrid.css');
 ?>
 
 <html>
