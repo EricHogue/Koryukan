@@ -1,22 +1,27 @@
 <h2><?php echo $this->purify($this->translate('Manage Users')); ?></h2>
 
-<table id="list2"></table>
-<div id="pager2"></div>
+<table id="userGrid"></table>
+<div id="userPager"></div>
 
 
 <script type="text/javascript">
 $(function() {
 
 
-    jQuery("#list2").jqGrid({
-        url:'/en/administration/getusers?q=2',
+    jQuery("#userGrid").jqGrid({
+        url:'/<?php echo $this->purify($this->lang); ?>/administration/getusers',
         datatype: "json",
-        colNames:['Inv No'],
+        colNames:['id', 'username', 'First Name', 'Last Name', 'Email', 'Status'],
         colModel:[
-            {name:'id',index:'id', width:55}
+            {name:'id',index:'id', width:55},
+            {name:'username',index:'username', width:55},
+            {name:'firstName',index:'firstName', width:55},
+            {name:'lastName',index:'lastName', width:55},
+            {name:'email',index:'email', width:55},
+            {name:'status',index:'status', width:55}
         ],
-        caption:"JSON Example"
+        caption: "<?php echo $this->purify($this->translate('Users')); ?>",
+        navGrid: $('#userPager'),
     });
-    //jQuery("#list2").jqGrid('navGrid','#pager2',{edit:false,add:false,del:false});
 });
 </script>

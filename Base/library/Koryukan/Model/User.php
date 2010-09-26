@@ -54,7 +54,7 @@ class Koryukan_Model_User extends Koryukan_Model_Base implements Zend_Acl_Role_I
     /**
      * Return all the users
      *
-     * @return void
+     * @return Koryukan_Helper_Collection
      */
     public static function getAllUsers()
     {
@@ -133,6 +133,36 @@ class Koryukan_Model_User extends Koryukan_Model_Base implements Zend_Acl_Role_I
     public function getEmail()
     {
         return $this->_dbRecord->get('email');
+    }
+
+    /**
+     * Return the user first name
+     *
+     * @return string
+     */
+    public function getFirstName()
+    {
+        return $this->_dbRecord->get('firstName');
+    }
+
+    /**
+     * Return the user last name
+     *
+     * @return string
+     */
+    public function getLastName()
+    {
+        return $this->_dbRecord->get('lastName');
+    }
+
+    /**
+     * Return the status
+     *
+     * @return string
+     */
+    public function getStatus()
+    {
+        return $this->_dbRecord->get('status');
     }
 
     /**

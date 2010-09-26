@@ -31,7 +31,7 @@ class AdministrationController extends Zend_Controller_Action
      */
     public function usersAction()
     {
-
+        $this->view->assign('lang', Zend_Registry::get('lang'));
     }
 
     /**
@@ -41,49 +41,28 @@ class AdministrationController extends Zend_Controller_Action
      */
     public function getusersAction()
     {
-        $page = $_GET['page']; // get the requested page
-$limit = $_GET['rows']; // get how many rows we want to have into the grid
-$sidx = $_GET['sidx']; // get index row - i.e. user click to sort
-$sord = $_GET['sord']; // get the direction
-if(!$sidx) $sidx =1;
-// connect to the database
+        $userList = Koryukan_Model_User::getAllUsers();
+        $count = $userList->count();
 
-$count = 1;
-if( $count >0 ) {
-    $total_pages = ceil($count/$limit);
-} else {
-    $total_pages = 0;
-}
+        $response = array();
+        $response['page'] = 1;
+        $response['total'] = 1;
+        $response['records'] = $count;
 
-if ($page > $total_pages) $page=$total_pages;
+        $index = 0;
+        foreach ($userList as $user) {
+            $response['rows'][$index]['id'] = $user->getId();
+            $response['rows'][$index]['cell'] = array($user->getId(), $user->getUsername(), $user->getFirstName(),
+                $user->getLastName(), $user->getEmail(), $user->getStatus());
+        }
 
+        $jsonData = Zend_Json::encode($response);
+        $this->getResponse()
+            ->setHeader('Content-Type', 'text/json')
+            ->setBody($jsonData);
 
-$responce->page = $page;
-$responce->total = $total_pages;
-$responce->records = $count;
-
-
-
-    $responce->rows[0]['id']=1;
-    $responce->rows[0]['cell']=array(1);
-
-/*
-echo json_encode($responce);
-$this->getHelper('viewRenderer')->setNoRender();
-$this->_helper->layout->disableLayout();
-*/
-
-$jsonData = Zend_Json::encode($responce);
-    $this->getResponse()
-    ->setHeader('Content-Type', 'text/json')
-    ->setBody($jsonData);
-    //->sendResponse();
-
-    $this->getHelper('viewRenderer')->setNoRender();
-$this->_helper->layout->disableLayout();
-
-//echo $jsonData;
-
+        $this->getHelper('viewRenderer')->setNoRender();
+        $this->_helper->layout->disableLayout();
     }
 
 }
