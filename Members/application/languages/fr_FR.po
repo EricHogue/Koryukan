@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Koyukan Members\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-26 19:45-0500\n"
+"POT-Creation-Date: 2010-10-02 11:50-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: eric <eric@erichogue.ca>\n"
 "Language-Team: Koryukan <eric@koryukan.com>\n"
@@ -58,7 +58,35 @@ msgstr "Connection"
 msgid "An error occurred"
 msgstr "Une erreur c'est produite"
 
-#: application/views/scripts/administration/users.phtml:18
+#: application/views/scripts/administration/users.phtml:13
+msgid "id"
+msgstr "id"
+
+#: application/views/scripts/administration/users.phtml:13
+msgid "Username"
+msgstr "Nom d'usager"
+
+#: application/views/scripts/administration/users.phtml:14
+msgid "First Name"
+msgstr "Prénom"
+
+#: application/views/scripts/administration/users.phtml:14
+msgid "Last Name"
+msgstr "Nom"
+
+#: application/views/scripts/administration/users.phtml:15
+msgid "Email"
+msgstr "Email"
+
+#: application/views/scripts/administration/users.phtml:15
+msgid "Status"
+msgstr "Statut"
+
+#: application/views/scripts/administration/users.phtml:16
+msgid "Group"
+msgstr "Groupe"
+
+#: application/views/scripts/administration/users.phtml:26
 msgid "Users"
 msgstr "Usagers"
 
@@ -66,6 +94,8 @@ msgstr "Usagers"
 msgid "Test"
 msgstr "Ceci est un test"
 
+#~ msgid "Page {0} of {1}"
+#~ msgstr "Page {0} de {1}"
 #~ msgid "Access Denied"
 #~ msgstr "Accès refusé"
 

@@ -3,7 +3,6 @@
 <table id="userGrid"></table>
 <div id="userPager"></div>
 
-
 <script type="text/javascript">
 $(function() {
 
@@ -11,17 +10,40 @@ $(function() {
     jQuery("#userGrid").jqGrid({
         url:'/<?php echo $this->purify($this->lang); ?>/administration/getusers',
         datatype: "json",
-        colNames:['id', 'username', 'First Name', 'Last Name', 'Email', 'Status'],
+        colNames:["<? echo $this->purify($this->translate('id')); ?>", "<? echo $this->purify($this->translate('Username')); ?>",
+                  "<? echo $this->purify($this->translate('First Name')); ?>", "<? echo $this->purify($this->translate('Last Name')); ?>",
+                  "<? echo $this->purify($this->translate('Email')); ?>", "<? echo $this->purify($this->translate('Status')); ?>",
+                  "<? echo $this->purify($this->translate('Group')); ?>"],
         colModel:[
-            {name:'id',index:'id', width:55},
-            {name:'username',index:'username', width:55},
-            {name:'firstName',index:'firstName', width:55},
-            {name:'lastName',index:'lastName', width:55},
-            {name:'email',index:'email', width:55},
-            {name:'status',index:'status', width:55}
+            {name:'id',index:'id', width:20},
+            {name:'username',index:'username', width:50},
+            {name:'firstName',index:'firstName', width:50},
+            {name:'lastName',index:'lastName', width:50},
+            {name:'email',index:'email', width:70},
+            {name:'status',index:'status', width:40 },
+            {name:'group',index:'group', width:40 }
         ],
         caption: "<?php echo $this->purify($this->translate('Users')); ?>",
-        navGrid: $('#userPager'),
+        shrinkToFit: true,
+        width: 900,
+        height: '100%',
+
+
+        pager: $('#userPager'),
+        pgbuttons: false,
+        pginput: false,
+        viewrecords: true,
+        rowList: [],
+    });
+
+    jQuery("#userGrid").jqGrid('navGrid','#userPager', {
+        add: true,
+        cloneToTop: true,
+        del: true,
+        edit: true,
+        refresh: true,
+        search: false,
+        view: true,
     });
 });
 </script>
