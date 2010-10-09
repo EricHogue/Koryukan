@@ -3,38 +3,95 @@
 <table id="userGrid"></table>
 <div id="userPager"></div>
 
+<?php
+    $active = $this->purify($this->translate('Active'));
+    $deleted = $this->purify($this->translate('Deleted'));
+    $locked = $this->purify($this->translate('Locked'));
+    $statusEditOptionsValues =  "active:{$active};deleted:{$deleted};locked:{$locked}";
+
+    $user = $this->purify($this->translate('User'));
+    $powerUser = $this->purify($this->translate('Power User'));
+    $administrator = $this->purify($this->translate('Administrator'));
+    $groupEditOptionsValues =  "1: {$user}; 2: {$powerUser}; 3: {$administrator}";
+?>
 <script type="text/javascript">
 $(function() {
-
-
     jQuery("#userGrid").jqGrid({
         url:'/<?php echo $this->purify($this->lang); ?>/administration/getusers',
         datatype: "json",
         colNames:["<? echo $this->purify($this->translate('id')); ?>", "<? echo $this->purify($this->translate('Username')); ?>",
                   "<? echo $this->purify($this->translate('First Name')); ?>", "<? echo $this->purify($this->translate('Last Name')); ?>",
                   "<? echo $this->purify($this->translate('Email')); ?>", "<? echo $this->purify($this->translate('Status')); ?>",
-                  "<? echo $this->purify($this->translate('Group')); ?>"],
+                  "<? echo $this->purify($this->translate('Group')); ?>", "<? echo $this->purify($this->translate('Password')); ?>",
+                  "<? echo $this->purify($this->translate('PasswordConfirmation')); ?>",
+                  ],
         colModel:[
             {name:'id',index:'id', width:20},
-            {name:'username',index:'username', width:50},
-            {name:'firstName',index:'firstName', width:50},
-            {name:'lastName',index:'lastName', width:50},
-            {name:'email',index:'email', width:70},
-            {name:'status',index:'status', width:40 },
-            {name:'group',index:'group', width:40 }
+            {name:'username',index:'username', width:50, editable: true, edittype: 'text', editrules: {required: true}},
+            {name:'firstName',index:'firstName', width:50, editable: true, edittype: 'text', editrules: {required: true}},
+            {name:'lastName',index:'lastName', width:50, editable: true, edittype: 'text', editrules: {required: true}},
+            {name:'email',index:'email', width:70, editable: true, edittype: 'text', editrules: {required: true, email: true}},
+            {name:'status',index:'status', width:40, editable: true, edittype: 'select', editoptions: {value: "<?php echo $statusEditOptionsValues; ?>"}, editrules: {required: true}},
+            {name:'group',index:'group', width:50, editable: true, edittype: 'select', editoptions: {value: "<?php echo $groupEditOptionsValues; ?>"}, editrules: {required: true}},
+            {name:'password',index:'password', width:50, editable: true, edittype: 'password', editrules: {required: false}, hidden: true},
+            {name:'passwordConfirm',index:'passwordConfirm', width:50, editable: true, edittype: 'password', editrules: {required: false}, hidden: true},
         ],
         caption: "<?php echo $this->purify($this->translate('Users')); ?>",
         shrinkToFit: true,
-        width: 900,
+        //width: 900,
+        autowidth: true,
         height: '100%',
-
 
         pager: $('#userPager'),
         pgbuttons: false,
         pginput: false,
         viewrecords: true,
         rowList: [],
+
     });
+
+    var commonEditOption = {
+        viewPagerButtons: false,
+        url: "<?php echo $this->url(array('action' => 'edituser')); ?>",
+        afterShowForm: function (formid) {
+        },
+        beforeShowForm: function (formid) {
+            var username = $('#tr_username input').val();
+            if (0 === username.length) {
+                //Adding a new user
+                $('#tr_username input').removeAttr('readonly');
+                $('#tr_password').css('display', '');
+                $('#tr_passwordConfirm').css('display', '');
+            } else {
+                //Editing an existing user
+                $('#tr_username input').attr('readonly', 'readonly');
+                $('#tr_password').css('display', 'none');
+                $('#tr_passwordConfirm').css('display', 'none');
+
+            }
+        },
+        onInitializeForm: function (formid) {
+        },
+        closeOnEscape: true,
+        closeAfterAdd: true,
+        beforeSubmit: function(postdata, formid) {
+            var success = true;
+            var message = '';
+
+            var id = postdata['userGrid_id'];
+            if ("_empty" === id)
+            {
+                //Validate that the password is entered and that it match the confirmation
+                var password = $.trim(postdata['password']);
+                if (0
+
+            } else {
+
+            }
+
+            return [success, message];
+        },
+    };
 
     jQuery("#userGrid").jqGrid('navGrid','#userPager', {
         add: true,
@@ -44,6 +101,12 @@ $(function() {
         refresh: true,
         search: false,
         view: true,
+        addfunc: function() {
+            jQuery("#userGrid").editGridRow('new', commonEditOption);
+        },
+        editfunc: function(rowId) {
+            jQuery("#userGrid").editGridRow(rowId, commonEditOption);
+        },
     });
 });
 </script>

@@ -33,6 +33,9 @@ class Koryukan_Model_User extends Koryukan_Model_Base implements Zend_Acl_Role_I
      */
     const DB_CLASS_NAME = 'Koryukan_Db_User';
 
+    const STATUS_ACTIVE = 'active';
+    const STATUS_DELETED = 'deleted';
+    const STATUS_LOCKED = 'locked';
 
     /**
      * Return a user by username
@@ -163,6 +166,71 @@ class Koryukan_Model_User extends Koryukan_Model_Base implements Zend_Acl_Role_I
     public function getStatus()
     {
         return $this->_dbRecord->get('status');
+    }
+
+    /**
+     * Set the user name
+     *
+     * @return void
+     */
+    public function setUsername($username)
+    {
+        $this->_dbRecord->set('username', $username);
+    }
+
+    /**
+     * Set the first name
+     *
+     * @return void
+     */
+    public function setFirstName($firstName)
+    {
+        $this->_dbRecord->set('firstName', $firstName);
+    }
+
+    /**
+     * Set the last name
+     *
+     * @return void
+     */
+    public function setLastName($lastName)
+    {
+        $this->_dbRecord->set('lastName', $lastName);
+    }
+
+    /**
+     * Set the email
+     *
+     * @return void
+     */
+    public function setEmail($email)
+    {
+        $this->_dbRecord->set('email', $email);
+    }
+
+    /**
+     * Set the status
+     *
+     * @return void
+     */
+    public function setStatus($status)
+    {
+        if (true !== in_array($status, array(self::STATUS_ACTIVE, self::STATUS_DELETED, self::STATUS_LOCKED))) {
+            throw new Exception('Bad status');
+        }
+
+        $this->_dbRecord->set('status', $status);
+    }
+
+    /**
+     * Add group
+     *
+     * @return void
+     */
+    public function addGroup($groupId)
+    {
+
+        $this->_dbRecord->UserGroups[] = Koryukan_Model_UserGroup::getById($groupId)->getDbRecord();
     }
 
     /**

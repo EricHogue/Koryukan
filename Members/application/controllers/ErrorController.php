@@ -31,6 +31,11 @@ class ErrorController Extends Zend_Controller_Action
         $this->getResponse()->clearBody();
         $this->view->exception = $errors->exception;
         $this->view->request   = $errors->request;
+
+        error_log($errors->types);
+        error_log($errors->exception->getMessage());
+        error_log($errors->exception->getTraceAsString());
+
     }
 
 }

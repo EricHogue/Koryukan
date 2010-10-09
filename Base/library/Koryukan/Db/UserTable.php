@@ -38,7 +38,7 @@ class Koryukan_Db_UserTable extends Doctrine_Table
     public function getAllUsers()
     {
         $query = $this->createQuery('user');
-        $query->innerJoin('user.UserGroups');
+        $query->leftJoin('user.UserGroups');
         $query->addWhere('status = ?', 'active');
 
         return $query;

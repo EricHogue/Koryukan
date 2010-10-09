@@ -55,4 +55,24 @@ abstract class Koryukan_Model_Base
 
         $this->_dbRecord = $dbRecord;
     }
+
+    /**
+     * Save the changes
+     *
+     * @return void
+     */
+    public function save()
+    {
+        $this->_dbRecord->save();
+    }
+
+    /**
+     * Return the db record
+     *
+     * @return Doctrine_Record
+     */
+    public function getDbRecord()
+    {
+        return $this->_dbRecord;
+    }
 }

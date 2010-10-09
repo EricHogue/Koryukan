@@ -46,6 +46,19 @@ class Koryukan_Model_UserGroup extends Koryukan_Model_Base implements Zend_Acl_R
     }
 
     /**
+     * Return a group by id
+     *
+     * @return Koryukan_Model_UserGroup
+     */
+    public static function getById($groupId)
+    {
+        $table = Doctrine_Core::getTable(self::DB_CLASS_NAME);
+        $dbObject = $table->findOneByGroupId($groupId);
+
+        return new self($dbObject);
+    }
+
+    /**
      * Return the group id
      *
      * @return integer

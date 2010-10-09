@@ -51,15 +51,58 @@ class AdministrationController extends Zend_Controller_Action
 
         $index = 0;
         foreach ($userList as $user) {
+            $group = $user->getGroups()->current();
+            $groupText = $this->view->translate($group->getName());
+
             $response['rows'][$index]['id'] = $user->getId();
             $response['rows'][$index]['cell'] = array($user->getId(), $user->getUsername(), $user->getFirstName(),
-                $user->getLastName(), $user->getEmail(), $user->getStatus());
+                $user->getLastName(), $user->getEmail(), $this->view->translate($user->getStatus()), $groupText);
+            $index++;
         }
 
         $jsonData = Zend_Json::encode($response);
         $this->getResponse()
             ->setHeader('Content-Type', 'text/json')
             ->setBody($jsonData);
+
+        $this->getHelper('viewRenderer')->setNoRender();
+        $this->_helper->layout->disableLayout();
+    }
+
+    /**
+     * Edit a user
+     *
+     * @return void
+     */
+    public function edituserAction()
+    {
+        $request = $this->getRequest();
+
+        $operation = $request->getParam('oper', 'edit');
+        if (0 === strcasecmp('add', $operation)) {
+            $isNew = true;
+        } else {
+            $isNew = false;
+        }
+
+        if ($isNew) {
+            $user = new Koryukan_Model_User();
+            $user->setUsername($request->getParam('username'));
+        } else {
+            $user = Koryukan_Model_User::getByUsername($request->getParam('username'));
+        }
+
+        $user->setFirstName($request->getParam('firstName'));
+        $user->setLastName($request->getParam('lastName'));
+        $user->setEmail($request->getParam('email'));
+        $user->setStatus($request->getParam('status'));
+        $user->addGroup($request->getParam('group'));
+
+        $user->save();
+
+        $this->getResponse()
+            ->setHeader('Content-Type', 'text/json')
+            ->setBody('');
 
         $this->getHelper('viewRenderer')->setNoRender();
         $this->_helper->layout->disableLayout();

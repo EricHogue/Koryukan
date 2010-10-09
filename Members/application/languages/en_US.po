@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Koyukan Members\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-10-02 11:50-0500\n"
+"POT-Creation-Date: 2010-10-02 15:28-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: eric <eric@erichogue.ca>\n"
 "Language-Team: Koryukan <eric@koryukan.com>\n"
@@ -58,35 +58,59 @@ msgstr "Login"
 msgid "An error occurred"
 msgstr "An error occurred"
 
+#: application/views/scripts/administration/users.phtml:7
+msgid "Active"
+msgstr "Active"
+
+#: application/views/scripts/administration/users.phtml:8
+msgid "Deleted"
+msgstr "Deleted"
+
+#: application/views/scripts/administration/users.phtml:9
+msgid "Locked"
+msgstr "Locked"
+
+#: application/views/scripts/administration/users.phtml:12
+msgid "User"
+msgstr "User"
+
 #: application/views/scripts/administration/users.phtml:13
+msgid "Power User"
+msgstr "Power User"
+
+#: application/views/scripts/administration/users.phtml:14
+msgid "Administrator"
+msgstr "Administrator"
+
+#: application/views/scripts/administration/users.phtml:22
 msgid "id"
 msgstr "id"
 
-#: application/views/scripts/administration/users.phtml:13
+#: application/views/scripts/administration/users.phtml:22
 msgid "Username"
 msgstr "Username"
 
-#: application/views/scripts/administration/users.phtml:14
+#: application/views/scripts/administration/users.phtml:23
 msgid "First Name"
 msgstr "First Name"
 
-#: application/views/scripts/administration/users.phtml:14
+#: application/views/scripts/administration/users.phtml:23
 msgid "Last Name"
 msgstr "Last Name"
 
-#: application/views/scripts/administration/users.phtml:15
+#: application/views/scripts/administration/users.phtml:24
 msgid "Email"
 msgstr "Email"
 
-#: application/views/scripts/administration/users.phtml:15
+#: application/views/scripts/administration/users.phtml:24
 msgid "Status"
 msgstr "Status"
 
-#: application/views/scripts/administration/users.phtml:16
+#: application/views/scripts/administration/users.phtml:25
 msgid "Group"
 msgstr "Group"
 
-#: application/views/scripts/administration/users.phtml:26
+#: application/views/scripts/administration/users.phtml:35
 msgid "Users"
 msgstr "Users"
 
