@@ -28,6 +28,7 @@ require_once 'Zend/Application.php';
 
 // Create application, bootstrap, and run
 $config = array('config' => array(realpath(BASE_PATH . '/configs/application.ini'),
+    realpath(BASE_PATH . '/configs/database.ini'),
     realpath(APPLICATION_PATH . '/../configs/application.ini')));
 
 $application = new Zend_Application(
