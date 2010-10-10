@@ -23,7 +23,7 @@ $(function() {
                   "<? echo $this->purify($this->translate('First Name')); ?>", "<? echo $this->purify($this->translate('Last Name')); ?>",
                   "<? echo $this->purify($this->translate('Email')); ?>", "<? echo $this->purify($this->translate('Status')); ?>",
                   "<? echo $this->purify($this->translate('Group')); ?>", "<? echo $this->purify($this->translate('Password')); ?>",
-                  "<? echo $this->purify($this->translate('PasswordConfirmation')); ?>",
+                  "<? echo $this->purify($this->translate('Password Confirmation')); ?>",
                   ],
         colModel:[
             {name:'id',index:'id', width:20},
@@ -74,6 +74,7 @@ $(function() {
         },
         closeOnEscape: true,
         closeAfterAdd: true,
+        closeAfterEdit: true,
         beforeSubmit: function(postdata, formid) {
             var success = true;
             var message = '';
@@ -83,10 +84,17 @@ $(function() {
             {
                 //Validate that the password is entered and that it match the confirmation
                 var password = $.trim(postdata['password']);
-                if (0
-
+                if (0 === password.length) {
+                    success = false;
+                    message = "<?php echo $this->purify($this->translate('The password is required')); ?>";
+                } else {
+                    var passwordConfirm = $.trim(postdata['passwordConfirm']);
+                    if (password !== passwordConfirm) {
+                        success = false;
+                        message = "<?php echo $this->purify($this->translate('Password confirmation does not match')); ?>";
+                    }
+                }
             } else {
-
             }
 
             return [success, message];

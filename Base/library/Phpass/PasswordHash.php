@@ -45,7 +45,7 @@ class Phpass_PasswordHash {
 			$this->random_state .= getmypid();
 	}
 
-	function get_random_bytes($count)
+	private function get_random_bytes($count)
 	{
 		$output = '';
 		if (is_readable('/dev/urandom') &&
@@ -68,7 +68,7 @@ class Phpass_PasswordHash {
 		return $output;
 	}
 
-	function encode64($input, $count)
+	private function encode64($input, $count)
 	{
 		$output = '';
 		$i = 0;
@@ -91,7 +91,7 @@ class Phpass_PasswordHash {
 		return $output;
 	}
 
-	function gensalt_private($input)
+	private function gensalt_private($input)
 	{
 		$output = '$P$';
 		$output .= $this->itoa64[min($this->iteration_count_log2 +
@@ -101,7 +101,7 @@ class Phpass_PasswordHash {
 		return $output;
 	}
 
-	function crypt_private($password, $setting)
+	private function crypt_private($password, $setting)
 	{
 		$output = '*0';
 		if (substr($setting, 0, 2) == $output)
@@ -146,7 +146,7 @@ class Phpass_PasswordHash {
 		return $output;
 	}
 
-	function gensalt_extended($input)
+	private function gensalt_extended($input)
 	{
 		$count_log2 = min($this->iteration_count_log2 + 8, 24);
 		# This should be odd to not reveal weak DES keys, and the
@@ -164,7 +164,7 @@ class Phpass_PasswordHash {
 		return $output;
 	}
 
-	function gensalt_blowfish($input)
+	private function gensalt_blowfish($input)
 	{
 		# This one needs to use a different order of characters and a
 		# different encoding scheme from the one in encode64() above.
@@ -205,7 +205,7 @@ class Phpass_PasswordHash {
 		return $output;
 	}
 
-	function HashPassword($password)
+	public function HashPassword($password)
 	{
 		$random = '';
 
@@ -240,7 +240,7 @@ class Phpass_PasswordHash {
 		return '*';
 	}
 
-	function CheckPassword($password, $stored_hash)
+	public function CheckPassword($password, $stored_hash)
 	{
 		$hash = $this->crypt_private($password, $stored_hash);
 		if ($hash[0] == '*')

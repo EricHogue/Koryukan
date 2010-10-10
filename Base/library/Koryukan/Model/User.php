@@ -234,6 +234,19 @@ class Koryukan_Model_User extends Koryukan_Model_Base implements Zend_Acl_Role_I
     }
 
     /**
+     * Set the user password
+     *
+     * @return void
+     */
+    public function setPassword($password)
+    {
+        $hasher = new Phpass_PasswordHash(self::HASH_ITERATION_COUNT, true);
+        $hashedPassword = $hasher->HashPassword($password);
+
+        $this->_dbRecord->set('password', $hashedPassword);
+    }
+
+    /**
      * Return the name of the db class
      *
      * @return string

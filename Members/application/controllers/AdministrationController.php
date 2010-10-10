@@ -98,6 +98,10 @@ class AdministrationController extends Zend_Controller_Action
         $user->setStatus($request->getParam('status'));
         $user->addGroup($request->getParam('group'));
 
+        if ($isNew) {
+            $user->setPassword($request->getParam('password'));
+        }
+
         $user->save();
 
         $this->getResponse()
