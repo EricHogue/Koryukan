@@ -3,3 +3,4 @@
 .project
 .settings/*
 cache/
+Base/configs/database.ini
