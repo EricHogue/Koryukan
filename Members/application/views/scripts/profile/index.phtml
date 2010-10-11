@@ -1,27 +1,35 @@
 <?php
-$this->headScript()->appendFile('/js/profileIndex.js', 'text/javascript');
+
 ?>
 
 <h2><?php echo $this->purify($this->translate('My Profile')); ?></h2>
 <form method="post" id="userProfile" action="<?php echo $this->url(array('action' => 'save')) ; ?>">
-    <label for="username"><?php echo $this->purify($this->translate('Username'))?>: </label>
-    <input type="text" id="username" name="username" readonly="readonly" value="<?php echo $this->purify($this->user->getUsername()); ?>" />
+    <fieldset>
+        <p>
+            <label for="username"><?php echo $this->purify($this->translate('Username'))?>: </label>
+            <input type="text" id="username" name="username" readonly="readonly" value="<?php echo $this->purify($this->user->getUsername()); ?>" />
+        </p>
 
+        <p>
+            <label for="firstName"><?php echo $this->purify($this->translate('First Name'))?>: </label>
+            <input type="text" id="firstName" name="firstName" value="<?php echo $this->purify($this->user->getFirstName()); ?>" />
+        </p>
 
-    <label for="firstName"><?php echo $this->purify($this->translate('First Name'))?>: </label>
-    <input type="text" id="firstName" name="firstName" value="<?php echo $this->purify($this->user->getFirstName()); ?>" />
+        <p>
+            <label for="lastName"><?php echo $this->purify($this->translate('Last Name'))?>: </label>
+            <input type="text" id="lastName" name="lastName" value="<?php echo $this->purify($this->user->getLastName()); ?>" />
+        </p>
 
-
-    <label for="lastName"><?php echo $this->purify($this->translate('Last Name'))?>: </label>
-    <input type="text" id="lastName" name="lastName" value="<?php echo $this->purify($this->user->getLastName()); ?>" />
-
-
-    <label for="email"><?php echo $this->purify($this->translate('Email'))?>: </label>
-    <input type="text" id="email" name="email" value="<?php echo $this->purify($this->user->getEmail()); ?>" />
-
+        <p>
+            <label for="email"><?php echo $this->purify($this->translate('Email'))?>: </label>
+            <input type="text" id="email" name="email" value="<?php echo $this->purify($this->user->getEmail()); ?>" />
+        </p>
+    </fieldset>
 
     <div class="actions">
         <button id='save' type="submit"><?php echo $this->purify($this->translate('Save')); ?></button>
         <button id='cancel' type="reset"><?php echo $this->purify($this->translate('Cancel')); ?></button>
     </div>
 </form>
+
+<script type="text/javascript" src="/js/profileIndex.js"></script>

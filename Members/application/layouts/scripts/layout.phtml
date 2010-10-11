@@ -13,8 +13,14 @@
     $this->headScript()->appendFile('/js/grid_i18n/grid.locale-' . $this->lang . '.js', 'text/javascript');
     $this->headScript()->appendFile('/js/jquery.jqGrid.min.js', 'text/javascript');
 
+    $this->headScript()->appendFile('/js/jquery.validate.min.js', 'text/javascript');
+    if (0 === strcasecmp($this->lang, 'fr')) {
+        $this->headScript()->appendFile('/js/validate_i18n/messages_fr.js', 'text/javascript');
+    }
+
     $this->headLink()->appendStylesheet('/css/jQueryUI/' . $jQueryUITheme . '/jquery-ui-1.8.2.custom.css');
     $this->headLink()->appendStylesheet('/css/ui.jqgrid.css');
+
 ?>
 
 <html>

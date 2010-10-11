@@ -105,20 +105,26 @@ ul.mainMenu li a {
 form#userProfile {
 }
 
+form#userProfile fieldset {
+	border: none;
+}
+
 form#userProfile label {
-	width: 15%;
-	float: left;
-	clear: left;
-	
+	display:inline-block;
+	width: 150px;
+}
+
+form#userProfile label.error {
+    margin-left: 10px;
+    width: auto;
+    display: inline;
+    color: red;
 }
 
 form#userProfile input {
-	float: left;
-	clear: right;
 }
 
 form#userProfile div.actions {
-	clear: both;
 }
 
 form#userProfile div.actions button {
