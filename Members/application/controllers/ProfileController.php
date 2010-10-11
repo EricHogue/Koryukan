@@ -51,6 +51,7 @@ class ProfileController extends Zend_Controller_Action
      */
     public function saveAction()
     {
-
+        $this->getHelper('viewRenderer')->setNoRender();
+        $this->_helper->layout->disableLayout();
     }
 }

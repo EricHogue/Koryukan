@@ -1,7 +1,11 @@
 $.validator.setDefaults({
     submitHandler: function(form) {
         var url = $("form#userProfile").attr('action');
-        //alert(url);
+        var data = $(form).serializeArray();
+        
+        $.post(url, data, function(data, textStatus, XMLHttpRequest) {
+            alert('Success');
+        }, 'json');
     }
 });
  
