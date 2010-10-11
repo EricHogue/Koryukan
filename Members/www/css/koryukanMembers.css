@@ -100,3 +100,27 @@ ul.mainMenu li a {
     display: block;
 }
 
+
+/* USER PROFILE */
+form#userProfile {
+}
+
+form#userProfile label {
+	width: 15%;
+	float: left;
+	clear: left;
+	
+}
+
+form#userProfile input {
+	float: left;
+	clear: right;
+}
+
+form#userProfile div.actions {
+	clear: both;
+}
+
+form#userProfile div.actions button {
+	padding: 0 10px;
+}
