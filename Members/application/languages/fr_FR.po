@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Koyukan Members\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-10-02 14:21-0500\n"
+"POT-Creation-Date: 2010-10-11 09:54-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: eric <eric@erichogue.ca>\n"
 "Language-Team: Koryukan <eric@koryukan.com>\n"
@@ -110,9 +110,21 @@ msgstr "Statut"
 msgid "Group"
 msgstr "Groupe"
 
-#: application/views/scripts/administration/users.phtml:35
+#: application/views/scripts/administration/users.phtml:26
+msgid "Password Confirmation"
+msgstr "Confirmation"
+
+#: application/views/scripts/administration/users.phtml:39
 msgid "Users"
 msgstr "Usagers"
+
+#: application/views/scripts/administration/users.phtml:89
+msgid "The password is required"
+msgstr "Le mot de passe est requis"
+
+#: application/views/scripts/administration/users.phtml:94
+msgid "Password confirmation does not match"
+msgstr "La confirmation du mot de passe est éronnée"
 
 #: application/views/scripts/index/index.phtml:2
 msgid "Test"

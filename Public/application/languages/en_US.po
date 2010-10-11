@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Koyukan Public\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-30 19:01-0500\n"
+"POT-Creation-Date: 2010-10-11 09:53-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: eric <eric@erichogue.ca>\n"
 "Language-Team: Koryukan <eric@koryukan.com>\n"
@@ -264,8 +264,8 @@ msgid "Saturday"
 msgstr "Saturday"
 
 #: application/views/scripts/contacts/index.phtml:106
-msgid "12:15 AM to 1:15 PM"
-msgstr "12:15 AM to 1:15 PM"
+msgid "11:15 AM to 12:15 PM"
+msgstr "11:15 AM to 12:15 PM"
 
 #: application/views/scripts/articles/body-movements-by-russel-haskin.phtml:6
 msgid "Brief Background of Russel Haskin"
