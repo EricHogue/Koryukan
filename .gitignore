@@ -4,3 +4,9 @@
 .settings/*
 cache/
 Base/configs/database.ini
+Base/library/Danceric
+Base/library/Doctrine
+Base/library/HTMLPurifier
+Base/library/Phpass
+Base/library/Zend
+Base/library/ZFDebug
