@@ -21,11 +21,7 @@ class KoryukanBootstrap extends Zend_Application_Bootstrap_Bootstrap
 
 
     protected function _initLanguageRoute() {
-        $config = $this->getOptions();
-        $languages = array_keys($config['languages']);
-
-        $zl = new Zend_Locale();
-        $lang = in_array($zl->getLanguage(), $languages)? $zl->getLanguage() : 'en';
+		$lang = $this->_getDefaultLanguage();
 
         $frontController = Zend_Controller_Front::getInstance();
         $route = new Zend_Controller_Router_Route(
@@ -41,6 +37,30 @@ class KoryukanBootstrap extends Zend_Application_Bootstrap_Bootstrap
         $frontController->setRouter($router);
     }
 
+    /**
+     * Return the default language to use
+     *
+     * @return string
+     */
+    private function _getDefaultLanguage()
+    {
+    	$config = $this->getOptions();
+        $languageList = array_keys($config['languages']);
+
+
+    	$defaultLanguage= '';
+    	if (array_key_exists('language', $_COOKIE)) {
+    		$defaultLanguage = $_COOKIE['language'];
+    	} else {
+        	$zl = new Zend_Locale();
+        	$defaultLanguage = $zl->getLanguage();
+    	}
+
+        $defaultLanguage = in_array($defaultLanguage, $languageList)? $defaultLanguage: 'en';
+
+        return $defaultLanguage;
+    }
+
     protected function _initAutoLoad() {
         $autoloader = Zend_Loader_Autoloader::getInstance();
 
@@ -53,8 +73,9 @@ class KoryukanBootstrap extends Zend_Application_Bootstrap_Bootstrap
         $config = $this->getOptions();
         $languages = $config['languages'];
         $languagePath = $config['languagePath'];
+        $cookiesDomain = $config['cookiesDomain'];
 
-        $plugin = new Koryukan_Controller_Plugin_LanguageSetup($languagePath, $languages);
+        $plugin = new Koryukan_Controller_Plugin_LanguageSetup($languagePath, $languages, $cookiesDomain);
 
         $this->bootstrap('frontController');
         $frontController = $this->getResource('frontController');
