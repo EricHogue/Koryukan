@@ -1,5 +1,5 @@
 <div id="logindiv">
-    <div class="ui-widget-header">Please login</div>
+    <div class="ui-widget-header"><?php echo $this->purify($this->translate('Please login')); ?></div>
 
     <form method="post" id="loginform" class="ui-widget-content">
         <label for="username"><?php echo $this->purify($this->translate('User Name')); ?>: </label>

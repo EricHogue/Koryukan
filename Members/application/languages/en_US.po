@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Koyukan Members\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-10-11 09:55-0500\n"
+"POT-Creation-Date: 2010-11-21 12:07-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: eric <eric@erichogue.ca>\n"
 "Language-Team: Koryukan <eric@koryukan.com>\n"
@@ -41,6 +41,10 @@ msgstr "Manage News"
 #: library/KoryukanMembers/MenuBuilder.php:86
 msgid "Manage Users"
 msgstr "Manage Users"
+
+#: application/views/scripts/login/index.phtml:2
+msgid "Please login"
+msgstr "Please login"
 
 #: application/views/scripts/login/index.phtml:5
 msgid "User Name"
@@ -87,18 +91,22 @@ msgid "id"
 msgstr "id"
 
 #: application/views/scripts/administration/users.phtml:22
+#: application/views/scripts/profile/index.phtml:9
 msgid "Username"
 msgstr "Username"
 
 #: application/views/scripts/administration/users.phtml:23
+#: application/views/scripts/profile/index.phtml:14
 msgid "First Name"
 msgstr "First Name"
 
 #: application/views/scripts/administration/users.phtml:23
+#: application/views/scripts/profile/index.phtml:19
 msgid "Last Name"
 msgstr "Last Name"
 
 #: application/views/scripts/administration/users.phtml:24
+#: application/views/scripts/profile/index.phtml:24
 msgid "Email"
 msgstr "Email"
 
@@ -125,6 +133,14 @@ msgstr "The password is required"
 #: application/views/scripts/administration/users.phtml:94
 msgid "Password confirmation does not match"
 msgstr "Password confirmation does not match"
+
+#: application/views/scripts/profile/index.phtml:30
+msgid "Save"
+msgstr "Save"
+
+#: application/views/scripts/profile/index.phtml:31
+msgid "Cancel"
+msgstr "Cancel"
 
 #: application/views/scripts/index/index.phtml:2
 msgid "Test"
