@@ -59,6 +59,56 @@ class MembersBootstrap extends KoryukanBootstrap
         $frontController->registerPlugin(new KoryukanMembers_Controller_Plugin_ActionSetup(), 96);
     }
 
+	/**
+     * Add a login route
+     *
+     * @return void
+     */
+    protected function _initLoginRoute()
+    {
+    	$this->bootstrap('LanguageRoute');
+
+    	$lang = $this->_getDefaultLanguage();
+    	$route = new Zend_Controller_Router_Route(
+            '/login',
+            array(
+            	'controller' => 'login',
+                'action' => 'index',
+                'module'=>'default',
+                'lang' => $lang)
+        );
+
+        $frontController = Zend_Controller_Front::getInstance();
+        $router = $frontController->getRouter();
+        $router->addRoute('login', $route);
+        $frontController->setRouter($router);
+    }
+
+	/**
+     * Add a logout route
+     *
+     * @return void
+     */
+    protected function _initLogoutRoute()
+    {
+    	$this->bootstrap('LanguageRoute');
+
+    	$lang = $this->_getDefaultLanguage();
+    	$route = new Zend_Controller_Router_Route(
+            '/login/logout',
+            array(
+            	'controller' => 'login',
+                'action' => 'logout',
+                'module'=>'default',
+                'lang' => $lang)
+        );
+
+        $frontController = Zend_Controller_Front::getInstance();
+        $router = $frontController->getRouter();
+        $router->addRoute('logout', $route);
+        $frontController->setRouter($router);
+    }
+
     /**
      * Init the session
      *

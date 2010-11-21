@@ -23,15 +23,15 @@ class KoryukanBootstrap extends Zend_Application_Bootstrap_Bootstrap
     protected function _initLanguageRoute() {
 		$lang = $this->_getDefaultLanguage();
 
-        $frontController = Zend_Controller_Front::getInstance();
         $route = new Zend_Controller_Router_Route(
             ':lang/:controller/:action/*',
-            array('controller'=>'index',
+            array('controller' => 'index',
                 'action' => 'index',
-                'module'=>'default',
-                'lang'=>$lang)
+                'module' => 'default',
+                'lang' => $lang)
         );
 
+        $frontController = Zend_Controller_Front::getInstance();
         $router = $frontController->getRouter();
         $router->addRoute('default', $route);
         $frontController->setRouter($router);
@@ -42,7 +42,7 @@ class KoryukanBootstrap extends Zend_Application_Bootstrap_Bootstrap
      *
      * @return string
      */
-    private function _getDefaultLanguage()
+    protected function _getDefaultLanguage()
     {
     	$config = $this->getOptions();
         $languageList = array_keys($config['languages']);
