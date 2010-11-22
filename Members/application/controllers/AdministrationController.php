@@ -76,6 +76,7 @@ class AdministrationController extends Zend_Controller_Action
      */
     public function edituserAction()
     {
+    	$response = array('success' => false);
         $request = $this->getRequest();
 
         $operation = $request->getParam('oper', 'edit');
@@ -107,12 +108,14 @@ class AdministrationController extends Zend_Controller_Action
 
         if ($isValid) {
         	$user->save();
+        	$response['success'] = true;
+        } else {
+        	$response['messages'] = $validator->getMessages();
         }
 
         $this->getResponse()
             ->setHeader('Content-Type', 'text/json')
-            ->setBody('');
-
+            ->setBody(Zend_Json::encode($response));
         $this->getHelper('viewRenderer')->setNoRender();
         $this->_helper->layout->disableLayout();
     }

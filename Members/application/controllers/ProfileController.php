@@ -63,7 +63,6 @@ class ProfileController extends Zend_Controller_Action
 	        $user->setLastName($request->getParam('lastName', ''));
 	        $user->setEmail($request->getParam('email', ''));
 
-
 	        $validator = new KoryukanMembers_UserValidator($this->view);
         	$isValid = $validator->isValid($user);
 

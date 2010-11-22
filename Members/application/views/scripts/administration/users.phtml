@@ -99,6 +99,15 @@ $(function() {
 
             return [success, message];
         },
+        afterSubmit: function(response, postdata) {
+            response = jQuery.parseJSON(response.responseText);
+
+            var joinedMessages = '';
+            for (message in response.messages) {
+                joinedMessages += message + '<br />';
+            }
+            return [response.success, joinedMessages, null];
+        }
     };
 
     jQuery("#userGrid").jqGrid('navGrid','#userPager', {
