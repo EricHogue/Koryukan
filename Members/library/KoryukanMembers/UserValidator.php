@@ -49,12 +49,12 @@ class KoryukanMembers_UserValidator extends Zend_Validate_Abstract
 
 		if (!$namePartsValidator->isValid($this->_user->getFirstName())) {
 			$valid = false;
-			$this->_error($this->_view->translate('The first name must have at least 2 characters'));
+			$this->_error($this->_view->translate('The first name must have at least 2 characters and consist only of letters'));
 		}
 
 		if (!$namePartsValidator->isValid($this->_user->getLastName())) {
 			$valid = false;
-			$this->_error($this->_view->translate('The last name must have at least 2 characters'));
+			$this->_error($this->_view->translate('The last name must have at least 2 characters and consist only of letters'));
 		}
 
 		$emailValidator = new Zend_Validate_EmailAddress();
@@ -66,7 +66,7 @@ class KoryukanMembers_UserValidator extends Zend_Validate_Abstract
 		if ($this->_user->isNew()) {
 			$usernameValidator = new Zend_Validate();
 			$usernameValidator->addValidator(new Zend_Validate_NotEmpty(Zend_Validate_NotEmpty::STRING))
-							->addValidator(new Zend_Validate_Alpha(array('allowWhiteSpace' => false)))
+							->addValidator(new Zend_Validate_Alnum(array('allowWhiteSpace' => false)))
 							->addValidator(new Zend_Validate_StringLength(array('min' => 5)));
 			if (!$usernameValidator->isValid($this->_user->getUsername())) {
 				$this->_error($this->_view->translate('The username must have at least 5 characters and contains no white spaces'));

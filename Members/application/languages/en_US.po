@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Koyukan Members\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-11-21 19:25-0500\n"
+"POT-Creation-Date: 2010-11-21 19:32-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: eric <eric@erichogue.ca>\n"
 "Language-Team: Koryukan <eric@koryukan.com>\n"
@@ -35,12 +35,12 @@ msgid "Application error"
 msgstr "An error occured in the application"
 
 #: library/KoryukanMembers/UserValidator.php:52
-msgid "The first name must have at least 2 characters"
-msgstr "The first name must have at least 2 characters"
+msgid "The first name must have at least 2 characters and consist only of letters"
+msgstr "Le prénom doit avoir au moins 2 caractères et être seulement composé de lettres"
 
 #: library/KoryukanMembers/UserValidator.php:57
-msgid "The last name must have at least 2 characters"
-msgstr "The last name must have at least 2 characters"
+msgid "The last name must have at least 2 characters and consist only of letters"
+msgstr "Le nom doit avoir au moins 2 caractères et être seulement composé de lettres"
 
 #: library/KoryukanMembers/UserValidator.php:63
 msgid "You must entre a valid email"
@@ -170,6 +170,10 @@ msgstr "Cancel"
 msgid "Test"
 msgstr "This is a test"
 
+#~ msgid "The first name must have at least 2 characters"
+#~ msgstr "The first name must have at least 2 characters"
+#~ msgid "The last name must have at least 2 characters"
+#~ msgstr "The last name must have at least 2 characters"
 #~ msgid "Page {0} of {1}"
 #~ msgstr "Page {0} of {1}"
 #~ msgid "Access Denied"

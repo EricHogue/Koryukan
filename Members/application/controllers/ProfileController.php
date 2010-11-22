@@ -78,7 +78,6 @@ class ProfileController extends Zend_Controller_Action
 
         $response['title'] = $this->view->translate('Profile Update');
 
-
         $this->getResponse()
             ->setHeader('Content-Type', 'text/json')
             ->setBody(Zend_Json::encode($response));

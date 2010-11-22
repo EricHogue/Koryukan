@@ -102,7 +102,12 @@ class AdministrationController extends Zend_Controller_Action
             $user->setPassword($request->getParam('password'));
         }
 
-        $user->save();
+        $validator = new KoryukanMembers_UserValidator($this->view);
+        $isValid = $validator->isValid($user);
+
+        if ($isValid) {
+        	$user->save();
+        }
 
         $this->getResponse()
             ->setHeader('Content-Type', 'text/json')
