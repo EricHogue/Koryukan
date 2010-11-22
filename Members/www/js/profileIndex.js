@@ -4,7 +4,17 @@ $.validator.setDefaults({
         var data = $(form).serializeArray();
         
         $.post(url, data, function(data, textStatus, XMLHttpRequest) {
-            alert('Success');
+            var displayText = '';
+            for (message in data.messages) {
+                displayText = displayText + '<p>' + message + '</p>'
+            }
+            
+            var theme = 'default';
+            if (!data.success) {
+               theme = 'ui-state-error';
+            }
+            
+            $("#messages").jGrowl(displayText, {'header': data.title, 'life': 5000, 'sticky': false, 'theme': theme});
         }, 'json');
     }
 });

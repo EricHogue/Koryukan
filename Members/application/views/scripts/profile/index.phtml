@@ -2,6 +2,24 @@
 
 ?>
 
+<style>
+<!--
+div.jGrowl-notification div.close {
+	text-align: right;
+	cursor: pointer;
+	float: right;
+}
+
+div.jGrowl-notification div.header {
+	font-weight: bold;
+}
+-->
+</style>
+
+<link rel="stylesheet" href="/css/jquery.jgrowl.css" type="text/css"/>
+<script type="text/javascript" src="/js/jquery.jgrowl_minimized.js"></script>
+
+
 <h2><?php echo $this->purify($this->translate('My Profile')); ?></h2>
 <form method="post" id="userProfile" action="<?php echo $this->url(array('action' => 'save')) ; ?>">
     <fieldset>
@@ -33,3 +51,6 @@
 </form>
 
 <script type="text/javascript" src="/js/profileIndex.js"></script>
+
+
+<div id="messages" class="center" style='top: 150px;'></div>

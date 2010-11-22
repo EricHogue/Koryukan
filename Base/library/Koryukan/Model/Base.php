@@ -75,4 +75,14 @@ abstract class Koryukan_Model_Base
     {
         return $this->_dbRecord;
     }
+
+    /**
+     * Check if it's a new record
+     *
+     * @return boolean
+     */
+    public function isNew()
+    {
+        return !$this->getDbRecord()->exists();
+    }
 }

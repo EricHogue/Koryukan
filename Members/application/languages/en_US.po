@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Koyukan Members\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-11-21 12:07-0500\n"
+"POT-Creation-Date: 2010-11-21 19:25-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: eric <eric@erichogue.ca>\n"
 "Language-Team: Koryukan <eric@koryukan.com>\n"
@@ -17,6 +17,14 @@ msgstr ""
 "X-Poedit-SearchPath-0: application\n"
 "X-Poedit-SearchPath-1: library\n"
 
+#: application/controllers/ProfileController.php:73
+msgid "Your profile has been updated"
+msgstr "Your profile has been updated"
+
+#: application/controllers/ProfileController.php:79
+msgid "Profile Update"
+msgstr "Profile Update"
+
 #: application/controllers/ErrorController.php:18
 msgid "Page not found"
 msgstr "Page not found"
@@ -25,6 +33,22 @@ msgstr "Page not found"
 #: application/controllers/ErrorController.php:27
 msgid "Application error"
 msgstr "An error occured in the application"
+
+#: library/KoryukanMembers/UserValidator.php:52
+msgid "The first name must have at least 2 characters"
+msgstr "The first name must have at least 2 characters"
+
+#: library/KoryukanMembers/UserValidator.php:57
+msgid "The last name must have at least 2 characters"
+msgstr "The last name must have at least 2 characters"
+
+#: library/KoryukanMembers/UserValidator.php:63
+msgid "You must entre a valid email"
+msgstr "You must entre a valid email"
+
+#: library/KoryukanMembers/UserValidator.php:72
+msgid "The username must have at least 5 characters and contains no white spaces"
+msgstr "The username must have at least 5 characters and contains no white spaces"
 
 #: library/KoryukanMembers/MenuBuilder.php:83
 msgid "Forum"
@@ -91,22 +115,22 @@ msgid "id"
 msgstr "id"
 
 #: application/views/scripts/administration/users.phtml:22
-#: application/views/scripts/profile/index.phtml:9
+#: application/views/scripts/profile/index.phtml:27
 msgid "Username"
 msgstr "Username"
 
 #: application/views/scripts/administration/users.phtml:23
-#: application/views/scripts/profile/index.phtml:14
+#: application/views/scripts/profile/index.phtml:32
 msgid "First Name"
 msgstr "First Name"
 
 #: application/views/scripts/administration/users.phtml:23
-#: application/views/scripts/profile/index.phtml:19
+#: application/views/scripts/profile/index.phtml:37
 msgid "Last Name"
 msgstr "Last Name"
 
 #: application/views/scripts/administration/users.phtml:24
-#: application/views/scripts/profile/index.phtml:24
+#: application/views/scripts/profile/index.phtml:42
 msgid "Email"
 msgstr "Email"
 
@@ -134,11 +158,11 @@ msgstr "The password is required"
 msgid "Password confirmation does not match"
 msgstr "Password confirmation does not match"
 
-#: application/views/scripts/profile/index.phtml:30
+#: application/views/scripts/profile/index.phtml:48
 msgid "Save"
 msgstr "Save"
 
-#: application/views/scripts/profile/index.phtml:31
+#: application/views/scripts/profile/index.phtml:49
 msgid "Cancel"
 msgstr "Cancel"
 
